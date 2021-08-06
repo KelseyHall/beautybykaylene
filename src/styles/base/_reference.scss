@@ -1,0 +1,64 @@
+//Colours
+$violet: #e0cee3;
+$violet-opacity-low: #e0cee3 0.28;
+$violet-light: #f6f1f7;
+
+$dark-purple: #926399;
+$purple-opacity-low: #926399 0.22;
+$purple-light: #e7dde9;
+
+$pink: #f1d8f5;
+
+$green-light: #d1e3ce;
+$green: #94ba8d;
+$dark-green: #63845d;
+
+$grey: #a7a7a7;
+$dark-grey: #636363;
+
+$gold: #d4af37;
+$dirty-gold: #ac9957;
+$dirty-gold-faded: (#ede8e5);
+
+//Font style
+@font-face {
+  font-family: 'Marmelad';
+  src: url('../../fonts/Marmelad/Marmelad-Regular.ttf');
+  font-weight: lighter;
+}
+$default-font: 'Marmelad';
+
+//Font-size
+
+//nav
+//22px = 1.375rem
+$font-nav-sm: 1.375rem;
+//26px = 1.625rem
+$font-nav: 1.625rem;
+
+//pricing
+//26px = 1.625rem
+$font-pricing: 1.625rem;
+
+//titles
+//29px = 1.813rem
+$font-title-sm: 1.813rem;
+//32px = 2rem
+$font-title-md: 2rem;
+//42px = 2.625 rem
+$font-title-lg: 2.625rem;
+
+//text blurbs + forms
+//12px = 0.75rem
+$font-size-xs: 0.75rem;
+//14px = 0.875rem
+$font-size-sm: 0.875rem;
+//17px = 1.063rem
+$font-size-md: 1.063rem;
+//20px = 1.25rem
+$font-size-ml: 1.25rem;
+//22px = 1.375rem
+$font-size-lg: 1.375rem;
+
+// Font family
+$default-type: 'marmelad';
