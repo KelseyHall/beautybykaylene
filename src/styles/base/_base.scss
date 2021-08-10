@@ -4,17 +4,17 @@ body {
   font-family: $default-font;
 
   // max-width: 1440px;
-  margin: 0 auto;
+  // margin: 0 auto;
 }
 .main-container {
-  margin: 0 auto;
+  // margin: 0 auto;
   padding: 0 20px;
 }
 .App {
   // display: flex;
   // flex-direction: column;
-  margin: 0 auto;
-  max-width: 1440px;
+  // margin: 0 auto;
+  // max-width: 1440px;
 }
 //color titles
 .primary {
@@ -50,7 +50,11 @@ hr {
   width: 120px;
   border-radius: 9px;
 }
+.home-banner {
+  @extend %pageCenter;
+}
 .about-us {
+  @extend %pageCenter;
   .about-us-selfie {
     display: flex;
     border-radius: 50%;
@@ -66,6 +70,7 @@ hr {
 }
 
 .testimonials {
+  @extend %pageCenter;
   background: url('../../images/topQuote.png') top left,
     url('../../images/bottomQuote.png') bottom right;
   background-repeat: no-repeat;
@@ -73,7 +78,7 @@ hr {
   height: 320px;
   padding: 90px 0 0 0;
 
-  margin: 40px auto;
+  // margin: 40px auto;
 
   p {
     margin: 50px auto;
@@ -97,17 +102,26 @@ hr {
     // background-position-y: -235px;
     background-repeat: no-repeat;
   }
-  .services-1,
-  .services-2,
-  .services-3,
-  .services-4 {
+  &-bg {
+    background: $violet-light;
+    margin: 0;
+  }
+  &-card {
+    @extend %pageCenter;
+  }
+  &-item-1,
+  &-item-2,
+  &-item-3,
+  &-item-4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: $violet-light;
-    margin: 0;
-    padding: 10px;
+
     border: 1px solid $dirty-gold-faded;
+    // margin: 0;
+    padding: 10px;
+    // height: 300px;
+
     img {
       width: 150px;
       height: auto;
@@ -118,7 +132,7 @@ hr {
 .jump-to-service {
   display: flex;
   justify-content: space-evenly;
-  width: 80%;
+  @extend %pageCenter;
   img {
     width: 127px;
   }
@@ -134,6 +148,7 @@ hr {
 }
 
 .services-content {
+  @extend %pageCenter;
   .h2-title,
   p,
   img {
@@ -178,6 +193,7 @@ hr {
 }
 
 .areas-of-service {
+  @extend %pageCenter;
   h1 {
     text-align: center;
     hr {
@@ -187,7 +203,6 @@ hr {
   }
   .serviceMap {
     width: 100%;
-    margin: 0 auto;
   }
   .commuting-chart {
     display: flex;
@@ -214,7 +229,9 @@ hr {
     background-color: $dark-purple;
   }
 }
-
+.contactUs {
+  @extend %pageCenter;
+}
 .contactContent-1 {
   background: $purple-light;
   text-align: right;
@@ -259,6 +276,7 @@ hr {
   padding: 20px 10px;
   background: $violet-light;
   form {
+    @extend %pageCenter;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -293,6 +311,7 @@ hr {
 }
 
 .Faq {
+  @extend %pageCenter;
   background-image: url('../../images/backdrop.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -301,8 +320,3 @@ hr {
   // width: 1000px;
   padding: 30px;
 }
-// // .full-bleed-left {
-// //   width: 60vw;
-// // }
-// .full-bleed-right {
-// }

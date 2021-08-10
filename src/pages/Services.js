@@ -72,13 +72,7 @@ const ServicesPage = () => {
               <p className="price">$99.99</p>
             </li>
           </ul>
-          {/*<ul className="services-prices">
-            <li>$99.99</li>
-            <li>$99.99</li>
-            <li>$99.99</li>
-            <li>$99.99</li>
-            <li>$99.99</li>
-  </ul> */}
+
           <ul className="services-item">
             <li>
               <p>item name</p>
@@ -101,13 +95,6 @@ const ServicesPage = () => {
               <p className="price">$99.99</p>
             </li>
           </ul>
-          {/*<ul className="services-prices">
-            <li>$99.99</li>
-            <li>$99.99</li>
-            <li>$99.99</li>
-            <li>$99.99</li>
-            <li>$99.99</li>
-</ul>*/}
         </div>
       </div>
       <div className="services-content">
@@ -135,13 +122,6 @@ const ServicesPage = () => {
               <p className="price">$99.99</p>
             </li>
           </ul>
-          {/*<ul className="services-prices">
-            <li>$99.99</li>
-            <li>$99.99</li>
-            <li>$99.99</li>
-            <li>$99.99</li>
-            <li>$99.99</li>
-</ul>*/}
         </div>
         <div className="services-about-content service-right-col-2 full-bleed-right">
           <h2 className="h2-title primary">about the service</h2>

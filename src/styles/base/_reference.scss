@@ -62,3 +62,12 @@ $font-size-lg: 1.375rem;
 
 // Font family
 $default-type: 'marmelad';
+
+//Media break points
+$layout-breakpoint-med: 960px;
+$layout-breakpoint-lrg: 1440px;
+
+%pageCenter {
+  margin: 0 auto;
+  width: 80%;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import HomeServicesBlurb from '../components/Services-blurb';
 import nails from '../images/nails.jpg';
 import waxing from '../images/waxing.png';
 import lashBrow from '../images/lash-brow.png';
@@ -53,41 +53,10 @@ const HomePage = () => {
           services <hr />
         </h1>
         <span className="banner"> </span>
-        <div className="services-1">
-          <img src={nails} alt="nails-icon" />
-          <h3 className="h3-title primary">nails</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
-            elit nisl elementum ut nulla. Pellentesque morbi eu, vulputate
-            vulputate nunc, tempus.{' '}
-          </p>
-        </div>
-        <div className="services-2">
-          <img src={waxing} alt="waxing-icon" />
-          <h3 className="h3-title primary">waxing</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
-            elit nisl elementum ut nulla. Pellentesque morbi eu, vulputate
-            vulputate nunc, tempus.{' '}
-          </p>
-        </div>
-        <div className="services-3">
-          <img src={lashBrow} alt="lashes and brows-icon" />
-          <h3 className="h3-title primary">lashes and brows</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
-            elit nisl elementum ut nulla. Pellentesque morbi eu, vulputate
-            vulputate nunc, tempus.{' '}
-          </p>
-        </div>
-        <div className="services-4">
-          <img src={massages} alt="massages-icon" />
-          <h3 className="h3-title primary">massages</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
-            elit nisl elementum ut nulla. Pellentesque morbi eu, vulputate
-            vulputate nunc, tempus.{' '}
-          </p>
+        <div className="services-bg">
+          <div className="services-card">
+            <HomeServicesBlurb />
+          </div>
         </div>
       </div>
       <div className="gallery">insert image player </div>
