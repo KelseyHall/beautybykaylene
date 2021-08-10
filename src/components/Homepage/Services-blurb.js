@@ -1,9 +1,9 @@
 import React from 'react';
 
-import nails from '../images/nails.jpg';
-import waxing from '../images/waxing.png';
-import lashBrow from '../images/lash-brow.png';
-import massages from '../images/massage.png';
+import nails from '../../images/nails.jpg';
+import waxing from '../../images/waxing.png';
+import lashBrow from '../../images/lash-brow.png';
+import massages from '../../images/massage.png';
 
 const serviceBlurb = [
   {
@@ -44,7 +44,13 @@ const DisplayServicesBlurb = () =>
     </div>
   ));
 const HomeServicesBlurb = () => {
-  return <DisplayServicesBlurb />;
+  return (
+    <div className="services-bg">
+      <div className="services-card">
+        <DisplayServicesBlurb />
+      </div>
+    </div>
+  );
 };
 
 export default HomeServicesBlurb;

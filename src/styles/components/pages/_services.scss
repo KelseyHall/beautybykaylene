@@ -1,0 +1,44 @@
+.services-content {
+  @extend %pageCenter;
+  .h2-title,
+  p,
+  img {
+    padding: 0 20px;
+  }
+}
+.services-about-content {
+  background: $violet-light;
+  text-align: left;
+  p {
+    color: $grey;
+  }
+  .services-Img {
+    width: 90%;
+  }
+}
+.services-content .service-left-col-2 {
+  padding-left: 45%;
+}
+
+.services-pricing {
+  background: $purple-light;
+
+  font-size: $font-pricing;
+  color: $dark-grey;
+
+  .services-prices {
+    padding: 20px;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    p {
+      display: inline-block;
+      margin: 0;
+    }
+    .price {
+      margin-left: 20%;
+    }
+  }
+}

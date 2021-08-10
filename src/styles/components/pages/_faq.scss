@@ -1,0 +1,31 @@
+.sort-by-service {
+  ul {
+    color: $dark-grey;
+    font-size: $font-nav;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    li {
+      text-align: center;
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  img {
+    width: 115px;
+  }
+}
+.Faq {
+  @extend %pageCenter;
+  background-image: url('../../../images/backdrop.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
+  // width: 1000px;
+  padding: 30px;
+}

@@ -1,0 +1,104 @@
+.home-banner {
+  background: url('../../../images/landingBanner.jpg') no-repeat;
+  width: 100vw;
+  background-position: top right;
+  height: 100vh;
+  margin-top: 0;
+  &-content {
+    width: 50%;
+  }
+}
+.about-us {
+  @extend %pageCenter;
+  .about-us-selfie {
+    display: flex;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+    background-image: url('../../../images/temp-coverphoto.jpg');
+    background-position: 5%;
+    background-size: 400px;
+  }
+  p {
+  }
+}
+
+.testimonials {
+  @extend %pageCenter;
+  background: url('../../../images/topQuote.png') top left,
+    url('../../../images/bottomQuote.png') bottom right;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  height: 320px;
+  padding: 90px 0 0 0;
+  width: 50% !important;
+  // margin: 40px auto;
+
+  p {
+    margin: 50px auto;
+    width: 550px;
+    text-align: center;
+    font-size: $font-size-lg;
+  }
+  .testimonial-author {
+    color: $purple-light;
+  }
+}
+
+.services {
+  .banner {
+    // width: 100vw;
+    height: 480px;
+
+    background: url('../../../images/placeholder-2.jpg');
+    background-size: cover;
+    background-position: bottom;
+    // background-position-y: -235px;
+    background-repeat: no-repeat;
+  }
+  &-bg {
+    background: $violet-light;
+    width: 100vw;
+    margin: 0;
+  }
+  &-card {
+    @extend %pageCenter;
+  }
+  &-item-1,
+  &-item-2,
+  &-item-3,
+  &-item-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid $dirty-gold-faded;
+    // margin: 0;
+    padding: 10px;
+    // height: 300px;
+
+    img {
+      width: 150px;
+      height: auto;
+    }
+  }
+}
+
+.jump-to-service {
+  display: flex;
+  justify-content: space-evenly;
+  @extend %pageCenter;
+  img {
+    width: 127px;
+  }
+
+  .nav-item-1,
+  .nav-item-2,
+  .nav-item-3,
+  .nav-item-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

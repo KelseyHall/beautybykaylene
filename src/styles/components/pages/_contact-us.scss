@@ -1,0 +1,57 @@
+.areas-of-service {
+  @extend %pageCenter;
+  h1 {
+    text-align: center;
+    hr {
+      width: 500px;
+      left: 0;
+    }
+  }
+  .serviceMap {
+    width: 100%;
+  }
+  .commuting-chart {
+    display: flex;
+    align-items: center;
+    p {
+      font-size: $font-size-sm;
+      color: $grey;
+      margin: 0 20% 0 10px;
+    }
+  }
+  .services-area-1,
+  .services-area-2,
+  .services-area-3 {
+    width: 65px;
+    height: 24px;
+  }
+  .services-area-1 {
+    background-color: $dark-green;
+  }
+  .services-area-2 {
+    background-color: $pink;
+  }
+  .services-area-3 {
+    background-color: $dark-purple;
+  }
+}
+.contactUs {
+  @extend %pageCenter;
+}
+.contactContent-1 {
+  background: $purple-light;
+  text-align: right;
+  padding: 30px 15px;
+  p {
+    padding-right: 20px;
+    color: $dark-grey;
+  }
+  .h1-title,
+  .h3-title {
+    margin: 0;
+    padding-right: 20px;
+    text-align: right;
+  }
+}
+.contactContent-2 {
+}
