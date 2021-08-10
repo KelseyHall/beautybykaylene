@@ -5,6 +5,7 @@ import LashBrowicon from '../images/lash-brow.png';
 import MassageIcon from '../images/massage.png';
 
 import Placeholder from '../images/services-placeholder.jpg';
+import ShowServices from '../components/ServicesPage/Services';
 
 const ServicesPage = () => {
   return (
@@ -29,7 +30,8 @@ const ServicesPage = () => {
         </div>
       </div>
       <div className="services-content ">
-        <div className="services-about-content  service-left-col full-bleed-left">
+        <ShowServices />
+        {/*<div className="services-about-content  service-left-col full-bleed-left">
           <h2 className="h2-title primary">about the service</h2>
           <img
             src={Placeholder}
@@ -46,7 +48,7 @@ const ServicesPage = () => {
             maecenas leo. Ut donec commodo posuere ac at. Massa adipiscing ac
             enim eget faucibus justo, ut. Felis luctus arcu, duis purus.{' '}
           </p>
-        </div>
+  </div>*/}
 
         <div className="services-pricing service-right-col full-bleed-right">
           <h2 className="h2-title primary">pricing</h2>
@@ -123,7 +125,7 @@ const ServicesPage = () => {
             </li>
           </ul>
         </div>
-        <div className="services-about-content service-right-col-2 full-bleed-right">
+        {/*<div className="services-about-content service-right-col-2 full-bleed-right">
           <h2 className="h2-title primary">about the service</h2>
           <img
             src={Placeholder}
@@ -140,7 +142,7 @@ const ServicesPage = () => {
             maecenas leo. Ut donec commodo posuere ac at. Massa adipiscing ac
             enim eget faucibus justo, ut. Felis luctus arcu, duis purus.{' '}
           </p>
-        </div>
+        </div>*/}
       </div>
       <div className="services-floating-nav">
         <ul>

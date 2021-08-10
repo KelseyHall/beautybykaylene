@@ -1,11 +1,12 @@
-@import './base/grid.scss';
+@import './base/reference.scss';
 @import './base/base.scss';
 
-@import './base/reference.scss';
+@import './base/grid.scss';
+@import './base/mediaSize.scss';
+
 @import './components/nav';
 @import './components/get-in-touch';
 @import './components/pages/home';
 @import './components/pages/services';
 @import './components/pages/contact-us';
 @import './components/pages/faq';
-@import './base/mediaSize.scss';
