@@ -1,11 +1,11 @@
-import React from 'react';
-import Nailicon from '../images/nails.jpg';
-import Waxingicon from '../images/waxing.png';
-import LashBrowicon from '../images/lash-brow.png';
-import MassageIcon from '../images/massage.png';
+import React from "react";
+import Nailicon from "../images/nails.jpg";
+import Waxingicon from "../images/waxing.png";
+import LashBrowicon from "../images/lash-brow.png";
+import MassageIcon from "../images/massage.png";
 
-import Placeholder from '../images/services-placeholder.jpg';
-import ShowServices from '../components/ServicesPage/Services';
+import Placeholder from "../images/services-placeholder.jpg";
+import Services from "../components/ServicesPage/Services";
 
 const ServicesPage = () => {
   return (
@@ -30,7 +30,7 @@ const ServicesPage = () => {
         </div>
       </div>
       <div className="services-content ">
-        <ShowServices />
+        <Services />
         {/*<div className="services-about-content  service-left-col full-bleed-left">
           <h2 className="h2-title primary">about the service</h2>
           <img
