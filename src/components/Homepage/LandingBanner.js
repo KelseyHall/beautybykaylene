@@ -1,5 +1,5 @@
 import React from 'react';
-
+import BannerImg from '../../images/landingBanner.jpg';
 const LandingBanner = () => {
   return (
     <div className="home-banner">
@@ -12,6 +12,7 @@ const LandingBanner = () => {
         </p>
         <button className="button">button</button>
       </div>
+      <img src={BannerImg} alt="banner-img" />
     </div>
   );
 };

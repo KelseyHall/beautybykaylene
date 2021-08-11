@@ -3,6 +3,9 @@ import HomeServicesBlurb from '../components/Homepage/Services-blurb';
 import AboutUsContent from '../components/Homepage/AboutUs';
 import Testimonials from '../components/Homepage/Testimonials';
 import LandingBanner from '../components/Homepage/LandingBanner';
+
+import BannerImg from '../images/placeholder-2.jpg';
+
 const HomePage = () => {
   return (
     <div className="main-container">
@@ -20,7 +23,8 @@ const HomePage = () => {
         <h1 className="h1-title primary">
           services <hr />
         </h1>
-        <span className="banner"> </span>
+        <img src={BannerImg} alt="services-banner" className="banner" />
+        {/*<span className="banner"> </span>*/}
 
         <HomeServicesBlurb />
       </div>
