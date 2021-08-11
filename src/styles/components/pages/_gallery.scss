@@ -1,0 +1,12 @@
+.gallery-Default {
+  @extend %pageCenter;
+}
+.gallery-masonry-grid {
+  .photocard {
+    background: $purple-light;
+
+    img {
+      width: 100%;
+    }
+  }
+}
