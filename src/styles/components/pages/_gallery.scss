@@ -2,11 +2,37 @@
   @extend %pageCenter;
 }
 .gallery-masonry-grid {
+  width: 80vw;
   .photocard {
     background: $purple-light;
-
-    img {
-      width: 100%;
-    }
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tall {
+    min-width: 300px;
+    min-height: 500px;
+    // height: 50vh;
+    // aspect-ratio: 3/5;
+  }
+  .wide {
+    min-width: 500px;
+    min-height: 300px;
+    // aspect-ratio: 4/3;
+  }
+  .square {
+    min-width: 300px;
+    min-height: 300px;
+    // aspect-ratio: 1/1;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    // max-width: 100%;
+    // // height: auto;
+    vertical-align: middle;
+    display: inline-block;
   }
 }
