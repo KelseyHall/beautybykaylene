@@ -73,7 +73,7 @@ const galleryDatabase = [
   },
   {
     id: 9,
-    className: 'wide',
+    className: 'square',
     img: picture2,
     title: 'Picture Title',
     description: 'Description placeholder',
