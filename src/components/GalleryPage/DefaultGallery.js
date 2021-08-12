@@ -92,7 +92,7 @@ const galleryDatabase = [
 const MasonryGalleryPhoto = () =>
   galleryDatabase.map(({ id, className, img, title, description, altText }) => (
     <div className={'photocard ' + className} key={id}>
-      <img src={img} altText={altText} />
+      <img src={img} alt={altText} />
     </div>
   ));
 
