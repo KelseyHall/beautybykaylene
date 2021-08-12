@@ -1,10 +1,10 @@
 import React from 'react';
 
-import picture from '../../images/services-placeholder.jpg';
-import picture2 from '../../images/placeholder.jpg';
-import picture3 from '../../images/temp-coverphoto.jpg';
-import picture4 from '../../images/massage.png';
-import picture5 from '../../images/backdrop.jpg';
+import picture from '../../images/horizonal-img-1.jpg';
+import picture2 from '../../images/horizonal-img-2.jpg';
+import picture3 from '../../images/vertical-img-1.jpg';
+import picture4 from '../../images/vertical-img-2.jpg';
+import picture5 from '../../images/square-img.jpg';
 
 const galleryDatabase = [
   {
@@ -18,7 +18,7 @@ const galleryDatabase = [
   {
     id: 2,
     className: 'wide',
-    img: picture5,
+    img: picture2,
     title: 'Picture Title',
     description: 'Description placeholder',
     altText: 'picture',
@@ -26,14 +26,14 @@ const galleryDatabase = [
   {
     id: 3,
     className: 'tall',
-    img: picture3,
+    img: picture4,
     title: 'Picture Title',
     description: 'Description placeholder',
     altText: 'picture',
   },
   {
     id: 4,
-    className: 'square',
+    className: 'tall',
     img: picture4,
     title: 'Picture Title',
     description: 'Description placeholder',
@@ -41,8 +41,8 @@ const galleryDatabase = [
   },
   {
     id: 5,
-    className: 'tall',
-    img: picture2,
+    className: 'square',
+    img: picture5,
     title: 'Picture Title',
     description: 'Description placeholder',
     altText: 'picture',
@@ -50,7 +50,7 @@ const galleryDatabase = [
   {
     id: 6,
     className: 'square',
-    img: picture4,
+    img: picture5,
     title: 'Picture Title',
     description: 'Description placeholder',
     altText: 'picture',
@@ -74,7 +74,7 @@ const galleryDatabase = [
   {
     id: 9,
     className: 'square',
-    img: picture2,
+    img: picture5,
     title: 'Picture Title',
     description: 'Description placeholder',
     altText: 'picture',
