@@ -1,6 +1,8 @@
 import React from 'react';
 import header from '../images/header.png';
 
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+
 // import { Navbar, Nav, NavDropdown, SplitButton } from 'react-bootstrap';
 import { Dropdown, ButtonGroup, Button } from 'react-bootstrap';
 // import '../../node_modules/bootstrap/scss/bootstrap.scss';
@@ -12,31 +14,45 @@ const HeaderNav = () => {
     <div>
       <img className="headerImg" src={header} alt="beauty by Kaylene header " />
       <div className="navHeader">
-        <Button>home</Button>
+        <Button>
+          <Link to="/">home</Link>
+        </Button>
         <Dropdown as={ButtonGroup}>
-          <Button variant="services">services</Button>
+          <Button variant="services">
+            <Link to="/services">services</Link>
+          </Button>
           <Dropdown.Toggle
             split
             id="dropdown-toggle"
             className="dropdown-toggle"
           />
           <Dropdown.Menu className="sub-menu">
-            <Dropdown.Item eventKey="1">service 1</Dropdown.Item>
-            <Dropdown.Item eventKey="2">service 2</Dropdown.Item>
+            <Dropdown.Item eventKey="1">
+              <Link to="/services#service1">service 1</Link>
+            </Dropdown.Item>
+            <Dropdown.Item eventKey="2">
+              <Link to="/services#service2">service 2</Link>
+            </Dropdown.Item>
             <Dropdown.Item eventKey="3">service 3</Dropdown.Item>
             <Dropdown.Item eventKey="4">service 4</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
-        <Button>gallery</Button>
+        <Button>
+          <Link to="/gallery">gallery</Link>
+        </Button>
         <Dropdown as={ButtonGroup}>
-          <Button variant="contactus">contact us</Button>
+          <Button variant="contactus">
+            <Link to="/ContactUs">contact us</Link>
+          </Button>
           <Dropdown.Toggle
             split
             id="dropdown-toggle-2"
             className="dropdown-toggle"
           />
           <Dropdown.Menu className="sub-menu">
-            <Dropdown.Item eventKey="5">service 1</Dropdown.Item>
+            <Dropdown.Item eventKey="5">
+              <Link to="/faq">Faq</Link>
+            </Dropdown.Item>
             <Dropdown.Item eventKey="6">service 2</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>

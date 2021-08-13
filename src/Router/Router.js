@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useParams,
-} from 'react-router-dom';
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   useParams,
+// } from 'react-router-dom';
+
 import HomePage from '../pages/Home';
 import ServicesPage from '../pages/Services';
 import GalleryPage from '../pages/Gallery';
@@ -29,19 +30,17 @@ import FaqPage from '../pages/Faq';
 //     <FaqPage />
 //   </Route>
 // </Switch>;
+//
 
-const NavRouter = () => {
-  return (
-    <div>
-      <Router>
-        <Route exact path="/" component={HomePage}></Route>
-        <Route exact path="/services" component={ServicesPage}></Route>
-        <Route exact path="/gallery" component={GalleryPage}></Route>
-        <Route exact path="/ContactUs" component={ContactUsPage}></Route>
-        <Route exact path="/faq" component={Page}></Route>
-      </Router>
-    </div>
-  );
-};
-
+const NavRouter = (
+  <div>
+    <Router>
+      <Route exact path="/" component={HomePage}></Route>
+      <Route exact path="/services" component={ServicesPage}></Route>
+      <Route exact path="/gallery" component={GalleryPage}></Route>
+      <Route exact path="/ContactUs" component={ContactUsPage}></Route>
+      <Route exact path="/faq" component={FaqPage}></Route>
+    </Router>
+  </div>
+);
 export default NavRouter;

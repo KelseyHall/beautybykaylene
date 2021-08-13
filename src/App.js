@@ -10,7 +10,12 @@ import FaqPage from './pages/Faq';
 
 import GetintouchForm from './components/GetInTouchForm';
 
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  BrowserRouter,
+} from 'react-router-dom';
 
 import './styles/style.scss';
 // const Header = () => {
@@ -52,15 +57,18 @@ function App() {
   return (
     <div>
       <div className="App">
-        <header className="App-header">
-          <HeaderNav />
-        </header>
-        <HomePage />
-        <ServicesPage />
-        <GalleryPage />
-        <ContactUsPage />
-        <FaqPage />
-
+        <BrowserRouter>
+          <header className="App-header">
+            <HeaderNav />
+          </header>
+          <Switch>
+            <Route exact path="/" component={HomePage}></Route>
+            <Route exact path="/services" component={ServicesPage}></Route>
+            <Route exact path="/gallery" component={GalleryPage}></Route>
+            <Route exact path="/ContactUs" component={ContactUsPage}></Route>
+            <Route exact path="/faq" component={FaqPage}></Route>
+          </Switch>
+        </BrowserRouter>
         <GetintouchForm />
         <footer></footer>
       </div>
@@ -69,6 +77,11 @@ function App() {
 }
 
 export default App;
+// <HomePage />
+// <ServicesPage />
+// <GalleryPage />
+// <ContactUsPage />
+// <FaqPage />
 
 // <div className="App">
 // <Router>
