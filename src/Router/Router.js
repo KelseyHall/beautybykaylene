@@ -12,20 +12,36 @@ import GalleryPage from '../pages/Gallery';
 import ContactUsPage from '../pages/ContactUs';
 import FaqPage from '../pages/Faq';
 
-<Switch>
-  <Route path="/">
-    <HomePage />
-  </Route>
-  <Route path="/services">
-    <ServicesPage />
-  </Route>
-  <Route path="/gallery">
-    <GalleryPage />
-  </Route>
-  <Route path="/contact">
-    <ContactUsPage />
-  </Route>
-  <Route path="/faq">
-    <FaqPage />
-  </Route>
-</Switch>;
+// <Switch>
+//   <Route path="/">
+//     <HomePage />
+//   </Route>
+//   <Route path="/services">
+//     <ServicesPage />
+//   </Route>
+//   <Route path="/gallery">
+//     <GalleryPage />
+//   </Route>
+//   <Route path="/contact">
+//     <ContactUsPage />
+//   </Route>
+//   <Route path="/faq">
+//     <FaqPage />
+//   </Route>
+// </Switch>;
+
+const NavRouter = () => {
+  return (
+    <div>
+      <Router>
+        <Route exact path="/" component={HomePage}></Route>
+        <Route exact path="/services" component={ServicesPage}></Route>
+        <Route exact path="/gallery" component={GalleryPage}></Route>
+        <Route exact path="/ContactUs" component={ContactUsPage}></Route>
+        <Route exact path="/faq" component={Page}></Route>
+      </Router>
+    </div>
+  );
+};
+
+export default NavRouter;

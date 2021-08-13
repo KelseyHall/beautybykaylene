@@ -85,7 +85,11 @@
     }
   }
 }
-
+.carousel-gallery {
+  height: 600px;
+  margin-bottom: 80px;
+  background: $purple-light;
+}
 .jump-to-service {
   display: flex;
   justify-content: space-evenly;

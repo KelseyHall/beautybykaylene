@@ -5,6 +5,7 @@ import Testimonials from '../components/Homepage/Testimonials';
 import LandingBanner from '../components/Homepage/LandingBanner';
 
 import BannerImg from '../images/placeholder-2.jpg';
+import CarouselGallery from '../components/Homepage/GalleryCarousel';
 
 const HomePage = () => {
   return (
@@ -28,7 +29,9 @@ const HomePage = () => {
 
         <HomeServicesBlurb />
       </div>
-      <div className="gallery">insert image player </div>
+      <div className="gallery">
+        <CarouselGallery />
+      </div>
     </div>
   );
 };

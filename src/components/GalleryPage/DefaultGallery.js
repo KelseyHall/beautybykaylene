@@ -34,7 +34,7 @@ const galleryDatabase = [
   {
     id: 4,
     className: 'tall',
-    img: picture4,
+    img: picture3,
     title: 'Picture Title',
     description: 'Description placeholder',
     altText: 'picture',
@@ -49,8 +49,8 @@ const galleryDatabase = [
   },
   {
     id: 6,
-    className: 'square',
-    img: picture5,
+    className: 'tall',
+    img: picture4,
     title: 'Picture Title',
     description: 'Description placeholder',
     altText: 'picture',
@@ -81,8 +81,8 @@ const galleryDatabase = [
   },
   {
     id: 10,
-    className: 'tall',
-    img: picture3,
+    className: 'square',
+    img: picture5,
     title: 'Picture Title',
     description: 'Description placeholder',
     altText: 'picture',
@@ -91,8 +91,8 @@ const galleryDatabase = [
 
 const MasonryGalleryPhoto = () =>
   galleryDatabase.map(({ id, className, img, title, description, altText }) => (
-    <div className={'photocard ' + className} key={id}>
-      <img src={img} alt={altText} />
+    <div key={id} className={'photocard ' + className}>
+      <img src={img} alt={altText} key={id} />
     </div>
   ));
 
