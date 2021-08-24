@@ -5,7 +5,7 @@ const servicesDescriptions = [
   {
     id: 1,
     row: '',
-    anchor: 'service1',
+    linkedinHandle: 'anchor-service1',
     service: 'about the service',
     image: placeholder,
     blurb:
@@ -56,7 +56,7 @@ const servicesDescriptions = [
   {
     id: 2,
     row: '-2',
-    anchor: 'service2',
+    linkedinHandle: 'anchor-service2',
     service: 'about the service',
     image: placeholder,
     blurb:
@@ -87,7 +87,7 @@ const servicesDescriptions = [
   {
     id: 3,
     row: '',
-    anchor: 'service3',
+    linkedinHandle: 'anchor-service3',
     service: 'about the service',
     image: placeholder,
     blurb:
@@ -138,8 +138,8 @@ const servicesDescriptions = [
   {
     id: 4,
     row: '-2',
-    anchor: 'service4',
-    service: 'about the service 4',
+    linkedinHandle: 'anchor-service4',
+    service: 'about the service',
     image: placeholder,
     blurb:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecteturpulvinar viverra eu sem maecenas leo. Ut donec commodo posuere acat. Massa adipiscing ac enim eget faucibus justo, ut. Felis luctusarcu, duis purus. Eget turpis sit proin ullamcorper. Ut morbi nequeat sed neque viverra sit dui. Lorem ipsum dolor sit amet,consectetur adipiscing elit. Consectetur pulvinar viverra eu semmaecenas leo. Ut donec commodo posuere ac at. Massa adipiscing acenim eget faucibus justo, ut. Felis luctus arcu, duis purus.',
@@ -179,10 +179,9 @@ const Service = ({
   serviceDetails,
   idx,
   row,
-  anchor,
+  linkedinHandle,
 }) => (
-  <div className="services-content">
-    <a href={`#${anchor}`}></a>
+  <div className="services-content" id={linkedinHandle}>
     <div className={'services-about-content  service-' + WhichClass(idx) + row}>
       <h2 className="h2-title primary">{service}</h2>
       <img src={image} className="services-Img" alt="service-theme-photo" />
@@ -199,6 +198,7 @@ const Service = ({
         ))}
       </ul>
     </div>
+    <div className={'mobile-bg' + row}></div>
   </div>
 );
 

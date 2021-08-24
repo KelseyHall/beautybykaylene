@@ -36,7 +36,7 @@ const NavRouter = (
   <div>
     <Router>
       <Route exact path="/" component={HomePage}></Route>
-      <Route exact path="/services" component={ServicesPage}></Route>
+      <Route path="/services" component={ServicesPage}></Route>
       <Route exact path="/gallery" component={GalleryPage}></Route>
       <Route exact path="/ContactUs" component={ContactUsPage}></Route>
       <Route exact path="/faq" component={FaqPage}></Route>

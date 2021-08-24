@@ -17,7 +17,7 @@
     @extend %pageCenter;
     background: #fff;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
     margin: 0 auto 20px;
     // width: 1400px;
@@ -45,7 +45,7 @@
     }
   }
 
-  button {
+  .mainNav .nav-link {
     background-color: #fff;
     border: none;
     color: $grey;
@@ -53,21 +53,48 @@
     font-family: $default-font;
     font-size: $font-nav;
   }
-  button:hover {
+  .dropdown-menu {
+    background: $violet-light;
+    :hover {
+      color: $violet-light;
+      background: white;
+    }
+    .dropdown-item.active,
+    .dropdown-item:active {
+      background-color: $violet-light !important;
+      color: $dark-purple;
+    }
+  }
+  .nav-dropdown-special {
+    display: flex;
+  }
+  .navbar-collapse {
+    // height: 100vh;
+  }
+  .navbar .mainNav .nav-link:hover {
     color: $dark-purple;
   }
 
-  .dropdown-toggle {
+  .mainNav .dropdown-toggle {
     display: inline-block;
     width: 10px;
     height: 10px;
     border-top: 3px solid $grey;
     border-right: 3px solid $grey;
     transform: scale(0.8) rotate(135deg);
-    margin: 7px 0 0 0;
+    margin: 0 0 0 5px;
     padding: 6px;
 
-    position: absolute;
+    // position: absolute;
+    &::after {
+      vertical-align: 0;
+    }
+  }
+  .navbar-toggler {
+    border: none;
+  }
+  .navbar-toggler-icon {
+    background-image: url(../../images/hamburgerMenu.png) !important;
   }
   .dropdown-toggle:hover {
     border-top: solid $dark-purple;
@@ -81,6 +108,12 @@
     justify-content: space-evenly;
     list-style: none;
     background-color: $violet;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    margin: 0;
   }
   li {
     @extend %pageCenter;

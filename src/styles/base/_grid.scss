@@ -1,14 +1,14 @@
 .App-header {
 }
 
-.headerImg {
-  grid-column: 1/13;
-  grid-row: 1/2;
-}
-.navHeader {
-  grid-column: 1/13;
-  grid-row: 2/3;
-}
+// .headerImg {
+//   grid-column: 1/13;
+//   grid-row: 1/2;
+// }
+// .navHeader {
+//   grid-column: 1/13;
+//   grid-row: 2/3;
+// }
 .about-us {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
