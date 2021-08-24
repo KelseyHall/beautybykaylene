@@ -12,8 +12,12 @@ import '../styles/style.scss';
 const HeaderNav = () => {
   return (
     <div>
-      <img className="headerImg" src={header} alt="beauty by Kaylene header " />
       <div className="navHeader">
+        <img
+          className="headerImg"
+          src={header}
+          alt="beauty by Kaylene header "
+        />
         <Navbar className="navbar" expand="lg" sticky="top">
           {/*<Navbar.Brand href="#home"></Navbar.Brand>*/}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -22,30 +26,36 @@ const HeaderNav = () => {
             <Nav className="mainNav">
               <Nav.Link href="/">home</Nav.Link>
 
-              <Nav.Link href="/gallery">gallery</Nav.Link>
               <Nav.Link href="/services" className="nav-dropdown-special">
                 services
                 <NavDropdown id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">
+                  <NavDropdown.Item href="/services/#anchor-service1">
                     service1
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
+                  <NavDropdown.Item href="/services/#anchor-service2">
                     service2
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
+                  <NavDropdown.Item href="/services/#anchor-service3">
                     service3
                   </NavDropdown.Item>
 
-                  <NavDropdown.Item href="#action/3.4">
+                  <NavDropdown.Item href="/services/#anchor-service4">
                     service4
                   </NavDropdown.Item>
                 </NavDropdown>
               </Nav.Link>
-              <Nav.Link href="/contactUs">contact us</Nav.Link>
+              <Nav.Link href="/gallery">gallery</Nav.Link>
+
+              <Nav.Link href="/contactUs" className="nav-dropdown-special">
+                contact us
+                <NavDropdown id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/faq">faq</NavDropdown.Item>
+                </NavDropdown>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <br />
+        <br className="headerline" />
       </div>
     </div>
   );

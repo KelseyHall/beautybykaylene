@@ -9,7 +9,7 @@ import ContactUsPage from './pages/ContactUs';
 import FaqPage from './pages/Faq';
 
 import GetintouchForm from './components/GetInTouchForm';
-
+import Footer from './components/Footer';
 import {
   BrowserRouter as Router,
   Route,
@@ -18,6 +18,7 @@ import {
 } from 'react-router-dom';
 
 import './styles/style.scss';
+
 // const Header = () => {
 //   return (
 //     <div>
@@ -70,7 +71,9 @@ function App() {
           </Switch>
         </BrowserRouter>
         <GetintouchForm />
-        <footer></footer>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </div>
   );

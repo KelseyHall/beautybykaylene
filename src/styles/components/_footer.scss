@@ -1,0 +1,24 @@
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .get-socials {
+    width: 100px;
+    margin: 0 auto;
+    img {
+      width: 50px;
+    }
+  }
+  p {
+    color: $dark-purple;
+    text-align: center;
+
+    a {
+      color: $dark-purple;
+    }
+    a:active,
+    a:hover {
+      color: $dark-purple;
+    }
+  }
+}

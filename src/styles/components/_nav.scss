@@ -13,6 +13,12 @@
     text-decoration: none;
     color: $dark-grey;
   }
+  .headerline {
+    height: 3px;
+    width: 100vw;
+    background-color: $gold;
+    z-index: 1;
+  }
   .navHeader {
     @extend %pageCenter;
     background: #fff;
@@ -20,12 +26,13 @@
     // justify-content: space-between;
     align-items: center;
     margin: 0 auto 20px;
+    flex-direction: column;
     // width: 1400px;
   }
   .nav {
     display: flex;
     align-items: baseline;
-    justify-content: space-around;
+
     list-style-type: none;
   }
   .fullWidth-line {
@@ -52,6 +59,9 @@
     width: auto;
     font-family: $default-font;
     font-size: $font-nav;
+  }
+  .nav-link {
+    margin: 0 45px;
   }
   .dropdown-menu {
     background: $violet-light;
