@@ -7,16 +7,25 @@ const AreasOfService = () => {
       <h1 className="h1-title primary">
         areas of service <hr />
       </h1>
-      <img src={ServiceMap} className="serviceMap" alt="map" />
+      <div className="areas-of-service-map"></div>
+
       <div className="commuting-chart">
-        <div className="services-area-1"></div>
-        <p>free commute</p>
-        <div className="services-area-2"></div>
-        <p>$5-10 commuting fee</p>
-        <div className="services-area-3"></div>
-        <p>$15-20 commuting fee</p>
+        <div className="services-area-1">
+          <div className="icon"></div>
+          <p>free commute</p>
+        </div>
+
+        <div className="services-area-2">
+          <div className="icon"></div>
+          <p>$5-10 commuting fee</p>
+        </div>
+
+        <div className="services-area-3">
+          <div className="icon"></div>
+          <p>$15-20 commuting fee</p>
+        </div>
       </div>
-      <p>
+      <p className="blurb">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu dictum
         netus morbi nisi in ligula. Aliquam sit quam ante pellentesque morbi
         curabitur. Pretium tincidunt amet, elit consequat amet gravida feugiat

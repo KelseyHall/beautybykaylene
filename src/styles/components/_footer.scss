@@ -2,17 +2,20 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
+  .logo {
+    height: 50px;
+  }
   .get-socials {
-    width: 100px;
+    width: 50px;
     margin: 0 auto;
     img {
-      width: 50px;
+      width: 25px;
     }
   }
   p {
     color: $dark-purple;
     text-align: center;
-
+    font-size: $font-size-sm;
     a {
       color: $dark-purple;
     }

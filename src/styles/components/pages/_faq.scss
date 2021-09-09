@@ -1,3 +1,8 @@
+.Faq {
+  .h2-title {
+    text-align: center;
+  }
+}
 .sort-by-service {
   ul {
     color: $dark-grey;
@@ -12,6 +17,10 @@
       p {
         margin: 0;
       }
+    }
+    .service-links {
+      background: none;
+      border: none;
     }
   }
 

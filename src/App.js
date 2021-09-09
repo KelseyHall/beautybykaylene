@@ -19,41 +19,6 @@ import {
 
 import './styles/style.scss';
 
-// const Header = () => {
-//   return (
-//     <div>
-//       <div className="header">
-//         <NavLink page="home">home</NavLink>
-//       </div>
-//     </div>
-//   );
-// };
-// const Home = () => (
-//   <div>
-//     <HomePage />
-//   </div>
-// );
-// const Services = () => (
-//   <div>
-//     <ServicesPage />
-//   </div>
-// );
-// const Gallery = () => (
-//   <div>
-//     <GalleryPage />
-//   </div>
-// );
-// const Contact = () => (
-//   <div>
-//     <ContactUsPage />
-//   </div>
-// );
-// const Faq = () => (
-//   <div>
-//     <FaqPage />
-//   </div>
-// );
-
 function App() {
   return (
     <div>
@@ -80,20 +45,3 @@ function App() {
 }
 
 export default App;
-// <HomePage />
-// <ServicesPage />
-// <GalleryPage />
-// <ContactUsPage />
-// <FaqPage />
-
-// <div className="App">
-// <Router>
-//   <Route path="/:page" component={Header} />
-//   <Route exact path="/" component={Home} />
-//   <Route exact path="/home" component={Home} />
-//   <Route exact path="/services" component={Services} />
-//   <Route exact path="/gallery" component={Gallery} />
-//   <Route exact path="/contactUs" component={Contact} />
-//   <Route exact path="/faq" component={Faq} />
-// </Router>
-// </div>

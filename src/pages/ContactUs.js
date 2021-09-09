@@ -6,6 +6,7 @@ import GetintouchForm from '../components/GetInTouchForm';
 const contactUsPage = () => {
   return (
     <div className="main-container">
+      <AreasOfService />
       <div className="contactUs">
         <div className="contactUs-column-1">
           <ContactUsBlurb />
@@ -16,7 +17,6 @@ const contactUsPage = () => {
           </div>
         </div>
       </div>
-      <AreasOfService />
     </div>
   );
 };

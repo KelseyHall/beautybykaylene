@@ -1,9 +1,15 @@
 import React from 'react';
-
+import AboutUsImg from '../../images/temp-coverphoto.jpg';
 const AboutUsContent = () => {
   return (
     <div className="about-us">
-      <div className="about-us-selfie"></div>
+      <h1 className="h1-title primary">
+        about us
+        <hr className="homeUnderline" />
+      </h1>
+      <div className="about-us-selfie">
+        <img src={AboutUsImg} alt="headshot of Kaylene" />
+      </div>
 
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque mattis

@@ -13,43 +13,93 @@ const servicesDescriptions = [
     serviceDetails: [
       {
         category: 'Service1',
+        sub: 'sub-1',
         details: { id: 'item-1', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service1',
+        sub: 'sub-1',
         details: { id: 'item-2', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service1',
+        sub: 'sub-1',
         details: { id: 'item-3', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service1',
+        sub: 'sub-1',
         details: { id: 'item-4', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service1',
+        sub: 'sub-1',
         details: { id: 'item-5', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service1',
+        sub: 'sub-2',
         details: { id: 'item-6', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service1',
+        sub: 'sub-2',
         details: { id: 'item-7', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service1',
+        sub: 'sub-2',
         details: { id: 'item-8', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service1',
+        sub: 'sub-2',
         details: { id: 'item-9', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service1',
+        sub: 'sub-2',
         details: { id: 'item-10', name: 'item name', price: 99.99 },
+      },
+      {
+        category: 'Service1',
+        sub: 'sub-3',
+        details: { id: 'item-11', name: 'item name', price: 99.99 },
+      },
+      {
+        category: 'Service1',
+        sub: 'sub-3',
+        details: { id: 'item-12', name: 'item name', price: 99.99 },
+      },
+      {
+        category: 'Service1',
+        sub: 'sub-3',
+        details: { id: 'item-13', name: 'item name', price: 99.99 },
+      },
+      {
+        category: 'Service1',
+        sub: 'sub-3',
+        details: { id: 'item-14', name: 'item name', price: 99.99 },
+      },
+      {
+        category: 'Service1',
+        sub: 'sub-3',
+        details: { id: 'item-15', name: 'item name', price: 99.99 },
+      },
+      {
+        category: 'Service1',
+        sub: 'sub-4',
+        details: { id: 'item-16', name: 'item name', price: 99.99 },
+      },
+      {
+        category: 'Service1',
+        sub: 'sub-4',
+        details: { id: 'item-17', name: 'item name', price: 99.99 },
+      },
+      {
+        category: 'Service1',
+        sub: 'sub-4',
+        details: { id: 'item-18', name: 'item name', price: 99.99 },
       },
     ],
   },
@@ -64,22 +114,27 @@ const servicesDescriptions = [
     serviceDetails: [
       {
         category: 'Service2',
+        sub: 'sub-1',
         details: { id: '2-item-1', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service2',
+        sub: 'sub-1',
         details: { id: '2-item-2', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service2',
+        sub: 'sub-1',
         details: { id: '2-item-3', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service2',
+        sub: 'sub-1',
         details: { id: '2-item-4', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service2',
+        sub: 'sub-1',
         details: { id: '2-item-5', name: 'item name', price: 99.99 },
       },
     ],
@@ -95,42 +150,52 @@ const servicesDescriptions = [
     serviceDetails: [
       {
         category: 'Service3',
+        sub: 'sub-1',
         details: { id: '3-item-1', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service3',
+        sub: 'sub-1',
         details: { id: '3-item-2', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service3',
+        sub: 'sub-1',
         details: { id: '3-item-3', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service3',
+        sub: 'sub-1',
         details: { id: '3-item-4', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service3',
+        sub: 'sub-1',
         details: { id: '3-item-5', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service3',
+        sub: 'sub-2',
         details: { id: '3-item-6', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service3',
+        sub: 'sub-2',
         details: { id: '3-item-7', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service3',
+        sub: 'sub-2',
         details: { id: '3-item-8', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service3',
+        sub: 'sub-2',
         details: { id: '3-item-9', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service 3',
+        sub: 'sub-2',
         details: { id: '3-item-10', name: 'item name', price: 99.99 },
       },
     ],
@@ -146,22 +211,27 @@ const servicesDescriptions = [
     serviceDetails: [
       {
         category: 'Service4',
+        sub: 'sub-1',
         details: { id: '4-item-1', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service4',
+        sub: 'sub-1',
         details: { id: '4-item-2', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service4',
+        sub: 'sub-1',
         details: { id: '4-item-3', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service4',
+        sub: 'sub-1',
         details: { id: '4-item-4', name: 'item name', price: 99.99 },
       },
       {
         category: 'Service4',
+        sub: 'sub-1',
         details: { id: '4-item-5', name: 'item name', price: 99.99 },
       },
     ],

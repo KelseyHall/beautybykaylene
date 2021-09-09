@@ -7,41 +7,64 @@
       left: 0;
     }
   }
-  .serviceMap {
-    width: 100%;
+  .areas-of-service-map {
+    max-width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    background: url('../../../images/mapPlaceHolder.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
   }
   .commuting-chart {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     p {
       font-size: $font-size-sm;
       color: $grey;
-      margin: 0 20% 0 10px;
+    }
+    .blurb {
+      margin-top: 20px !important;
     }
   }
   .services-area-1,
   .services-area-2,
   .services-area-3 {
-    width: 65px;
-    height: 24px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    p {
+      margin: 0 0 0 5px;
+    }
+
+    .icon {
+      width: 65px;
+      height: 24px;
+    }
   }
-  .services-area-1 {
+
+  .services-area-1 .icon {
     background-color: $dark-green;
   }
-  .services-area-2 {
+  .services-area-2 .icon {
     background-color: $pink;
   }
-  .services-area-3 {
+  .services-area-3 .icon {
     background-color: $dark-purple;
   }
 }
+.areas-of-service {
+  margin-top: 70px;
+}
 .contactUs {
   @extend %pageCenter;
+  margin-top: 60px;
 }
 .contactUs-column-1 {
   background: $purple-light;
   text-align: right;
-  padding: 30px 15px;
+  padding: 65px 15px 20px;
   p {
     padding-right: 20px;
     color: $dark-grey;
@@ -53,5 +76,17 @@
     text-align: right;
   }
 }
-.contactContent-2 {
+
+.contactUs-column-2 {
+  margin-top: 0;
+
+  .getInTouch {
+    padding: 30px;
+    hr {
+      width: 100%;
+    }
+    .h1-title {
+      text-align: left;
+    }
+  }
 }

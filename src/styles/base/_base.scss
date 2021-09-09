@@ -25,9 +25,12 @@ body {
   font-size: $font-title-sm;
 }
 hr {
-  width: 500px;
+  width: 95%;
   border: none;
   border-top: 1px solid $dirty-gold;
+}
+.homeUnderline {
+  width: 500px;
 }
 //buttons
 .button {
@@ -38,4 +41,9 @@ hr {
   padding: 6px 0;
   width: 120px;
   border-radius: 9px;
+}
+
+//text paragraphs
+p {
+  font-size: $font-size-ml;
 }

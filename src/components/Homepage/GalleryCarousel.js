@@ -15,8 +15,10 @@ const slides = [
 ];
 
 const CarouselGallery = () => (
-  <div className="carousel-gallery">
-    <Carousel slides={slides} showNavigation={true} />{' '}
+  <div className="gallery">
+    <div className="carousel-gallery">
+      <Carousel slides={slides} showNavigation={true} />{' '}
+    </div>
   </div>
 );
 

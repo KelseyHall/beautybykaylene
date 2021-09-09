@@ -7,8 +7,16 @@
 // }
 
 @media screen and (min-width: 1200px) {
+  //services page
+  .services-content {
+    .mobile-bg,
+    .mobile-bg-2 {
+      display: none;
+    }
+  }
 }
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  //services page
   .services-content {
     .mobile-bg,
     .mobile-bg-2 {
@@ -17,18 +25,52 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
+  //Nav settings
+  .App-header .dropdown-menu {
+    margin-top: 0;
+  }
+
+  //overall
+  p {
+    font-size: $font-size-sm;
+  }
+  //HomePage
+  .testimonials {
+    background-size: 70px !important;
+    height: 200px !important;
+    padding-top: 60px !important;
+    p {
+      font-size: $font-size-sm !important;
+    }
+  }
+  //services Page
   .services-content {
     display: flex;
     flex-direction: column;
     margin: 40px 0;
 
+    .h2-title {
+      text-align: center;
+    }
     .services-about-content {
       margin: 0;
       z-index: 1;
+      top: 0;
     }
     .services-pricing {
+      p {
+        font-size: $font-pricing;
+      }
       z-index: 1;
     }
+    .service-left-col-2,
+    .service-right-col-2 {
+      padding-left: 0 !important;
+    }
+    .service-right-col {
+      padding: 0;
+    }
+
     .mobile-bg {
       background: $purple-light;
       width: 100%;
@@ -59,8 +101,48 @@
       margin: 0;
     }
   }
+  //contact us page
+  .contactUs-column-1 {
+    grid-column: 1/12;
+    p,
+    .h1-title,
+    .h3-title {
+      text-align: left !important;
+    }
+    hr {
+      width: 100%;
+    }
+  }
+  .contactUs-column-2 {
+    grid-column: 2/13;
+    grid-row: 16/29;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
+  //Nav settings
+  .navbar .mainNav .nav-link:hover {
+    color: white !important;
+    background: $dark-purple;
+  }
+  .App-header {
+    .dropdown-toggle:hover {
+      border-top: solid #fff !important;
+      border-right: solid #fff !important;
+    }
+  }
 }
 @media screen and (max-width: 575.98px) {
+  //Nav settings
+  .navbar .mainNav .nav-link:hover {
+    color: white !important;
+    background: $dark-purple;
+  }
+  .App-header {
+    .dropdown-toggle:hover {
+      border-top: solid #fff !important;
+      border-right: solid #fff !important;
+    }
+  }
+
+  //Home Page
 }

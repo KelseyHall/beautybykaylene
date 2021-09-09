@@ -1,31 +1,61 @@
 .services-content {
   @extend %pageCenter;
+  margin-top: 60px;
   .h2-title,
   p,
   img {
     padding: 0 20px;
   }
+  .services-item {
+    li {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
 .services-about-content {
   background: $violet-light;
-  text-align: left;
+  padding: 60px 0;
   p {
     color: $grey;
   }
   .services-Img {
-    width: 90%;
+    width: 100%;
   }
 }
+
+.service-right-col {
+  text-align: left;
+  position: relative;
+  // top: -140px;
+}
+
+.service-left-col {
+  text-align: left;
+  position: relative;
+  top: -140px;
+}
+.service-right-col-2 {
+  // top: -100px;
+}
+.service-left-col-2 {
+}
+
 .services-content .service-left-col-2 {
-  padding-left: 45%;
+  // padding-left: 45%;
 }
 
 .services-pricing {
+  padding: 100px 0;
   background: $purple-light;
 
-  font-size: $font-pricing;
+  p {
+    font-size: $font-pricing !important;
+  }
   color: $dark-grey;
-
+  .h2-title {
+    padding-bottom: 10px;
+  }
   .services-prices {
     padding: 20px;
   }
