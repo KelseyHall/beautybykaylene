@@ -1,4 +1,4 @@
-import React, { isValidElement } from 'react';
+import React from 'react';
 import placeholder from '../../images/services-placeholder.jpg';
 
 const servicesDescriptions = [
@@ -154,7 +154,7 @@ const servicesDescriptions = [
   },
 ];
 const isEven = (n) => {
-  return n % 2 == 0;
+  return n % 2 === 0;
 };
 const WhichRow = (idx) => (isEven(idx) ? '' : '-2');
 
@@ -171,7 +171,7 @@ const Service = ({
     <div className={'services-about-content  service-top-col' + WhichRow(idx)}>
       <div className={'content'}>
         <h2 className="h2-title primary">{service}</h2>
-        <img src={image} className="services-Img" alt="service-theme-photo" />
+        <img src={image} className="services-Img" alt="service-theme" />
         <p>{blurb}</p>
       </div>
     </div>

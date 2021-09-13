@@ -20,10 +20,10 @@ const GetintouchForm = () => {
         <button>Ask me!</button>
       </form>
       <div className="get-socials">
-        <a href={FacebookLink} target="_blank">
+        <a href={FacebookLink} target="_blank" rel="noreferrer">
           <img src={FacebookIcon} alt="facebook-icon" />
         </a>
-        <a href={InstagramLink} target="_blank">
+        <a href={InstagramLink} target="_blank" rel="noreferrer">
           <img src={InstagramIcon} alt="instagram-icon" />
         </a>
       </div>

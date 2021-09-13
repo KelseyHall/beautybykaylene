@@ -58,10 +58,10 @@ const HeaderNav = () => {
         <hr className="headerline" />
       </div>
       <div className="floating-socials">
-        <a href={FacebookLink} target="_blank">
+        <a href={FacebookLink} target="_blank" rel="noreferrer">
           <img src={FacebookIcon} alt="facebook-icon" />
         </a>
-        <a href={InstagramLink} target="_blank">
+        <a href={InstagramLink} target="_blank" rel="noreferrer">
           <img src={InstaIcon} alt="instagram-icon" />
         </a>
       </div>
@@ -69,10 +69,10 @@ const HeaderNav = () => {
         <span className="nav-media-toggler-icon">X</span>
       </button>
       <div id="nav-media-socials" className="nav-media-socials">
-        <a href={FacebookLink} target="_blank">
+        <a href={FacebookLink} target="_blank" rel="noreferrer">
           <img src={FacebookIcon} alt="facebook-icon" />
         </a>
-        <a href={InstagramLink} target="_blank">
+        <a href={InstagramLink} target="_blank" rel="noreferrer">
           <img src={InstaIcon} alt="instagram-icon" />
         </a>
       </div>

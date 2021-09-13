@@ -10,15 +10,15 @@ const Footer = () => {
     <div className="footer">
       <img src={SimpleLogo} alt="Beauty by Kaylene" className="logo" />
       <div className="get-socials">
-        <a href={FacebookLink} target="_blank">
+        <a href={FacebookLink} target="_blank" rel="noreferrer">
           <img src={FacebookIcon} alt="facebook-icon" />
         </a>
-        <a href={InstagramLink} target="_blank">
+        <a href={InstagramLink} target="_blank" rel="noreferrer">
           <img src={InstagramIcon} alt="instagram-icon" />
         </a>
       </div>
       <p>
-        © copyright 2021 | <a href="#">privacy policy</a>
+        © copyright 2021 | <a href="#privacyPolicy">privacy policy</a>
       </p>
     </div>
   );

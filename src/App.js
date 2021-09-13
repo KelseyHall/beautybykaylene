@@ -10,12 +10,7 @@ import FaqPage from './pages/Faq';
 
 import GetintouchForm from './components/GetInTouchForm';
 import Footer from './components/Footer';
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  BrowserRouter,
-} from 'react-router-dom';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
 
 import './styles/style.scss';
 

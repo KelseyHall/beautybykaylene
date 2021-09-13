@@ -1,5 +1,5 @@
 import React from 'react';
-import ServiceMap from '../../images/mapPlaceHolder.png';
+// import ServiceMap from '../../images/mapPlaceHolder.png';
 
 const AreasOfService = () => {
   return (
