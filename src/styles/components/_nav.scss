@@ -107,9 +107,9 @@
   }
   .navbar-toggler {
     border: none;
-    position: absolute;
+    // position: absolute;
 
-    top: -80px;
+    // top: -80px;
   }
   .navbar-collapse {
     // width: 80vw;
@@ -145,10 +145,16 @@
   display: flex;
   flex-direction: column;
   right: 0;
+  z-index: 5;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.5);
   img {
     margin: 2px 0;
     width: 34px;
   }
+}
+
+.nav-media-socials {
+  display: none;
+  height: 100px;
 }

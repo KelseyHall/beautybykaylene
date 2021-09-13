@@ -7,22 +7,8 @@
 // }
 
 @media screen and (min-width: 1200px) {
-  //services page
-  .services-content {
-    .mobile-bg,
-    .mobile-bg-2 {
-      display: none;
-    }
-  }
 }
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
-  //services page
-  .services-content {
-    .mobile-bg,
-    .mobile-bg-2 {
-      display: none;
-    }
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
   //Nav settings
@@ -45,8 +31,8 @@
   }
   //services Page
   .services-content {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     margin: 40px 0;
 
     .h2-title {
@@ -63,38 +49,9 @@
       }
       z-index: 1;
     }
-    .service-left-col-2,
-    .service-right-col-2 {
+    .service-top-col-2,
+    .service-bottom-col-2 {
       padding-left: 0 !important;
-    }
-    .service-right-col {
-      padding: 0;
-    }
-
-    .mobile-bg {
-      background: $purple-light;
-      width: 100%;
-      height: 100%;
-
-      z-index: -1;
-      position: absolute;
-    }
-    .mobile-bg-2 {
-      background: $violet-light;
-      width: 100%;
-      height: 800px;
-      z-index: -1;
-      position: absolute;
-    }
-
-    .service-left-col,
-    .service-right-col {
-      background: $violet-light;
-    }
-
-    .service-left-col-2,
-    .service-right-col-2 {
-      background: $purple-light;
     }
 
     .services-pricing {
@@ -118,7 +75,10 @@
     grid-row: 16/29;
   }
 }
+
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
+}
+@media screen and (max-width: 767.98px) {
   //Nav settings
   .navbar .mainNav .nav-link:hover {
     color: white !important;
@@ -128,21 +88,93 @@
     .dropdown-toggle:hover {
       border-top: solid #fff !important;
       border-right: solid #fff !important;
+    }
+  }
+  //home page
+  .testimonials {
+    background-size: 70px !important;
+    height: 200px !important;
+    padding-top: 60px !important;
+    p {
+      font-size: $font-size-sm !important;
+    }
+  }
+
+  //services page
+  .services-content {
+    .services-sub {
+      float: left;
+      width: 100% !important;
+    }
+    .stagger-bg-2 {
+      background: $violet-light;
+    }
+    .stagger-bg {
+      background: $purple-light;
+    }
+    .service-bottom-col {
+      color: $grey;
+    }
+    .service-bottom-col-2 {
+      color: $dark-grey;
+    }
+
+    .service-top-col,
+    .service-bottom-col {
+      background: $violet-light;
+    }
+
+    .service-top-col-2,
+    .service-bottom-col-2 {
+      background: $purple-light;
     }
   }
 }
 @media screen and (max-width: 575.98px) {
-  //Nav settings
-  .navbar .mainNav .nav-link:hover {
-    color: white !important;
-    background: $dark-purple;
+  //nav socials
+  .floating-socials {
+    display: none !important;
   }
-  .App-header {
-    .dropdown-toggle:hover {
-      border-top: solid #fff !important;
-      border-right: solid #fff !important;
+  // .nav-media-socials {
+  //   display: block;
+  // }
+  //service Page
+  //jumpNav
+  .jump-to-service {
+    display: flex;
+    flex-wrap: wrap;
+
+    // .nav-text {
+    //   flex: 160px;
+    // }
+    // .nav-item-1,
+    // .nav-item-2,
+    // .nav-item-3,
+    // .nav-item-4 {
+    //   flex: 1 1;
+    // }
+    * {
+      flex: 1 1 160px;
     }
   }
 
-  //Home Page
+  .services-content {
+    width: 100%;
+    .stagger-bg,
+    .stagger-bg-2 {
+      display: none;
+    }
+    .service-top-col {
+      border-top: 50px solid $purple-light;
+    }
+    .service-bottom-col {
+      border-bottom: 50px solid $purple-light;
+    }
+    .service-top-col-2 {
+      border-top: 50px solid $violet-light;
+    }
+    .service-bottom-col-2 {
+      border-bottom: 50px solid $violet-light;
+    }
+  }
 }

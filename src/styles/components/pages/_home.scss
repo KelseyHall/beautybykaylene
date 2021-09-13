@@ -67,11 +67,6 @@
   }
   .banner {
     width: 100vw;
-
-    // background: url('../../../images/placeholder-2.jpg');
-    // background-size: cover;
-    // background-position: bottom;
-    // background-position-y: -235px;
     background-repeat: no-repeat;
   }
   &-bg {
@@ -112,23 +107,6 @@
 .carousel-gallery {
   height: 600px;
   margin-bottom: 80px;
-}
-.jump-to-service {
-  display: flex;
-  justify-content: space-evenly;
-  @extend %pageCenter;
-  img {
-    width: 127px;
-  }
-
-  .nav-item-1,
-  .nav-item-2,
-  .nav-item-3,
-  .nav-item-4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 .about-us,
