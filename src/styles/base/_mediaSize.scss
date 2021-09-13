@@ -91,9 +91,32 @@
     }
   }
   //home page
+  .home-banner {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    .home-banner-content {
+      width: 100%;
+      padding: 0 10%;
+    }
+    img {
+      width: 90% !important;
+    }
+  }
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $violet-light;
+    width: 100%;
+    padding: 0 2%;
+    margin: 40px auto;
+    p {
+      text-align: justify !important;
+    }
+  }
   .testimonials {
     background-size: 70px !important;
-    height: 200px !important;
+    // height: 200px !important;
     padding-top: 60px !important;
     p {
       font-size: $font-size-sm !important;
@@ -101,6 +124,11 @@
   }
 
   //services page
+  .services-floating-nav {
+    img {
+      display: none;
+    }
+  }
   .services-content {
     .services-sub {
       float: left;
@@ -138,6 +166,91 @@
   // .nav-media-socials {
   //   display: block;
   // }
+
+  //Home page
+  .homeUnderline {
+    width: 80%;
+  }
+  .testimonials-wrapper {
+    .h1-title {
+      margin-bottom: 30px;
+    }
+    .testimonials {
+      width: 90% !important;
+      background-size: 50px !important;
+      p {
+        width: 80% !important;
+      }
+    }
+  }
+  .services-floating-nav {
+    img {
+      display: block !important;
+    }
+    span {
+      display: none;
+    }
+  }
+  .services {
+    &-card {
+      display: flex;
+      flex-direction: column;
+    }
+    &-item-1,
+    &-item-2,
+    &-item-3,
+    &-item-4 {
+      border-top: 1px solid $dirty-gold-faded !important;
+      border-bottom: 1px solid $dirty-gold-faded !important;
+      border-left: none !important;
+      border-right: none !important;
+      img {
+        width: 45% !important;
+        padding: 25% 0;
+      }
+      p {
+        width: 50%;
+        font-size: $font-size-xs !important;
+      }
+      .h3-title {
+        width: 50%;
+      }
+    }
+
+    &-item-1,
+    &-item-3 {
+      .h3-title,
+      p {
+        float: right;
+        text-align: left !important;
+      }
+      img {
+        float: left;
+        align-items: center;
+      }
+    }
+    &-item-2,
+    &-item-4 {
+      .h3-title,
+      p {
+        float: left;
+        text-align: right !important;
+      }
+      img {
+        float: right;
+      }
+    }
+  }
+  .services {
+    padding-bottom: 30px !important;
+  }
+  .gallery {
+    padding: 20px 0 !important;
+    .carousel-gallery {
+      height: 150px !important;
+      margin-bottom: 20px;
+    }
+  }
   //service Page
   //jumpNav
   .jump-to-service {

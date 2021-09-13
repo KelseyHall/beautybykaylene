@@ -2,7 +2,7 @@ import React from 'react';
 
 const Testimonials = () => {
   return (
-    <div>
+    <div className="testimonials-wrapper">
       <h1 className="h1-title primary">testimonials</h1>
       <div className="testimonials">
         <p>

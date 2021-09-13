@@ -18,7 +18,10 @@
   .services-sub:nth-child(odd) {
     clear: left;
   }
-
+  .h2-title {
+    text-align: left;
+    padding: 0 20px;
+  }
   .h3-title {
     padding: 20px;
   }
@@ -31,6 +34,7 @@
     p {
       // text-align: justify;
     }
+
     .services-Img {
       float: left;
       width: 50%;
@@ -39,17 +43,7 @@
     }
   }
 }
-.service-top-col:before,
-.service-top-col-2:before {
-  // content: '';
-  // z-index: -1;
-  // position: absolute;
-  // // width: 100%;
-  // // left: -100vw;
-  // // right: -100vw;
-  // padding-left: 20%;
-  // background: #000;
-}
+
 .service-bottom-col {
   background: $purple-light;
   color: $dark-grey;
@@ -100,7 +94,7 @@
     }
     // color: $dark-grey;
     .h2-title {
-      padding-bottom: 10px;
+      padding: 20px;
     }
     .services-prices {
       padding: 20px;

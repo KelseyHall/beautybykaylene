@@ -1,5 +1,5 @@
 import React from 'react';
-import NailIcon from '../images/nails.jpg';
+import NailIcon from '../images/nails.png';
 import WaxingIcon from '../images/waxing.png';
 import LashBrowIcon from '../images/lash-brow.png';
 import MassageIcon from '../images/massage.png';

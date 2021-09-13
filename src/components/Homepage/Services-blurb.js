@@ -1,6 +1,6 @@
 import React from 'react';
 
-import nails from '../../images/nails.jpg';
+import nails from '../../images/nails.png';
 import waxing from '../../images/waxing.png';
 import lashBrow from '../../images/lash-brow.png';
 import massages from '../../images/massage.png';

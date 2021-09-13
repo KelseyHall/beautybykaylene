@@ -4,10 +4,14 @@
   }
 }
 .sort-by-service {
+  .nav-title {
+    padding: 20px;
+  }
   ul {
     color: $dark-grey;
     font-size: $font-nav;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     list-style: none;

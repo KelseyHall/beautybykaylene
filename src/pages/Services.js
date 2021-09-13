@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import Nailicon from '../images/nails.jpg';
+import Nailicon from '../images/nails.png';
 import Waxingicon from '../images/waxing.png';
 import LashBrowicon from '../images/lash-brow.png';
 import MassageIcon from '../images/massage.png';
@@ -9,8 +9,8 @@ import Services from '../components/ServicesPage/Services';
 const ServicesPage = () => {
   return (
     <div className="main-container" id="topOfPage">
+      <p className="nav-text primary">Jump to...</p>
       <div className="jump-to-service">
-        <p className="nav-text primary">Jump to...</p>
         <div className="nav-item-1">
           <Link
             activeClass="active"
@@ -78,7 +78,8 @@ const ServicesPage = () => {
               smooth={true}
               duration={500}
             >
-              services 1
+              <img src={Nailicon} alt="nails-icon" />
+              <span>services 1</span>
             </Link>
           </li>
           <li>
@@ -90,7 +91,8 @@ const ServicesPage = () => {
               smooth={true}
               duration={500}
             >
-              services 2
+              <img src={Waxingicon} alt="waxing-icon" />
+              <span>services 2</span>
             </Link>
           </li>
           <li>
@@ -102,7 +104,8 @@ const ServicesPage = () => {
               smooth={true}
               duration={500}
             >
-              services 3
+              <img src={LashBrowicon} alt="lash and brows-icon" />
+              <span>services 3</span>
             </Link>
           </li>
           <li>
@@ -114,7 +117,8 @@ const ServicesPage = () => {
               smooth={true}
               duration={500}
             >
-              services 4
+              <img src={MassageIcon} alt="massage-icon" />
+              <span>services 4</span>
             </Link>
           </li>
           <li>

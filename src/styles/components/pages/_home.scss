@@ -47,6 +47,9 @@
   height: 320px;
   padding: 90px 0 0 0;
   width: 60% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   // margin: 40px auto;
 
   p {
