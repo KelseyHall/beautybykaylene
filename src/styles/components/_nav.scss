@@ -13,13 +13,16 @@
     text-decoration: none;
     color: $dark-grey;
   }
-  .headerline {
-    width: 100vw;
-    background-color: $gold;
-    z-index: 1;
-    left: -13%;
-    position: relative;
-    margin-bottom: 0;
+  // .headerline {
+  //   width: 110vw;
+  //   background-color: $gold;
+  //   z-index: 1;
+  //   left: -13%;
+  //   position: relative;
+  //   margin-bottom: 0;
+  // }
+  .navbar {
+    justify-content: center;
   }
   .navHeader {
     @extend %pageCenter;
@@ -30,6 +33,7 @@
     margin: 0 auto;
     flex-direction: column;
     // width: 1400px;
+    border-bottom: 1px solid $gold;
   }
   .nav {
     display: flex;

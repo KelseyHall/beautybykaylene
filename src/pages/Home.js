@@ -3,8 +3,8 @@ import HomeServicesBlurb from '../components/Homepage/Services-blurb';
 import AboutUsContent from '../components/Homepage/AboutUs';
 import Testimonials from '../components/Homepage/Testimonials';
 import LandingBanner from '../components/Homepage/LandingBanner';
-
 import CarouselGallery from '../components/Homepage/GalleryCarousel';
+import GetintouchForm from '../components/GetInTouchForm';
 
 const HomePage = () => {
   return (
@@ -14,6 +14,7 @@ const HomePage = () => {
       <Testimonials />
       <HomeServicesBlurb />
       <CarouselGallery />
+      <GetintouchForm />
     </div>
   );
 };

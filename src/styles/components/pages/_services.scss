@@ -94,6 +94,7 @@
     }
     // color: $dark-grey;
     .h2-title {
+      text-align: left;
       padding: 20px;
     }
     .services-prices {
@@ -113,21 +114,24 @@
     }
   }
 }
-.jump-to-service {
-  display: flex;
-  padding: 70px 0;
-  justify-content: space-evenly;
+.jump-to-service-wrapper {
   @extend %pageCenter;
-  img {
-    width: 127px;
-  }
-
-  .nav-item-1,
-  .nav-item-2,
-  .nav-item-3,
-  .nav-item-4 {
+  padding: 30px 0;
+  .jump-to-service {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-evenly;
+
+    img {
+      width: 127px;
+    }
+
+    .nav-item-1 a,
+    .nav-item-2 a,
+    .nav-item-3 a,
+    .nav-item-4 a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

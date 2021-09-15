@@ -7,7 +7,9 @@ const AreasOfService = () => {
       <h1 className="h1-title primary">
         areas of service <hr />
       </h1>
-      <div className="areas-of-service-map"></div>
+      <div className="areas-of-service-map">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1BprHgYXUWWoGpVG2Vu_S7-r0TgSDQ2-K"></iframe>
+      </div>
 
       <div className="commuting-chart">
         <div className="services-area-1">

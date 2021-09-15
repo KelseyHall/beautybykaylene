@@ -55,7 +55,7 @@ const HeaderNav = () => {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <hr className="headerline" />
+        {/*<hr className="headerline" />*/}
       </div>
       <div className="floating-socials">
         <a href={FacebookLink} target="_blank" rel="noreferrer">
@@ -65,9 +65,9 @@ const HeaderNav = () => {
           <img src={InstaIcon} alt="instagram-icon" />
         </a>
       </div>
-      <button id="nav-media-toggler" className="nav-media-toggler">
+      {/*<button id="nav-media-toggler" className="nav-media-toggler">
         <span className="nav-media-toggler-icon">X</span>
-      </button>
+  </button>*/}
       <div id="nav-media-socials" className="nav-media-socials">
         <a href={FacebookLink} target="_blank" rel="noreferrer">
           <img src={FacebookIcon} alt="facebook-icon" />

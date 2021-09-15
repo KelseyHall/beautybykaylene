@@ -3,6 +3,13 @@
     text-align: center;
   }
 }
+.faq-backdrop {
+  background-image: url('../../../images/backdrop.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
+}
 .sort-by-service {
   .nav-title {
     padding: 20px;
@@ -34,11 +41,7 @@
 }
 .Faq {
   @extend %pageCenter;
-  background-image: url('../../../images/backdrop.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: top;
+
   // width: 1000px;
   padding: 30px;
 }

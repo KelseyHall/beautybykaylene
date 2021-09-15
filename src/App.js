@@ -30,7 +30,7 @@ function App() {
             <Route exact path="/faq" component={FaqPage}></Route>
           </Switch>
         </BrowserRouter>
-        <GetintouchForm />
+
         <footer>
           <Footer />
         </footer>

@@ -3,18 +3,17 @@
   h1 {
     text-align: center;
     hr {
-      width: 500px;
+      width: 60%;
       left: 0;
     }
   }
   .areas-of-service-map {
-    max-width: 1000px;
-    height: 400px;
+    iframe {
+      width: 100%;
+      height: 500px;
+    }
+
     margin: 0 auto;
-    background: url('../../../images/mapPlaceHolder.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
   }
   .commuting-chart {
     display: flex;
@@ -64,7 +63,7 @@
 .contactUs-column-1 {
   background: $purple-light;
   text-align: right;
-  padding: 65px 15px 20px;
+  padding: 65px 0 20px;
   p {
     padding-right: 20px;
     color: $dark-grey;
@@ -74,6 +73,12 @@
     margin: 0;
     padding-right: 20px;
     text-align: right;
+  }
+  .contactUs-content {
+    padding: 0 20px;
+    hr {
+      width: 100%;
+    }
   }
 }
 
