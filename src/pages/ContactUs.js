@@ -6,17 +6,23 @@ import GetintouchForm from '../components/GetInTouchForm';
 const contactUsPage = () => {
   return (
     <div className="main-container">
-      <AreasOfService />
       <div className="contactUs">
+        <div className="contactUs-content">
+          <ContactUsBlurb />
+        </div>
+
+        {/*
         <div className="contactUs-column-1">
           <ContactUsBlurb />
         </div>
         <div className="contactUs-column-2">
-          <div className="get-in-touch-form">
+            <div className="get-in-touch-form">
             <GetintouchForm />
-          </div>
         </div>
+        </div>
+        */}
       </div>
+      <AreasOfService />
     </div>
   );
 };

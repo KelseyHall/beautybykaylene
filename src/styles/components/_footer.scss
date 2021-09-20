@@ -1,9 +1,24 @@
 footer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  .footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .contact-info-footer {
+      display: flex;
+      flex-direction: row;
+      .info-wrapper {
+        padding: 0 20px;
+        p {
+          text-align: left;
+          margin: 0;
+          font-size: $font-size-md;
+        }
+      }
+    }
+  }
   .logo {
-    height: 50px;
+    height: 65px;
   }
   .get-socials {
     width: 50px;
@@ -23,5 +38,8 @@ footer {
     a:hover {
       color: $dark-purple;
     }
+  }
+  .contact-info-footer {
+    display: flex;
   }
 }

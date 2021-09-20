@@ -1,6 +1,7 @@
 .services-content {
   @extend %pageCenter;
   margin-top: 60px;
+  margin-bottom: 40px;
   .h2-title,
   p,
   img {
@@ -26,14 +27,37 @@
     padding: 20px;
   }
 }
+.services-floating-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+  img {
+    width: 30px;
+  }
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: $violet;
+
+    width: 100%;
+    align-items: center;
+    // height: 40px;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    z-index: 10;
+  }
+  li {
+    @extend %pageCenter;
+  }
+}
 
 .services-about-content {
   .content {
     display: inline-block;
     padding: 60px 0;
-    p {
-      // text-align: justify;
-    }
 
     .services-Img {
       float: left;
@@ -70,10 +94,6 @@
   color: $dark-grey;
 }
 
-.services-content .service-top-col-2 {
-  // padding-left: 45%;
-}
-
 .stagger-bg {
   background: $purple-light;
   height: 100%;
@@ -107,9 +127,6 @@
       p {
         display: inline-block;
         margin: 0;
-      }
-      .price {
-        // margin-left: 20%;
       }
     }
   }

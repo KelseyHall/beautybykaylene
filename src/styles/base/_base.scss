@@ -1,9 +1,6 @@
 body {
   font-family: $default-font;
 }
-.main-container {
-  // padding: 0 20px;
-}
 
 //color titles
 .primary {
@@ -38,8 +35,8 @@ hr {
   color: #fff;
   border: none;
   font-size: $font-size-ml;
-  padding: 6px 0;
-  width: 120px;
+  padding: 6px;
+  // width: 120px;
   border-radius: 9px;
 }
 

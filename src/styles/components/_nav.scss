@@ -73,7 +73,7 @@
     background: $violet;
     width: 100%;
     text-align: left;
-    margin-top: 33px !important;
+    margin-top: 15px !important;
     :hover {
       color: $violet-light;
       background: white;
@@ -124,30 +124,6 @@
   .dropdown-toggle:hover {
     border-top: solid $dark-purple;
     border-right: solid $dark-purple;
-  }
-}
-
-.services-floating-nav {
-  img {
-    width: 30px;
-  }
-  ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    background-color: $violet;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    align-items: center;
-    // height: 40px;
-    padding: 10px;
-    margin: 0;
-    text-align: center;
-    z-index: 10;
-  }
-  li {
-    @extend %pageCenter;
   }
 }
 

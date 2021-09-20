@@ -11,10 +11,9 @@ const HomePage = () => {
     <div className="main-container">
       <LandingBanner />
       <AboutUsContent />
-      <Testimonials />
+      {/*<Testimonials />*/}
       <HomeServicesBlurb />
       <CarouselGallery />
-      <GetintouchForm />
     </div>
   );
 };

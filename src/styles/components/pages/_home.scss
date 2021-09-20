@@ -12,21 +12,32 @@
     width: 60%;
     margin: 0;
   }
+  a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  a:active,
+  a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 .about-us {
   @extend %pageCenter;
 
   .about-us-selfie {
-    background-image: url('../../../images/purple-watercolor.jpg');
+    background-image: url('../../../images/plantbackground.png');
     background-repeat: no-repeat;
-    background-position-y: -50px;
+    background-position-x: -12px;
+    background-position-y: -8px;
     padding: 40px 0 0 0;
-    background-size: 300px;
+    background-size: 265px;
 
     width: 300px;
 
     img {
-      margin-left: 100px;
+      margin-left: 112px;
       border-radius: 50%;
       width: 200px;
       height: 200px;

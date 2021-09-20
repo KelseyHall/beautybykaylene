@@ -19,7 +19,7 @@ const HeaderNav = () => {
           src={header}
           alt="beauty by Kaylene header "
         />
-        <Navbar className="navbar " expand="lg" sticky="top">
+        <Navbar className="navbar " expand="sm" sticky="top">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
           <Navbar.Collapse id="basic-navbar-nav">

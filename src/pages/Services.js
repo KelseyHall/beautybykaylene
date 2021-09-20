@@ -82,7 +82,7 @@ const ServicesPage = () => {
               duration={500}
             >
               <img src={Nailicon} alt="nails-icon" />
-              <span>services 1</span>
+              <span>nails</span>
             </Link>
           </li>
           <li>
@@ -95,7 +95,7 @@ const ServicesPage = () => {
               duration={500}
             >
               <img src={Waxingicon} alt="waxing-icon" />
-              <span>services 2</span>
+              <span>waxing</span>
             </Link>
           </li>
           <li>
@@ -108,7 +108,7 @@ const ServicesPage = () => {
               duration={500}
             >
               <img src={LashBrowicon} alt="lash and brows-icon" />
-              <span>services 3</span>
+              <span>lash & brow</span>
             </Link>
           </li>
           <li>
@@ -121,7 +121,7 @@ const ServicesPage = () => {
               duration={500}
             >
               <img src={MassageIcon} alt="massage-icon" />
-              <span>services 4</span>
+              <span>massage</span>
             </Link>
           </li>
           <li>
@@ -138,7 +138,6 @@ const ServicesPage = () => {
           </li>
         </ul>
       </div>
-      <GetintouchForm />
     </div>
   );
 };

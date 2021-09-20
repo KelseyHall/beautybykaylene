@@ -10,7 +10,6 @@ const galleryPage = () => {
         <MasonryGallery />
         <InstagramFeed />
       </div>
-      <GetintouchForm />
     </div>
   );
 };

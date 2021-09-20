@@ -10,7 +10,9 @@ const LandingBanner = () => {
           pharetra ac tellus varius. Faucibus egestas euismod pellentesque nisl,
           sodales molestie. Fermentum cursus leo.
         </p>
-        <button className="button">button</button>
+        <a href="/contactus" className="button">
+          book now
+        </a>
       </div>
       <img src={BannerImg} alt="banner-img" />
     </div>

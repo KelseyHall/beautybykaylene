@@ -8,7 +8,7 @@ import GalleryPage from './pages/Gallery';
 import ContactUsPage from './pages/ContactUs';
 import FaqPage from './pages/Faq';
 
-import GetintouchForm from './components/GetInTouchForm';
+//import GetintouchForm from './components/GetInTouchForm';
 import Footer from './components/Footer';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 

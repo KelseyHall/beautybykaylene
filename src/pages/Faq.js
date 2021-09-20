@@ -71,7 +71,6 @@ const FaqPage = () => {
 
         <QuestionAndAnswer />
       </div>
-      <GetintouchForm />
     </div>
   );
 };
