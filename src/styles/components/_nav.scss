@@ -1,6 +1,7 @@
 .App-header {
   font-family: $default-font;
   // width: 1400px;
+  background: #fff;
 
   img {
     width: 80%;
@@ -33,7 +34,7 @@
     margin: 0 auto;
     flex-direction: column;
     // width: 1400px;
-    border-bottom: 1px solid $gold;
+    border-bottom: 1px solid $dirty-gold;
   }
   .nav {
     display: flex;
