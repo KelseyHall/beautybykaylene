@@ -15,8 +15,6 @@
     padding: 20px;
   }
   ul {
-    color: $dark-grey;
-    font-size: $font-nav;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -26,12 +24,22 @@
     li {
       text-align: center;
       p {
+        color: $dark-grey;
+        font-size: $font-nav;
         margin: 0;
       }
     }
     .service-links {
       background: none;
       border: none;
+    }
+  }
+  .view-all-button {
+    background: none;
+    border: none;
+    p {
+      color: $dark-grey;
+      font-size: $font-size-md;
     }
   }
 

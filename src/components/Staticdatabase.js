@@ -266,7 +266,7 @@ export const GalleryDatabase = [
 ];
 
 //FAQ Page
-export const FaqQuestions = [
+export const faqQuestions = [
   {
     id: uuidv4(),
     category: 'nails',
@@ -295,6 +295,14 @@ export const FaqQuestions = [
     category: 'massage',
     question:
       'massage Lorem ipsum dolor sit amet, ipsum dolor sit amet consectetur adipiscing eli?',
+    answer:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsanfeugiat integer risus libero pulvinar tellus senectus sapien. Ultrices tellus odio nisl non nibh lacinia. Consectetur metus odio magna volutpatin. Rutrum adipiscing convallis facilisis vestibulum eleifend inullamcorper laoreet enim. Placerat quis donec dolor et at mattis atfeugiat nibh. Sit nibh faucibus at vitae quis eros, molestie luctus.Viverra mauris pulvinar sed volutpat. In viverra arcu purus sed purusvel amet vel.',
+  },
+  {
+    id: uuidv4(),
+    category: 'general',
+    question:
+      'general Lorem ipsum dolor sit amet, ipsum dolor sit amet consectetur adipiscing eli?',
     answer:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsanfeugiat integer risus libero pulvinar tellus senectus sapien. Ultrices tellus odio nisl non nibh lacinia. Consectetur metus odio magna volutpatin. Rutrum adipiscing convallis facilisis vestibulum eleifend inullamcorper laoreet enim. Placerat quis donec dolor et at mattis atfeugiat nibh. Sit nibh faucibus at vitae quis eros, molestie luctus.Viverra mauris pulvinar sed volutpat. In viverra arcu purus sed purusvel amet vel.',
   },

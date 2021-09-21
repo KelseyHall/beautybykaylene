@@ -7,6 +7,7 @@ import ServicesPage from './pages/Services';
 import GalleryPage from './pages/Gallery';
 import ContactUsPage from './pages/ContactUs';
 import FaqPage from './pages/Faq';
+import FormPage from './pages/FormPage';
 
 //import GetintouchForm from './components/GetInTouchForm';
 import Footer from './components/Footer';
@@ -28,6 +29,7 @@ function App() {
             <Route exact path="/gallery" component={GalleryPage}></Route>
             <Route exact path="/ContactUs" component={ContactUsPage}></Route>
             <Route exact path="/faq" component={FaqPage}></Route>
+            <Route exact path="/form" component={FormPage}></Route>
           </Switch>
         </BrowserRouter>
 

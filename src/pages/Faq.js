@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import NailIcon from '../images/nails.png';
 import WaxingIcon from '../images/waxing.png';
 import LashBrowIcon from '../images/lash-brow.png';
@@ -6,14 +6,27 @@ import MassageIcon from '../images/massage.png';
 import GeneralIcon from '../images/general.png';
 import GetintouchForm from '../components/GetInTouchForm';
 
-import QuestionAndAnswer, {
-  filteredQuestions,
-} from '../components/FaqPage/Questions';
-const handleClick = (option) => {
-  return filteredQuestions(option);
-};
+// import QuestionAndAnswer, {
+//   filteredQuestions,
+//   handleClick,
+// } from '../components/FaqPage/Questions';
+
+import { faqQuestions } from '../components/Staticdatabase';
 
 const FaqPage = () => {
+  const [categorySearch, setCategorySearch] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+  const FilterByCategory = (e) => () => {
+    setCategorySearch(e);
+  };
+
+  useEffect(() => {
+    const results = faqQuestions.filter((item) =>
+      item.category.includes(categorySearch)
+    );
+    setSearchResults(results);
+  }, [categorySearch]);
+
   return (
     <div className="faq-backdrop">
       <div className="main-container Faq">
@@ -24,7 +37,7 @@ const FaqPage = () => {
             <li>
               <button
                 className="service-links"
-                onClick={() => handleClick('nails')}
+                onClick={FilterByCategory('nails')}
               >
                 <img src={NailIcon} alt="nails-icon" />
                 <p>nails</p>
@@ -33,7 +46,7 @@ const FaqPage = () => {
             <li>
               <button
                 className="service-links"
-                onClick={() => handleClick('waxing')}
+                onClick={FilterByCategory('waxing')}
               >
                 <img src={WaxingIcon} alt="waxing-icon" />
                 <p>waxing</p>
@@ -42,7 +55,7 @@ const FaqPage = () => {
             <li>
               <button
                 className="service-links"
-                onClick={() => handleClick('lashbrow')}
+                onClick={FilterByCategory('lashbrow')}
               >
                 <img src={LashBrowIcon} alt="lash-brows-icon" />
                 <p>lash & brows</p>
@@ -51,7 +64,7 @@ const FaqPage = () => {
             <li>
               <button
                 className="service-links"
-                onClick={() => handleClick('massage')}
+                onClick={FilterByCategory('massage')}
               >
                 <img src={MassageIcon} alt="massage-icon" />
                 <p>massage</p>
@@ -60,16 +73,25 @@ const FaqPage = () => {
             <li>
               <button
                 className="service-links"
-                onClick={() => handleClick('general')}
+                onClick={FilterByCategory('general')}
               >
                 <img src={GeneralIcon} alt="general-icon" />
                 <p>general</p>
               </button>
             </li>
           </ul>
+
+          <button className="view-all-button" onClick={FilterByCategory('')}>
+            <p>view all</p>
+          </button>
         </div>
 
-        <QuestionAndAnswer />
+        {searchResults.map(({ id, question, answer }) => (
+          <div key={id} className="QA">
+            <p className="question-bold secondary">{question}</p>
+            <p>{answer}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

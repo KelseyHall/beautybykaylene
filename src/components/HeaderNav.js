@@ -30,17 +30,17 @@ const HeaderNav = () => {
                 services
                 <NavDropdown id="basic-nav-dropdown">
                   <NavDropdown.Item href="/services/#anchor-service1">
-                    service1
+                    nails
                   </NavDropdown.Item>
                   <NavDropdown.Item href="/services/#anchor-service2">
-                    service2
+                    waxing
                   </NavDropdown.Item>
                   <NavDropdown.Item href="/services/#anchor-service3">
-                    service3
+                    lash & brow
                   </NavDropdown.Item>
 
                   <NavDropdown.Item href="/services/#anchor-service4">
-                    service4
+                    message
                   </NavDropdown.Item>
                 </NavDropdown>
               </Nav.Link>
@@ -50,6 +50,7 @@ const HeaderNav = () => {
                 contact us
                 <NavDropdown id="basic-nav-dropdown">
                   <NavDropdown.Item href="/faq">faq</NavDropdown.Item>
+                  <NavDropdown.Item href="/form">client forms</NavDropdown.Item>
                 </NavDropdown>
               </Nav.Link>
             </Nav>

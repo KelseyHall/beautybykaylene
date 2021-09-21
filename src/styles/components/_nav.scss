@@ -76,8 +76,14 @@
     text-align: left;
     margin-top: 15px !important;
     :hover {
-      color: $violet-light;
-      background: white;
+      color: white;
+      background: $dark-purple;
+    }
+    .dropdown-item {
+      border-bottom: 1px solid #fff;
+    }
+    .dropdown-item:last-child {
+      border-bottom: none;
     }
     .dropdown-item.active,
     .dropdown-item:active {
