@@ -99,7 +99,8 @@
       border-right: solid #fff !important;
     }
     .nav-link {
-      margin: 0 10px !important;
+      font-size: $font-nav-sm !important;
+      margin: 0 5px !important;
     }
   }
   //footer
@@ -252,6 +253,10 @@
     .navHeader {
       border: none !important;
       width: 100% !important;
+
+      .nav-link {
+        padding: 0 10px;
+      }
     }
     img {
       width: 88% !important;

@@ -19,6 +19,8 @@ import galleryPicture3 from '../images/vertical-img-1.jpg';
 import galleryPicture4 from '../images/vertical-img-2.jpg';
 import galleryPicture5 from '../images/square-img.jpg';
 
+import placeholderPdf from '../pdfs/pdfplaceholder.pdf';
+
 //HomePage carousel
 export const CarouselSlides = [
   { key: uuidv4(), content: <img src={picture} alt="1" /> },
@@ -314,4 +316,16 @@ export const faqQuestions = [
     answer:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsanfeugiat integer risus libero pulvinar tellus senectus sapien. Ultrices tellus odio nisl non nibh lacinia. Consectetur metus odio magna volutpatin. Rutrum adipiscing convallis facilisis vestibulum eleifend inullamcorper laoreet enim. Placerat quis donec dolor et at mattis atfeugiat nibh. Sit nibh faucibus at vitae quis eros, molestie luctus.Viverra mauris pulvinar sed volutpat. In viverra arcu purus sed purusvel amet vel.',
   },
+];
+
+//Downloadable PDFS Page
+export const downloadablePdf = [
+  {
+    id: uuidv4(),
+    label: 'this form name is',
+    src: placeholderPdf,
+  },
+  { id: uuidv4(), label: 'this form name is 2', src: placeholderPdf },
+  { id: uuidv4(), label: 'this form name is 3', src: placeholderPdf },
+  { id: uuidv4(), label: 'this form name is 4', src: placeholderPdf },
 ];
