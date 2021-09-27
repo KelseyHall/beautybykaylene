@@ -181,30 +181,30 @@ export const ServicesDescriptions = [
     ],
   },
 ];
-
+//Gallery page
 export const GalleryDatabase = [
   {
     id: uuidv4(),
     className: 'wide',
     img: galleryPicture,
     title: 'Picture Title',
-    description: 'Description placeholder',
-    altText: 'picture',
+    caption: 'Description placeholder',
+    altText: 'picture1',
   },
   {
     id: uuidv4(),
     className: 'wide',
     img: galleryPicture2,
     title: 'Picture Title',
-    description: 'Description placeholder',
-    altText: 'picture',
+    caption: 'Description placeholder',
+    altText: 'picture2',
   },
   {
     id: uuidv4(),
     className: 'tall',
     img: galleryPicture4,
     title: 'Picture Title',
-    description: 'Description placeholder',
+    caption: 'Description placeholder',
     altText: 'picture',
   },
   {
@@ -212,7 +212,7 @@ export const GalleryDatabase = [
     className: 'tall',
     img: galleryPicture3,
     title: 'Picture Title',
-    description: 'Description placeholder',
+    caption: 'Description placeholder',
     altText: 'picture',
   },
   {
@@ -220,7 +220,7 @@ export const GalleryDatabase = [
     className: 'square',
     img: galleryPicture5,
     title: 'Picture Title',
-    description: 'Description placeholder',
+    caption: 'Description placeholder',
     altText: 'picture',
   },
   {
@@ -228,7 +228,7 @@ export const GalleryDatabase = [
     className: 'tall',
     img: galleryPicture4,
     title: 'Picture Title',
-    description: 'Description placeholder',
+    caption: 'Description placeholder',
     altText: 'picture',
   },
   {
@@ -236,7 +236,7 @@ export const GalleryDatabase = [
     className: 'square',
     img: galleryPicture5,
     title: 'Picture Title',
-    description: 'Description placeholder',
+    caption: 'Description placeholder',
     altText: 'picture',
   },
   {
@@ -244,7 +244,7 @@ export const GalleryDatabase = [
     className: 'wide',
     img: galleryPicture,
     title: 'Picture Title',
-    description: 'Description placeholder',
+    caption: 'Description placeholder',
     altText: 'picture',
   },
   {
@@ -252,7 +252,7 @@ export const GalleryDatabase = [
     className: 'square',
     img: galleryPicture5,
     title: 'Picture Title',
-    description: 'Description placeholder',
+    caption: 'Description placeholder',
     altText: 'picture',
   },
   {
@@ -260,7 +260,7 @@ export const GalleryDatabase = [
     className: 'square',
     img: galleryPicture5,
     title: 'Picture Title',
-    description: 'Description placeholder',
+    caption: 'Description placeholder',
     altText: 'picture',
   },
 ];
@@ -284,7 +284,7 @@ export const faqQuestions = [
   },
   {
     id: uuidv4(),
-    category: 'lashbrow',
+    category: 'lash & brow',
     question:
       'lashbrow Lorem ipsum dolor sit amet, ipsum dolor sit amet consectetur adipiscing eli?',
     answer:

@@ -10,7 +10,7 @@
 }
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
 }
-@media screen and (min-width: 768px) and (max-width: 991.98px) {
+@media screen and (min-width: 769px) and (max-width: 991.98px) {
   //Nav settings
   .App-header {
     .dropdown-menu {
@@ -85,9 +85,9 @@
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 767.98px) {
+@media screen and (min-width: 576px) and (max-width: 768.98px) {
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 768.98px) {
   //Nav settings
   .navbar .mainNav .nav-link:hover {
     color: white !important;
@@ -152,7 +152,13 @@
   }
 
   //services page
-
+  .jump-to-service-wrapper {
+    .jump-to-service {
+      img {
+        width: 75px !important;
+      }
+    }
+  }
   .services-content {
     .h2-title {
       text-align: center !important;
@@ -212,6 +218,20 @@
       display: none;
     }
   }
+
+  //FAQ PAGE
+  .sort-by-service {
+    ul {
+      li {
+        img {
+          width: 80px !important;
+        }
+        p {
+          font-size: $font-size-md !important;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 575.98px) {
   //base
@@ -221,17 +241,36 @@
   p {
     font-size: $font-size-md;
   }
+
   //header nav moves with scrolling
   .App-header {
     position: sticky;
     top: 0;
     z-index: 100;
     border-bottom: 1px solid $dirty-gold;
+
     .navHeader {
       border: none !important;
+      width: 100% !important;
+    }
+    img {
+      width: 88% !important;
+      margin: 0 !important;
     }
     .navbar {
       width: 100% !important;
+
+      flex-direction: row-reverse !important;
+    }
+    .navbar-toggler {
+      padding: 2px;
+      width: 11% !important;
+    }
+    .navbar-collapse {
+      // height: 100vh;
+    }
+    .dropdown-menu a {
+      width: 100%;
     }
   }
   //nav socials
@@ -267,6 +306,24 @@
       background-size: 50px !important;
       p {
         width: 80% !important;
+      }
+    }
+  }
+  .jump-to-service-wrapper {
+    width: 95% !important;
+
+    .jump-to-service {
+      .nav-item-1 {
+        width: 50%;
+      }
+      a {
+        padding: 10px;
+      }
+      p {
+        font-size: $font-size-xs;
+      }
+      img {
+        width: 55px !important;
       }
     }
   }
@@ -379,6 +436,21 @@
     }
     iframe {
       height: 300px !important;
+    }
+  }
+
+  //FAQ PAGE
+  .sort-by-service {
+    ul {
+      justify-content: space-evenly !important;
+      li {
+        img {
+          width: 70px;
+        }
+        p {
+          font-size: $font-size-md !important;
+        }
+      }
     }
   }
 }

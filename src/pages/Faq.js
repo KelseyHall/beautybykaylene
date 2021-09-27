@@ -26,6 +26,13 @@ const FaqPage = () => {
     );
     setSearchResults(results);
   }, [categorySearch]);
+  const WhichTitle = () => {
+    if (categorySearch === '') {
+      return 'all questions';
+    } else {
+      return categorySearch;
+    }
+  };
 
   return (
     <div className="faq-backdrop">
@@ -55,7 +62,7 @@ const FaqPage = () => {
             <li>
               <button
                 className="service-links"
-                onClick={FilterByCategory('lashbrow')}
+                onClick={FilterByCategory('lash & brow')}
               >
                 <img src={LashBrowIcon} alt="lash-brows-icon" />
                 <p>lash & brows</p>
@@ -85,7 +92,7 @@ const FaqPage = () => {
             <p>view all</p>
           </button>
         </div>
-
+        <h1 className="primary">{<WhichTitle />}</h1>
         {searchResults.map(({ id, question, answer }) => (
           <div key={id} className="QA">
             <p className="question-bold secondary">{question}</p>

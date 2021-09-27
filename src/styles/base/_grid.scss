@@ -137,6 +137,11 @@
       grid-column: 1/9;
     }
   }
+
+  //gallery Masonry
+  .gallery-masonry-grid {
+    grid-template-columns: minmax(auto, 45%) 1fr;
+  }
 }
 
 //For future contact form

@@ -8,7 +8,7 @@ const galleryPage = () => {
     <div>
       <div className="gallery-Default">
         <MasonryGallery />
-        <InstagramFeed />
+        {/*<InstagramFeed />*/}
       </div>
     </div>
   );

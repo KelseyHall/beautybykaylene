@@ -14,12 +14,12 @@ const HeaderNav = () => {
   return (
     <div>
       <div className="navHeader">
-        <img
-          className="headerImg"
-          src={header}
-          alt="beauty by Kaylene header "
-        />
         <Navbar className="navbar " expand="sm" sticky="top">
+          <img
+            className="headerImg"
+            src={header}
+            alt="beauty by Kaylene header "
+          />
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
           <Navbar.Collapse id="basic-navbar-nav">
