@@ -1,0 +1,17 @@
+.form-page {
+  @extend %pageCenter;
+  padding: 20px 0;
+  p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: $dark-grey;
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: $font-size-md;
+
+    a {
+      margin: 10px 0;
+    }
+  }
+}

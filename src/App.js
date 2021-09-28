@@ -32,11 +32,10 @@ function App() {
             <Route exact path="/form" component={FormPage}></Route>
           </Switch>
         </BrowserRouter>
-
-        <footer>
-          <Footer />
-        </footer>
       </div>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
