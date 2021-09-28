@@ -294,7 +294,11 @@
       width: 90%;
     }
     .contact-info-footer {
+      align-items: flex-start !important;
       flex-direction: column !important;
+    }
+    .get-socials {
+      flex-direction: row;
     }
   }
 
