@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import Nailicon from '../images/nails.png';
-import Waxingicon from '../images/waxing.png';
-import LashBrowicon from '../images/lash-brow.png';
-import MassageIcon from '../images/massage.png';
+import nailIcon from '../images/nails.png';
+import waxingIcon from '../images/waxing.png';
+import lashBrowIcon from '../images/lash-brow.png';
+import massageIcon from '../images/massage.png';
 import Services from '../components/ServicesPage/Services';
-import GetintouchForm from '../components/GetInTouchForm';
+// import GetintouchForm from '../components/GetInTouchForm';
 
 const ServicesPage = () => {
   return (
@@ -22,7 +22,7 @@ const ServicesPage = () => {
               smooth={true}
               duration={500}
             >
-              <img src={Nailicon} alt="nails-icon" />
+              <img src={nailIcon} alt="nails-icon" />
               <p>nails</p>
             </Link>
           </div>
@@ -35,7 +35,7 @@ const ServicesPage = () => {
               smooth={true}
               duration={500}
             >
-              <img src={Waxingicon} alt="waxing-icon" />
+              <img src={waxingIcon} alt="waxing-icon" />
               <p>waxing</p>
             </Link>
           </div>
@@ -48,7 +48,7 @@ const ServicesPage = () => {
               smooth={true}
               duration={500}
             >
-              <img src={LashBrowicon} alt="lash and brows-icon" />
+              <img src={lashBrowIcon} alt="lash and brows-icon" />
               <p>lash & brows</p>
             </Link>
           </div>
@@ -61,7 +61,7 @@ const ServicesPage = () => {
               smooth={true}
               duration={500}
             >
-              <img src={MassageIcon} alt="massage-icon" />
+              <img src={massageIcon} alt="massage-icon" />
               <p>massage</p>
             </Link>
           </div>
@@ -81,7 +81,7 @@ const ServicesPage = () => {
               smooth={true}
               duration={500}
             >
-              <img src={Nailicon} alt="nails-icon" />
+              <img src={nailIcon} alt="nails-icon" />
               <span>nails</span>
             </Link>
           </li>
@@ -94,7 +94,7 @@ const ServicesPage = () => {
               smooth={true}
               duration={500}
             >
-              <img src={Waxingicon} alt="waxing-icon" />
+              <img src={waxingIcon} alt="waxing-icon" />
               <span>waxing</span>
             </Link>
           </li>
@@ -107,7 +107,7 @@ const ServicesPage = () => {
               smooth={true}
               duration={500}
             >
-              <img src={LashBrowicon} alt="lash and brows-icon" />
+              <img src={lashBrowIcon} alt="lash and brows-icon" />
               <span>lash & brow</span>
             </Link>
           </li>
@@ -120,7 +120,7 @@ const ServicesPage = () => {
               smooth={true}
               duration={500}
             >
-              <img src={MassageIcon} alt="massage-icon" />
+              <img src={massageIcon} alt="massage-icon" />
               <span>massage</span>
             </Link>
           </li>

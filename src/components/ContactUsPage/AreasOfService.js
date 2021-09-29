@@ -8,7 +8,10 @@ const AreasOfService = () => {
         areas of service <hr />
       </h1>
       <div className="areas-of-service-map">
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1BprHgYXUWWoGpVG2Vu_S7-r0TgSDQ2-K"></iframe>
+        <iframe
+          title="areasOfService"
+          src="https://www.google.com/maps/d/u/0/embed?mid=1BprHgYXUWWoGpVG2Vu_S7-r0TgSDQ2-K"
+        ></iframe>
       </div>
 
       <div className="commuting-chart">

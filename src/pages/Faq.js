@@ -4,12 +4,7 @@ import WaxingIcon from '../images/waxing.png';
 import LashBrowIcon from '../images/lash-brow.png';
 import MassageIcon from '../images/massage.png';
 import GeneralIcon from '../images/general.png';
-import GetintouchForm from '../components/GetInTouchForm';
-
-// import QuestionAndAnswer, {
-//   filteredQuestions,
-//   handleClick,
-// } from '../components/FaqPage/Questions';
+// import GetintouchForm from '../components/GetInTouchForm';
 
 import { faqQuestions } from '../components/Staticdatabase';
 

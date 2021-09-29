@@ -1,7 +1,7 @@
 import React from 'react';
 import AreasOfService from '../components/ContactUsPage/AreasOfService';
 import ContactUsBlurb from '../components/ContactUsPage/ContactsUsBlurb';
-import GetintouchForm from '../components/GetInTouchForm';
+// import GetintouchForm from '../components/GetInTouchForm';
 
 const contactUsPage = () => {
   return (

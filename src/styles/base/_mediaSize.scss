@@ -1,15 +1,8 @@
-// @media (max-width: $layout-breakpoint-lrg) {
+// @media screen and (min-width: 1200px) {
 // }
-// @media (min-width: $layout-breakpoint-med) {
-//   .App {
-//     max-width: 700px;
-//   }
+// @media screen and (min-width: 992px) and (max-width: 1199.98px) {
 // }
 
-@media screen and (min-width: 1200px) {
-}
-@media screen and (min-width: 992px) and (max-width: 1199.98px) {
-}
 @media screen and (min-width: 769px) and (max-width: 991.98px) {
   //Nav settings
   .App-header {
@@ -85,8 +78,9 @@
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768.98px) {
-}
+// @media screen and (min-width: 576px) and (max-width: 768.98px) {
+// }
+
 @media screen and (max-width: 768.98px) {
   //Nav settings
   .navbar .mainNav .nav-link:hover {
@@ -107,10 +101,6 @@
   .footer {
     margin-top: 40px;
     flex-direction: column !important;
-
-    // .contact-info-footer {
-    //   flex-direction: column !important;
-    // }
   }
   //home page
   .home-banner {
@@ -139,7 +129,6 @@
   }
   .testimonials {
     background-size: 70px !important;
-    // height: 200px !important;
     padding-top: 60px !important;
     p {
       font-size: $font-size-sm !important;
@@ -282,9 +271,7 @@
   .floating-socials {
     display: none !important;
   }
-  // .nav-media-socials {
-  //   display: block;
-  // }
+
   //footer
   .footer {
     margin-top: 40px;

@@ -8,7 +8,7 @@ const FormPage = () => {
         {downloadablePdf.map(({ label, src, id }) => (
           <p key={id}>
             {label}
-            <a className="button" href={src}>
+            <a className="button" href={src} download>
               Download
             </a>
           </p>
