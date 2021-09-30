@@ -5,11 +5,19 @@ const ContactInfo = () => {
     <div className="contact-info-footer">
       <div className="info-wrapper">
         <p className="primary">call or text</p>
-        <p className="secondary">905.644.8880</p>
+        <p>
+          <a className="secondary" href="tel:905-644-8880">
+            905.644.8880
+          </a>
+        </p>
       </div>
       <div className="info-wrapper">
         <p className="primary">send us an email at</p>
-        <p className="secondary">beautybykaylene@gmail.com</p>
+        <p>
+          <a className="secondary" href="mailto:beautybykaylene@gmail.com">
+            beautybykaylene@gmail.com
+          </a>
+        </p>
       </div>
       <SocialMedia />
     </div>

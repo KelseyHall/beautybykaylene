@@ -34,7 +34,7 @@
   z-index: 100;
   display: flex;
   justify-content: space-evenly;
-
+  color: $dark-grey;
   background-color: $violet;
   width: 100%;
   align-items: center;
@@ -45,6 +45,9 @@
   img {
     width: 30px;
   }
+}
+.jump-to-service-wrapper {
+  color: $dark-grey;
 }
 
 .services-about-content {

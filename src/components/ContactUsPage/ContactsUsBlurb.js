@@ -13,7 +13,14 @@ const ContactUsBlurb = () => {
         dignissim pellentesque. Sit cras quam enim id aliquam.
       </p>
       <h1 className="h1-title primary">book appointment</h1>
-      <h3 className="h3-title secondary">905.644.8880</h3>
+      <h3 className="h3-title">
+        <a className="secondary" href="tel:905-644-8880">
+          905.644.8880
+        </a>
+      </h3>
+      <p className="email-us">
+        <a href="mailto:beautybykaylene@gmail.com">beautybykaylene@gmail.com</a>
+      </p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem congue
         auctor interdum varius non, ut enim, ultricies semper. Dictumst dolor,
