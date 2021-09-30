@@ -12,10 +12,10 @@ const NavRouter = (
     <Router>
       <Route exact path="/" component={HomePage}></Route>
       <Route path="/services" component={ServicesPage}></Route>
-      <Route exact path="/gallery" component={GalleryPage}></Route>
-      <Route exact path="/ContactUs" component={ContactUsPage}></Route>
-      <Route exact path="/faq" component={FaqPage}></Route>
-      <Route exact path="/form" component={FormPage}></Route>
+      <Route path="/gallery" component={GalleryPage}></Route>
+      <Route path="/ContactUs" component={ContactUsPage}></Route>
+      <Route path="/faq" component={FaqPage}></Route>
+      <Route path="/form" component={FormPage}></Route>
     </Router>
   </div>
 );

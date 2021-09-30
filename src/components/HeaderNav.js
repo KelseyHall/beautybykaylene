@@ -24,9 +24,15 @@ const HeaderNav = () => {
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mainNav">
-              <Nav.Link href="/">home</Nav.Link>
+              <Nav.Link href="/" activeClassName="active">
+                home
+              </Nav.Link>
 
-              <Nav.Link href="/services" className="nav-dropdown-special">
+              <Nav.Link
+                href="/services"
+                activeClassName="active"
+                className="nav-dropdown-special"
+              >
                 services
                 <NavDropdown id="basic-nav-dropdown">
                   <NavDropdown.Item href="/services/#anchor-service1">
@@ -44,9 +50,15 @@ const HeaderNav = () => {
                   </NavDropdown.Item>
                 </NavDropdown>
               </Nav.Link>
-              <Nav.Link href="/gallery">gallery</Nav.Link>
+              <Nav.Link href="/gallery" activeClassName="active">
+                gallery
+              </Nav.Link>
 
-              <Nav.Link href="/contactUs" className="nav-dropdown-special">
+              <Nav.Link
+                href="/contactUs"
+                activeClassName="active"
+                className="nav-dropdown-special"
+              >
                 contact us
                 <NavDropdown id="basic-nav-dropdown">
                   <NavDropdown.Item href="/faq">faq</NavDropdown.Item>

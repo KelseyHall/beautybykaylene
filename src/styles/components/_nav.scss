@@ -44,6 +44,9 @@
 
     list-style-type: none;
   }
+  .active {
+    color: $dark-purple;
+  }
   .fullWidth-line {
     width: 100%;
     // padding: 0 20px;
