@@ -2,6 +2,12 @@ import React from 'react';
 
 import { v4 as uuidv4 } from 'uuid';
 
+//home page service blurb
+import nails from '../images/nails.png';
+import waxing from '../images/waxing.png';
+import lashBrow from '../images/lash-brow.png';
+import massages from '../images/massage.png';
+
 //home page carousel
 import picture from '../images/square-img.jpg';
 import picture2 from '../images/vertical-img-2.jpg';
@@ -20,6 +26,45 @@ import galleryPicture4 from '../images/vertical-img-2.jpg';
 import galleryPicture5 from '../images/square-img.jpg';
 
 import placeholderPdf from '../pdfs/pdfplaceholder.pdf';
+//HomePage services
+export const serviceBlurb = [
+  {
+    index: uuidv4(),
+    number: 1,
+    service: 'service1',
+    img: nails,
+    title: 'nails',
+    blurb:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elementum elit nisl elementum ut nulla. Pellentesque morbi eu, vulputate vulputate nunc, tempus.',
+  },
+  {
+    index: uuidv4(),
+    number: 2,
+    service: 'service2',
+    img: waxing,
+    title: 'waxing',
+    blurb:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elementum elit nisl elementum ut nulla. Pellentesque morbi eu, vulputate vulputate nunc, tempus.',
+  },
+  {
+    index: uuidv4(),
+    number: 3,
+    service: 'service3',
+    img: lashBrow,
+    title: 'lashes and brows',
+    blurb:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elementum elit nisl elementum ut nulla. Pellentesque morbi eu, vulputate vulputate nunc, tempus.',
+  },
+  {
+    index: uuidv4(),
+    number: 4,
+    service: 'service4',
+    img: massages,
+    title: 'massages',
+    blurb:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elementum elit nisl elementum ut nulla. Pellentesque morbi eu, vulputate vulputate nunc, tempus.',
+  },
+];
 
 //HomePage carousel
 export const CarouselSlides = [
@@ -33,7 +78,7 @@ export const CarouselSlides = [
 //Services content
 export const ServicesDescriptions = [
   {
-    id: 1,
+    id: uuidv4(),
     linkedinHandle: 'anchor-service1',
     service: 'nails',
     image: placeholder,
@@ -73,7 +118,7 @@ export const ServicesDescriptions = [
     ],
   },
   {
-    id: 2,
+    id: uuidv4(),
     linkedinHandle: 'anchor-service2',
     service: 'waxing',
     image: placeholder,
@@ -133,7 +178,7 @@ export const ServicesDescriptions = [
     ],
   },
   {
-    id: 3,
+    id: uuidv4(),
     linkedinHandle: 'anchor-service3',
     service: 'lash & brow',
     image: placeholder,
@@ -163,7 +208,7 @@ export const ServicesDescriptions = [
     ],
   },
   {
-    id: 4,
+    id: uuidv4(),
     linkedinHandle: 'anchor-service4',
     service: 'massage',
     image: placeholder,

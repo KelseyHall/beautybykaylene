@@ -1,5 +1,7 @@
 import React from 'react';
 import { ServicesDescriptions } from '../Staticdatabase';
+
+//to Determine what background class
 const isEven = (n) => {
   return n % 2 === 0;
 };
@@ -11,7 +13,6 @@ const Service = ({
   blurb,
   serviceDetails,
   idx,
-
   linkedinHandle,
 }) => (
   <div className="services-content" id={linkedinHandle}>

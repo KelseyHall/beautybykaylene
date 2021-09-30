@@ -1,49 +1,11 @@
 import React from 'react';
 
-import nails from '../../images/nails.png';
-import waxing from '../../images/waxing.png';
-import lashBrow from '../../images/lash-brow.png';
-import massages from '../../images/massage.png';
-
 import BannerImg from '../../images/placeholder-2.jpg';
+import { serviceBlurb } from '../Staticdatabase';
 
-const serviceBlurb = [
-  {
-    index: 1,
-    service: 'service1',
-    img: nails,
-    title: 'nails',
-    blurb:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elementum elit nisl elementum ut nulla. Pellentesque morbi eu, vulputate vulputate nunc, tempus.',
-  },
-  {
-    index: 2,
-    service: 'service2',
-    img: waxing,
-    title: 'waxing',
-    blurb:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elementum elit nisl elementum ut nulla. Pellentesque morbi eu, vulputate vulputate nunc, tempus.',
-  },
-  {
-    index: 3,
-    service: 'service3',
-    img: lashBrow,
-    title: 'lashes and brows',
-    blurb:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elementum elit nisl elementum ut nulla. Pellentesque morbi eu, vulputate vulputate nunc, tempus.',
-  },
-  {
-    index: 4,
-    service: 'service4',
-    img: massages,
-    title: 'massages',
-    blurb:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elementum elit nisl elementum ut nulla. Pellentesque morbi eu, vulputate vulputate nunc, tempus.',
-  },
-];
 const DisplayServicesBlurb = () =>
-  serviceBlurb.map(({ index, service, img, title, blurb }) => (
-    <div key={title} className={`services-item-` + index}>
+  serviceBlurb.map(({ index, number, service, img, title, blurb }) => (
+    <div key={index} className={`services-item-` + number}>
       <a href={`/services/#anchor-${service}`}>
         <img src={img} alt={title + `-icon`} />
         <h3 className="h3-title primary">{title}</h3>

@@ -35,21 +35,21 @@
   img {
     width: 30px;
   }
-  ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    background-color: $violet;
 
-    width: 100%;
-    align-items: center;
-    // height: 40px;
-    padding: 10px;
-    margin: 0;
-    text-align: center;
-    z-index: 10;
-  }
-  li {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  background-color: $violet;
+
+  width: 100%;
+  align-items: center;
+  // height: 40px;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  z-index: 10;
+
+  div {
     @extend %pageCenter;
   }
 }
@@ -142,10 +142,7 @@
       width: 127px;
     }
 
-    .nav-item-1 a,
-    .nav-item-2 a,
-    .nav-item-3 a,
-    .nav-item-4 a {
+    a {
       display: flex;
       flex-direction: column;
       align-items: center;
