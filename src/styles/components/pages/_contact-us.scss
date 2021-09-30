@@ -54,32 +54,47 @@
   }
 }
 .areas-of-service {
-  margin-top: 70px;
+  margin: 70px auto;
 }
 .contactUs {
   @extend %pageCenter;
   margin-top: 60px;
-}
-.contactUs-content {
   background: $purple-light;
-  text-align: left;
-  padding: 65px 0 20px;
-  p {
-    padding-right: 20px;
+  padding: 65px 20px 20px;
+  display: flex;
+
+  .contactUs-content {
+    text-align: justify;
+    p {
+      padding-right: 20px;
+      color: $dark-grey;
+    }
+    .h1-title,
+    .h3-title {
+      margin: 0;
+      padding-right: 20px;
+      text-align: center;
+    }
+
+    // .contactUs-content {
+    //   padding: 0 20px;
+    // }
+  }
+  .Faq-statement {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 60px;
+    text-align: center;
     color: $dark-grey;
   }
-  .h1-title,
-  .h3-title {
-    margin: 0;
-    padding-right: 20px;
-    text-align: center;
-  }
-  .contactUs-content {
-    padding: 0 20px;
-    hr {
-      width: 100%;
-    }
-  }
+}
+.client-forms {
+  padding: 30px 0;
+  @extend %pageCenter;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 //For future form

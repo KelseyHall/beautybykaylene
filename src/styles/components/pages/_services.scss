@@ -32,25 +32,18 @@
   position: sticky;
   bottom: 0;
   z-index: 100;
-  img {
-    width: 30px;
-  }
-
   display: flex;
   justify-content: space-evenly;
-  list-style: none;
-  background-color: $violet;
 
+  background-color: $violet;
   width: 100%;
   align-items: center;
-  // height: 40px;
   padding: 10px;
-  margin: 0;
   text-align: center;
-  z-index: 10;
 
-  div {
-    @extend %pageCenter;
+  @extend %pageCenter;
+  img {
+    width: 30px;
   }
 }
 
@@ -63,7 +56,6 @@
       float: left;
       width: 50%;
       margin: 5px;
-      // max-height: 300px;
     }
   }
 }
@@ -73,7 +65,6 @@
   color: $dark-grey;
   text-align: left;
   position: relative;
-  // top: -50%;
 }
 
 .service-top-col {
@@ -81,13 +72,11 @@
   color: $grey;
   text-align: left;
   position: relative;
-  // top: -140px;
 }
 .service-bottom-col-2 {
   background: $violet-light;
   color: $grey;
   position: relative;
-  // top: -50%;
 }
 .service-top-col-2 {
   background: $purple-light;

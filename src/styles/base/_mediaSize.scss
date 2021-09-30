@@ -78,8 +78,12 @@
   }
 }
 
-// @media screen and (min-width: 576px) and (max-width: 768.98px) {
-// }
+@media screen and (min-width: 576px) and (max-width: 768.98px) {
+  .Faq-statement {
+    margin: auto 20px !important;
+    padding: 0 !important;
+  }
+}
 
 @media screen and (max-width: 768.98px) {
   //Nav settings
@@ -194,8 +198,8 @@
       font-size: $font-size-md;
     }
   }
+  //contactUsPage
   .contactUs {
-    display: flex !important;
     &-column-1 {
       padding-right: 0 !important;
       p,
@@ -256,16 +260,14 @@
 
       flex-direction: row-reverse !important;
     }
-    .navbar-toggler {
-      padding: 2px;
-      width: 11% !important;
-    }
-    .navbar-collapse {
-      // height: 100vh;
-    }
-    .dropdown-menu a {
-      width: 100%;
-    }
+    // .navbar-toggler {
+    //   padding: 2px;
+    //   width: 11% !important;
+    // }
+
+    // .dropdown-menu a {
+    //   width: 100%;
+    // }
   }
   //nav socials
   .floating-socials {
@@ -433,6 +435,9 @@
     iframe {
       height: 300px !important;
     }
+  }
+  .contactUs {
+    flex-direction: column;
   }
 
   //FAQ PAGE

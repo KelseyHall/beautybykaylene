@@ -7,8 +7,14 @@ const contactUsPage = () => {
   return (
     <div className="main-container">
       <div className="contactUs">
-        <div className="contactUs-content">
-          <ContactUsBlurb />
+        <ContactUsBlurb />
+        <div className="Faq-statement">
+          <h3 className=" h3-title primary">have questions? </h3>
+          <p> Check out our FAQ page to see if we already answered! </p>
+
+          <a className="button" href={'/faq'}>
+            FAQ page
+          </a>
         </div>
 
         {/*
@@ -21,6 +27,14 @@ const contactUsPage = () => {
         </div>
         </div>
         */}
+      </div>
+      <div className="client-forms">
+        <p className="secondary">
+          new client? new service? download the required form
+        </p>
+        <a href="/form" className="button">
+          click here!
+        </a>
       </div>
       <AreasOfService />
     </div>

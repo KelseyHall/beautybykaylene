@@ -7,6 +7,43 @@ import GeneralIcon from '../images/general.png';
 // import GetintouchForm from '../components/GetInTouchForm';
 
 import { faqQuestions } from '../components/Staticdatabase';
+const sortbyNav = [
+  {
+    id: 1,
+    category: 'nails',
+    img: NailIcon,
+    altText: 'nails',
+    title: 'nails',
+  },
+  {
+    id: 2,
+    category: 'waxing',
+    img: WaxingIcon,
+    altText: 'waxing',
+    title: 'waxing',
+  },
+  {
+    id: 3,
+    category: 'lash & brow',
+    img: LashBrowIcon,
+    altText: 'lash-brow',
+    title: 'lash & brow',
+  },
+  {
+    id: 4,
+    category: 'massage',
+    img: MassageIcon,
+    altText: 'massage',
+    title: 'massage',
+  },
+  {
+    id: 5,
+    category: 'general',
+    img: GeneralIcon,
+    altText: 'general',
+    title: 'general',
+  },
+];
 
 const FaqPage = () => {
   const [categorySearch, setCategorySearch] = useState('');
@@ -29,6 +66,21 @@ const FaqPage = () => {
     }
   };
 
+  const SortByService = () =>
+    sortbyNav.map(({ id, category, img, altText, title }) => {
+      return (
+        <li key={id}>
+          <button
+            className="service-links"
+            onClick={FilterByCategory(category)}
+          >
+            <img src={img} alt={`${altText}-icon`} />
+            <p>{title}</p>
+          </button>
+        </li>
+      );
+    });
+
   return (
     <div className="faq-backdrop">
       <div className="main-container Faq">
@@ -36,51 +88,7 @@ const FaqPage = () => {
         <div className="sort-by-service">
           <h3 className="nav-title primary">sort by service</h3>
           <ul>
-            <li>
-              <button
-                className="service-links"
-                onClick={FilterByCategory('nails')}
-              >
-                <img src={NailIcon} alt="nails-icon" />
-                <p>nails</p>
-              </button>
-            </li>
-            <li>
-              <button
-                className="service-links"
-                onClick={FilterByCategory('waxing')}
-              >
-                <img src={WaxingIcon} alt="waxing-icon" />
-                <p>waxing</p>
-              </button>
-            </li>
-            <li>
-              <button
-                className="service-links"
-                onClick={FilterByCategory('lash & brow')}
-              >
-                <img src={LashBrowIcon} alt="lash-brows-icon" />
-                <p>lash & brows</p>
-              </button>
-            </li>
-            <li>
-              <button
-                className="service-links"
-                onClick={FilterByCategory('massage')}
-              >
-                <img src={MassageIcon} alt="massage-icon" />
-                <p>massage</p>
-              </button>
-            </li>
-            <li>
-              <button
-                className="service-links"
-                onClick={FilterByCategory('general')}
-              >
-                <img src={GeneralIcon} alt="general-icon" />
-                <p>general</p>
-              </button>
-            </li>
+            <SortByService />
           </ul>
 
           <button className="view-all-button" onClick={FilterByCategory('')}>

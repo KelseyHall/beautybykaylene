@@ -84,52 +84,50 @@
       color: white;
       background: $dark-purple;
     }
-    .dropdown-item {
-      border-bottom: 1px solid #fff;
-    }
-    .dropdown-item:last-child {
-      border-bottom: none;
-    }
-    .dropdown-item.active,
-    .dropdown-item:active {
-      background-color: $violet-light !important;
-      color: $dark-purple;
-    }
+    // .dropdown-item {
+    //   border-bottom: 1px solid #fff;
+    // }
+    // .dropdown-item:last-child {
+    //   border-bottom: none;
+    // }
+    // .dropdown-item.active,
+    // .dropdown-item:active {
+    //   background-color: $violet-light !important;
+    //   color: $dark-purple;
+    // }
   }
-  .nav-dropdown-special {
-    display: flex;
-  }
-  .navbar-collapse {
-    // height: 100vh;
-  }
+  // .nav-dropdown-special {
+  //   display: flex;
+  // }
+
   .navbar .mainNav .nav-link:hover {
     color: $dark-purple;
   }
 
-  .mainNav .dropdown-toggle {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-top: 3px solid $grey;
-    border-right: 3px solid $grey;
-    transform: scale(0.8) rotate(135deg);
-    margin: 0 0 0 5px;
-    padding: 6px;
+  // .mainNav .dropdown-toggle {
+  //   display: inline-block;
+  //   width: 10px;
+  //   height: 10px;
+  //   border-top: 3px solid $grey;
+  //   border-right: 3px solid $grey;
+  //   transform: scale(0.8) rotate(135deg);
+  //   margin: 0 0 0 5px;
+  //   padding: 6px;
 
-    // position: absolute;
-    &::after {
-      vertical-align: 0;
-    }
-  }
+  //   // position: absolute;
+  //   &::after {
+  //     vertical-align: 0;
+  //   }
+  // }
   .navbar-toggler {
     border: none;
     // position: absolute;
 
     // top: -80px;
   }
-  .navbar-collapse {
-    // width: 80vw;
-  }
+  // .navbar-collapse {
+  //   // width: 80vw;
+  // }
   .navbar-toggler-icon {
     background-image: url(../../images/hamburgerMenu.png) !important;
   }

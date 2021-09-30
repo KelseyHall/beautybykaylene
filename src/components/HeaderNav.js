@@ -3,7 +3,7 @@ import header from '../images/header.png';
 import FacebookIcon from '../images/facebookIcon.png';
 import InstaIcon from '../images/insta-Icon.png';
 
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 
 import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
@@ -34,36 +34,14 @@ const HeaderNav = () => {
                 className="nav-dropdown-special"
               >
                 services
-                <NavDropdown id="basic-nav-dropdown">
-                  <NavDropdown.Item href="/services/#anchor-service1">
-                    nails
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/services/#anchor-service2">
-                    waxing
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/services/#anchor-service3">
-                    lash & brow
-                  </NavDropdown.Item>
-
-                  <NavDropdown.Item href="/services/#anchor-service4">
-                    message
-                  </NavDropdown.Item>
-                </NavDropdown>
               </Nav.Link>
+
               <Nav.Link href="/gallery" activeClassName="active">
                 gallery
               </Nav.Link>
 
-              <Nav.Link
-                href="/contactUs"
-                activeClassName="active"
-                className="nav-dropdown-special"
-              >
+              <Nav.Link href="/contactUs" activeClassName="active">
                 contact us
-                <NavDropdown id="basic-nav-dropdown">
-                  <NavDropdown.Item href="/faq">faq</NavDropdown.Item>
-                  <NavDropdown.Item href="/form">client forms</NavDropdown.Item>
-                </NavDropdown>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -94,3 +72,25 @@ const HeaderNav = () => {
 };
 
 export default HeaderNav;
+
+//Drop DownNav
+// <NavDropdown id="basic-nav-dropdown">
+// <NavDropdown.Item href="/services/#anchor-service1">
+//   nails
+// </NavDropdown.Item>
+// <NavDropdown.Item href="/services/#anchor-service2">
+//   waxing
+// </NavDropdown.Item>
+// <NavDropdown.Item href="/services/#anchor-service3">
+//   lash & brow
+// </NavDropdown.Item>
+
+// <NavDropdown.Item href="/services/#anchor-service4">
+//   message
+// </NavDropdown.Item>
+// </NavDropdown>
+
+// <NavDropdown id="basic-nav-dropdown">
+//                   <NavDropdown.Item href="/faq">faq</NavDropdown.Item>
+//                   <NavDropdown.Item href="/form">client forms</NavDropdown.Item>
+//                 </NavDropdown>
