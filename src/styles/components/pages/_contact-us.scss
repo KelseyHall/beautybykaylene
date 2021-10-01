@@ -12,7 +12,6 @@
       width: 100%;
       height: 500px;
     }
-
     margin: 0 auto;
   }
   .commuting-chart {
@@ -95,6 +94,9 @@
     padding: 0 60px;
     text-align: center;
     color: $dark-grey;
+    a:hover {
+      color: $violet-light;
+    }
   }
 }
 .client-forms {
@@ -103,6 +105,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  a:hover {
+    color: $violet-light;
+  }
 }
 
 //For future form

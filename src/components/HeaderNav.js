@@ -28,11 +28,7 @@ const HeaderNav = () => {
                 home
               </Nav.Link>
 
-              <Nav.Link
-                href="/services"
-                activeClassName="active"
-                className="nav-dropdown-special"
-              >
+              <Nav.Link href="/services" activeClassName="active">
                 services
               </Nav.Link>
 

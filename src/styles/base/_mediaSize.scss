@@ -87,10 +87,7 @@
 
 @media screen and (max-width: 768.98px) {
   //Nav settings
-  .navbar .mainNav .nav-link:hover {
-    color: white !important;
-    background: $dark-purple;
-  }
+
   .App-header {
     .dropdown-toggle:hover {
       border-top: solid #fff !important;
@@ -237,6 +234,10 @@
   }
 
   //header nav moves with scrolling
+  .navbar .mainNav .nav-link:hover {
+    color: white !important;
+    background: $dark-purple;
+  }
   .App-header {
     position: sticky;
     top: 0;
