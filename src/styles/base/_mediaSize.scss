@@ -258,17 +258,16 @@
     }
     .navbar {
       width: 100% !important;
-
       flex-direction: row-reverse !important;
     }
-    // .navbar-toggler {
-    //   padding: 2px;
-    //   width: 11% !important;
-    // }
+    .navbar-toggler {
+      padding: 2px;
+      width: 11% !important;
+    }
 
-    // .dropdown-menu a {
-    //   width: 100%;
-    // }
+    .dropdown-menu a {
+      width: 100%;
+    }
   }
   //nav socials
   .floating-socials {
@@ -454,5 +453,12 @@
         }
       }
     }
+  }
+}
+
+//only in mobile screen
+@media screen and (min-width: 575.99px) {
+  .nav-quick-contact {
+    display: none;
   }
 }

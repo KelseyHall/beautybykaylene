@@ -1,12 +1,10 @@
 .App-header {
   font-family: $default-font;
-  // width: 1400px;
   background: #fff;
   display: flex;
 
   img {
     width: 80%;
-    // display: flex;
     margin: 0 10%;
   }
   a {
@@ -15,53 +13,27 @@
     text-decoration: none;
     color: $dark-grey;
   }
-  // .headerline {
-  //   width: 110vw;
-  //   background-color: $gold;
-  //   z-index: 1;
-  //   left: -13%;
-  //   position: relative;
-  //   margin-bottom: 0;
-  // }
+
   .navbar {
-    justify-content: center;
+    justify-content: left;
     flex-direction: inherit;
   }
   .navHeader {
     @extend %pageCenter;
     background: #fff;
     display: flex;
-    // justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     flex-direction: column;
-    // width: 1400px;
     border-bottom: 1px solid $dirty-gold;
   }
   .nav {
     display: flex;
     align-items: baseline;
-
     list-style-type: none;
   }
   .active {
     color: $dark-purple;
-  }
-  .fullWidth-line {
-    width: 100%;
-    // padding: 0 20px;
-  }
-  .sub-menu {
-    display: flex;
-    flex-direction: column;
-    background-color: $violet;
-    width: 200px;
-    margin: 30px 0 !important;
-    font-size: $font-nav;
-
-    .dropdown-item {
-      padding: 5px 0;
-    }
   }
 
   .mainNav .nav-link {
@@ -71,63 +43,15 @@
     width: auto;
     font-family: $default-font;
     font-size: $font-nav;
-  }
-  .nav-link {
     margin: 0 35px;
   }
-  .dropdown-menu {
-    background: $violet;
-    width: 100%;
-    text-align: left;
-    margin-top: 15px !important;
-    :hover {
-      color: white;
-      background: $dark-purple;
-    }
-    // .dropdown-item {
-    //   border-bottom: 1px solid #fff;
-    // }
-    // .dropdown-item:last-child {
-    //   border-bottom: none;
-    // }
-    // .dropdown-item.active,
-    // .dropdown-item:active {
-    //   background-color: $violet-light !important;
-    //   color: $dark-purple;
-    // }
-  }
-  // .nav-dropdown-special {
-  //   display: flex;
-  // }
-
-  .navbar .mainNav .nav-link:hover {
+  .nav-link:hover {
     color: $dark-purple;
   }
 
-  // .mainNav .dropdown-toggle {
-  //   display: inline-block;
-  //   width: 10px;
-  //   height: 10px;
-  //   border-top: 3px solid $grey;
-  //   border-right: 3px solid $grey;
-  //   transform: scale(0.8) rotate(135deg);
-  //   margin: 0 0 0 5px;
-  //   padding: 6px;
-
-  //   // position: absolute;
-  //   &::after {
-  //     vertical-align: 0;
-  //   }
-  // }
   .navbar-toggler {
     border: none;
-    // position: absolute;
-
-    // top: -80px;
   }
-  // .navbar-collapse {
-  //   // width: 80vw;
-  // }
   .navbar-toggler-icon {
     background-image: url(../../images/hamburgerMenu.png) !important;
   }
@@ -150,7 +74,92 @@
   }
 }
 
-.nav-media-socials {
-  display: none;
-  height: 100px;
+.nav-quick-contact {
+  width: 80%;
+  padding-top: 20px;
+  margin: 20px auto;
+  text-align: center;
+  border-top: 1px solid $dirty-gold;
+  p {
+    color: $grey;
+    font-size: $font-nav-sm;
+    margin-bottom: 0;
+  }
+  a {
+    color: $dark-green;
+  }
+  .nav-media-socials {
+    // display: none;
+    display: flex;
+    margin: 0 auto;
+    width: 70px;
+    padding: 0 !important;
+
+    li {
+      list-style-type: none;
+
+      img {
+        width: 30px !important;
+      }
+    }
+  }
 }
+
+//Drop down menu
+
+// .sub-menu {
+//   display: flex;
+//   flex-direction: column;
+//   background-color: $violet;
+//   width: 200px;
+//   margin: 30px 0 !important;
+//   font-size: $font-nav;
+
+//   .dropdown-item {
+//     padding: 5px 0;
+//   }
+// }
+
+// .dropdown-menu {
+//   background: $violet;
+//   width: 100%;
+//   text-align: left;
+//   margin-top: 15px !important;
+//   :hover {
+//     color: white;
+//     background: $dark-purple;
+//   }
+//   .dropdown-item {
+//     border-bottom: 1px solid #fff;
+//   }
+//   .dropdown-item:last-child {
+//     border-bottom: none;
+//   }
+//   .dropdown-item.active,
+//   .dropdown-item:active {
+//     background-color: $violet-light !important;
+//     color: $dark-purple;
+//   }
+// }
+// .nav-dropdown-special {
+//   display: flex;
+// }
+
+// .mainNav .dropdown-toggle {
+//   display: inline-block;
+//   width: 10px;
+//   height: 10px;
+//   border-top: 3px solid $grey;
+//   border-right: 3px solid $grey;
+//   transform: scale(0.8) rotate(135deg);
+//   margin: 0 0 0 5px;
+//   padding: 6px;
+
+//   // position: absolute;
+//   &::after {
+//     vertical-align: 0;
+//   }
+// }
+// .navbar-collapse {
+//   // width: 80vw;
+// }

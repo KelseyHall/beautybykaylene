@@ -39,10 +39,31 @@ const HeaderNav = () => {
               <Nav.Link href="/contactUs" activeClassName="active">
                 contact us
               </Nav.Link>
+              <div className="nav-quick-contact">
+                <p>
+                  text or call us
+                  <br />
+                  <a className="nav-contact" href="tel:905-644-8880">
+                    905.644.8880
+                  </a>
+                </p>
+                <p>our socials</p>
+                <ul className="nav-media-socials">
+                  <li>
+                    <a href={FacebookLink} target="_blank" rel="noreferrer">
+                      <img src={FacebookIcon} alt="facebook-icon" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href={InstagramLink} target="_blank" rel="noreferrer">
+                      <img src={InstaIcon} alt="instagram-icon" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        {/*<hr className="headerline" />*/}
       </div>
       <div className="floating-socials">
         <a href={FacebookLink} target="_blank" rel="noreferrer">
@@ -55,14 +76,6 @@ const HeaderNav = () => {
       {/*<button id="nav-media-toggler" className="nav-media-toggler">
         <span className="nav-media-toggler-icon">X</span>
   </button>*/}
-      <div id="nav-media-socials" className="nav-media-socials">
-        <a href={FacebookLink} target="_blank" rel="noreferrer">
-          <img src={FacebookIcon} alt="facebook-icon" />
-        </a>
-        <a href={InstagramLink} target="_blank" rel="noreferrer">
-          <img src={InstaIcon} alt="instagram-icon" />
-        </a>
-      </div>
     </div>
   );
 };
