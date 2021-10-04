@@ -6,17 +6,18 @@ import GalleryPage from '../pages/Gallery';
 import ContactUsPage from '../pages/ContactUs';
 import FaqPage from '../pages/Faq';
 import FormPage from '../pages/FormPage';
+import PageNotFound from '../pages/404';
+import { Route, Switch } from 'react-router-dom';
 
-const NavRouter = (
-  <div>
-    <Router>
-      <Route exact path="/" component={HomePage}></Route>
-      <Route path="/services" component={ServicesPage}></Route>
-      <Route path="/gallery" component={GalleryPage}></Route>
-      <Route path="/ContactUs" component={ContactUsPage}></Route>
-      <Route path="/faq" component={FaqPage}></Route>
-      <Route path="/form" component={FormPage}></Route>
-    </Router>
-  </div>
+const NavRouter = () => (
+  <Switch>
+    <Route exact path="/" component={HomePage} />
+    <Route path="/services" component={ServicesPage} />
+    <Route path="/gallery" component={GalleryPage} />
+    <Route path="/ContactUs" component={ContactUsPage} />
+    <Route path="/faq" component={FaqPage} />
+    <Route path="/form" component={FormPage} />
+    <Route path="*" component={PageNotFound} />
+  </Switch>
 );
 export default NavRouter;

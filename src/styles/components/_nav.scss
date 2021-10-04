@@ -8,7 +8,7 @@
     margin: 0 10%;
   }
   a {
-    align-self: left;
+    text-align: left;
     justify-self: end;
     text-decoration: none;
     color: $dark-grey;
@@ -75,10 +75,10 @@
 }
 
 .nav-quick-contact {
-  width: 80%;
+  width: 92%;
   padding-top: 20px;
   margin: 20px auto;
-  text-align: center;
+  text-align: left;
   border-top: 1px solid $dirty-gold;
   p {
     color: $grey;
@@ -91,7 +91,7 @@
   .nav-media-socials {
     // display: none;
     display: flex;
-    margin: 0 auto;
+
     width: 70px;
     padding: 0 !important;
 
