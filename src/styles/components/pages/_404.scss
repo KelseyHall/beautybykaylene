@@ -1,0 +1,21 @@
+.pageNotFound {
+  @extend %pageCenter;
+
+  padding: 5% 0;
+  height: fit-content;
+  a:hover {
+    color: $violet-light;
+  }
+  &-contents {
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+    img {
+      float: left;
+      padding: 20px;
+    }
+    h3 {
+      padding: 50px 0 20px;
+    }
+  }
+}
