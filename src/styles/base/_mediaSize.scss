@@ -79,6 +79,16 @@
 }
 
 @media screen and (min-width: 576px) and (max-width: 768.98px) {
+  .App-header {
+    .navHeader {
+      &__menu__item {
+        margin: 0;
+        a {
+          font-size: $font-nav-sm !important;
+        }
+      }
+    }
+  }
   .Faq-statement {
     margin: auto 20px !important;
     padding: 0 !important;
@@ -86,18 +96,6 @@
 }
 
 @media screen and (max-width: 768.98px) {
-  //Nav settings
-
-  .App-header {
-    .dropdown-toggle:hover {
-      border-top: solid #fff !important;
-      border-right: solid #fff !important;
-    }
-    .nav-link {
-      font-size: $font-nav-sm !important;
-      margin: 0 5px !important;
-    }
-  }
   //footer
   .footer {
     margin-top: 40px;
@@ -155,7 +153,10 @@
       text-align: center !important;
     }
     img {
-      width: 100% !important;
+      width: 95% !important;
+    }
+    p {
+      text-align: justify;
     }
     .services-sub {
       float: left;
@@ -233,40 +234,34 @@
     font-size: $font-size-md;
   }
 
-  //header nav moves with scrolling
-  .navbar .mainNav .nav-link:hover {
-    color: white !important;
-    background: $dark-purple;
-  }
   .App-header {
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 1px solid $dirty-gold;
 
     .navHeader {
-      border: none !important;
-      width: 100% !important;
+      align-items: stretch !important;
 
-      .nav-link {
-        padding: 0 10px;
+      &__menu {
+        // width: 100vw;
+        li {
+          &:last-child {
+            display: block;
+          }
+        }
+        &__item:hover {
+          background: $dark-purple;
+
+          a:hover {
+            color: #fff !important;
+          }
+        }
       }
     }
+
     img {
       width: 88% !important;
-      margin: 0 !important;
-    }
-    .navbar {
-      width: 100% !important;
-      flex-direction: row-reverse !important;
-    }
-    .navbar-toggler {
-      padding: 2px;
-      width: 11% !important;
-    }
-
-    .dropdown-menu a {
-      width: 100%;
+      margin: 0 auto !important;
     }
   }
   //nav socials
@@ -458,6 +453,25 @@
 
 //only in mobile screen
 @media screen and (min-width: 575.99px) {
+  .App-header {
+    .navHeader {
+      &__toggle {
+        display: none;
+      }
+
+      &__menu {
+        flex-direction: row !important;
+
+        li {
+          display: block !important;
+        }
+        &__item {
+          margin: 0 1.3rem;
+          text-align: center;
+        }
+      }
+    }
+  }
   .nav-quick-contact {
     display: none;
   }

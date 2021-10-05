@@ -4,6 +4,7 @@
   display: flex;
 
   img {
+    // float: right;
     width: 80%;
     margin: 0 10%;
   }
@@ -13,10 +14,8 @@
     text-decoration: none;
     color: $dark-grey;
   }
-
-  .navbar {
-    justify-content: left;
-    flex-direction: inherit;
+  .active {
+    color: $dark-purple !important;
   }
   .navHeader {
     @extend %pageCenter;
@@ -25,40 +24,87 @@
     align-items: center;
     margin: 0 auto;
     flex-direction: column;
+
     border-bottom: 1px solid $dirty-gold;
+    ul {
+      padding: 0;
+    }
+    &__toggle {
+      position: absolute;
+      cursor: pointer;
+      margin: 0rem 1rem;
+      top: 2rem;
+
+      svg {
+        width: 1.7rem;
+        fill: $green;
+      }
+      .close {
+        display: none;
+        float: left;
+      }
+
+      .menu {
+        margin-top: 0.2rem;
+      }
+    }
+
+    &__checkbox {
+      display: none;
+    }
+
+    &__menu {
+      display: flex;
+      flex-direction: column;
+
+      align-items: left;
+      margin: 1rem;
+
+      li {
+        list-style: none;
+        display: none;
+        &:last-child {
+          display: none;
+        }
+      }
+
+      &__item {
+        a {
+          color: $grey;
+          // width: auto;
+          font-family: $default-font;
+          font-size: $font-nav;
+          margin: 0 10px;
+          text-decoration: none;
+        }
+        a:hover {
+          color: $dark-purple;
+        }
+      }
+
+      svg {
+        width: 1.5rem;
+        fill: $dark-green;
+      }
+    }
   }
-  .nav {
-    display: flex;
-    align-items: baseline;
-    list-style-type: none;
+  // Toggle the hamburger menu in mobile view
+  #navHeader__checkbox:checked ~ ul.navHeader__menu li {
+    display: block;
   }
-  .active {
-    color: $dark-purple;
+  //Change from menu to close icon on tap
+  #navHeader__checkbox:checked ~ label.navHeader__toggle .close {
+    display: block;
   }
 
-  .mainNav .nav-link {
-    background-color: #fff;
-    border: none;
-    color: $grey;
-    width: auto;
-    font-family: $default-font;
-    font-size: $font-nav;
-    margin: 0 35px;
+  #navHeader__checkbox:checked ~ label.navHeader__toggle .menu {
+    display: none;
   }
-  .nav-link:hover {
-    color: $dark-purple;
-  }
-
-  .navbar-toggler {
-    border: none;
-  }
-  .navbar-toggler-icon {
-    background-image: url(../../images/hamburgerMenu.png) !important;
-  }
-  .dropdown-toggle:hover {
-    border-top: solid $dark-purple;
-    border-right: solid $dark-purple;
-  }
+  // .nav {
+  //   display: flex;
+  //   align-items: baseline;
+  //   list-style-type: none;
+  // }
 }
 
 .floating-socials {
@@ -76,8 +122,8 @@
 
 .nav-quick-contact {
   width: 92%;
-  padding-top: 20px;
-  margin: 20px auto;
+  // padding-top: 10px;
+  margin: 20px 10px;
   text-align: left;
   border-top: 1px solid $dirty-gold;
   p {
@@ -86,7 +132,10 @@
     margin-bottom: 0;
   }
   a {
-    color: $dark-green;
+    color: $dark-green !important;
+  }
+  a:hover {
+    background: none !important;
   }
   .nav-media-socials {
     // display: none;
@@ -104,62 +153,3 @@
     }
   }
 }
-
-//Drop down menu
-
-// .sub-menu {
-//   display: flex;
-//   flex-direction: column;
-//   background-color: $violet;
-//   width: 200px;
-//   margin: 30px 0 !important;
-//   font-size: $font-nav;
-
-//   .dropdown-item {
-//     padding: 5px 0;
-//   }
-// }
-
-// .dropdown-menu {
-//   background: $violet;
-//   width: 100%;
-//   text-align: left;
-//   margin-top: 15px !important;
-//   :hover {
-//     color: white;
-//     background: $dark-purple;
-//   }
-//   .dropdown-item {
-//     border-bottom: 1px solid #fff;
-//   }
-//   .dropdown-item:last-child {
-//     border-bottom: none;
-//   }
-//   .dropdown-item.active,
-//   .dropdown-item:active {
-//     background-color: $violet-light !important;
-//     color: $dark-purple;
-//   }
-// }
-// .nav-dropdown-special {
-//   display: flex;
-// }
-
-// .mainNav .dropdown-toggle {
-//   display: inline-block;
-//   width: 10px;
-//   height: 10px;
-//   border-top: 3px solid $grey;
-//   border-right: 3px solid $grey;
-//   transform: scale(0.8) rotate(135deg);
-//   margin: 0 0 0 5px;
-//   padding: 6px;
-
-//   // position: absolute;
-//   &::after {
-//     vertical-align: 0;
-//   }
-// }
-// .navbar-collapse {
-//   // width: 80vw;
-// }

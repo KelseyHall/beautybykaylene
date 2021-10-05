@@ -12,7 +12,7 @@ import { Route, Switch } from 'react-router-dom';
 const NavRouter = () => (
   <Switch>
     <Route exact path="/" component={HomePage} />
-    <Route path="/services" component={ServicesPage} />
+    <Route exact path="/services" component={ServicesPage} />
     <Route path="/gallery" component={GalleryPage} />
     <Route path="/ContactUs" component={ContactUsPage} />
     <Route path="/faq" component={FaqPage} />
