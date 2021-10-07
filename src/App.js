@@ -9,7 +9,7 @@ import './styles/style.scss';
 
 function App() {
   return (
-    <div>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
       <div className="App">
         <BrowserRouter>
           <header className="App-header">
@@ -18,7 +18,7 @@ function App() {
           <NavRouter />
         </BrowserRouter>
       </div>
-      <footer>
+      <footer style={{ marginTop: 'auto' }}>
         <Footer />
       </footer>
     </div>

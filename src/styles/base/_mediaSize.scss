@@ -238,7 +238,10 @@
     position: sticky;
     top: 0;
     z-index: 100;
-
+    // Toggle the hamburger menu in mobile view
+    .hide-item {
+      display: none !important;
+    }
     .navHeader {
       align-items: stretch !important;
 
@@ -246,14 +249,7 @@
         // width: 100vw;
         li {
           &:last-child {
-            display: block;
-          }
-        }
-        &__item:hover {
-          background: $dark-purple;
-
-          a:hover {
-            color: #fff !important;
+            display: block !important;
           }
         }
       }

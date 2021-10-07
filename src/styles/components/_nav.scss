@@ -19,6 +19,7 @@
   }
   .navHeader {
     @extend %pageCenter;
+
     background: #fff;
     display: flex;
     align-items: center;
@@ -29,7 +30,10 @@
     ul {
       padding: 0;
     }
+
     &__toggle {
+      background: none !important;
+      border: none;
       position: absolute;
       cursor: pointer;
       margin: 0rem 1rem;
@@ -62,7 +66,7 @@
 
       li {
         list-style: none;
-        display: none;
+        display: block;
         &:last-child {
           display: none;
         }
@@ -88,23 +92,32 @@
       }
     }
   }
-  // Toggle the hamburger menu in mobile view
-  #navHeader__checkbox:checked ~ ul.navHeader__menu li {
-    display: block;
-  }
+
+  // // Toggle the hamburger menu in mobile view
+  // .hide-item {
+  //   display: none;
+  // }
+  // .show-item {
+  //   display: block;
+  // }
   //Change from menu to close icon on tap
-  #navHeader__checkbox:checked ~ label.navHeader__toggle .close {
-    display: block;
+  .close_menu {
+    svg.menu {
+      display: none;
+    }
+    svg.close {
+      display: block;
+    }
   }
 
-  #navHeader__checkbox:checked ~ label.navHeader__toggle .menu {
-    display: none;
+  .open_menu {
+    svg.menu {
+      display: block;
+    }
+    svg.close {
+      display: none;
+    }
   }
-  // .nav {
-  //   display: flex;
-  //   align-items: baseline;
-  //   list-style-type: none;
-  // }
 }
 
 .floating-socials {
@@ -130,6 +143,7 @@
     color: $grey;
     font-size: $font-nav-sm;
     margin-bottom: 0;
+    margin-top: 10px;
   }
   a {
     color: $dark-green !important;
