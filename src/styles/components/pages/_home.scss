@@ -121,6 +121,12 @@
 .carousel-gallery {
   height: 600px;
   margin-bottom: 80px;
+  .css-1qzevvg {
+    img {
+      height: 70%;
+      filter: opacity(0.4);
+    }
+  }
 }
 
 .about-us,
