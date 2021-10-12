@@ -240,7 +240,7 @@ export const GalleryDatabase = [
   },
   {
     id: uuidv4(),
-    className: 'wide',
+    className: 'tall wide',
     img: galleryPicture2,
     title: 'Picture Title',
     caption: 'Description placeholder',
@@ -248,7 +248,7 @@ export const GalleryDatabase = [
   },
   {
     id: uuidv4(),
-    className: 'tall',
+    className: 'tall wide',
     img: galleryPicture4,
     title: 'Picture Title',
     caption: 'Description placeholder',
@@ -256,7 +256,7 @@ export const GalleryDatabase = [
   },
   {
     id: uuidv4(),
-    className: 'tall',
+    className: '',
     img: galleryPicture3,
     title: 'Picture Title',
     caption: 'Description placeholder',
@@ -264,7 +264,7 @@ export const GalleryDatabase = [
   },
   {
     id: uuidv4(),
-    className: 'square',
+    className: 'tall wide',
     img: galleryPicture5,
     title: 'Picture Title',
     caption: 'Description placeholder',
@@ -280,7 +280,7 @@ export const GalleryDatabase = [
   },
   {
     id: uuidv4(),
-    className: 'square',
+    className: '',
     img: galleryPicture5,
     title: 'Picture Title',
     caption: 'Description placeholder',
@@ -296,7 +296,7 @@ export const GalleryDatabase = [
   },
   {
     id: uuidv4(),
-    className: 'square',
+    className: 'tall',
     img: galleryPicture5,
     title: 'Picture Title',
     caption: 'Description placeholder',
@@ -304,7 +304,7 @@ export const GalleryDatabase = [
   },
   {
     id: uuidv4(),
-    className: 'square',
+    className: '',
     img: galleryPicture5,
     title: 'Picture Title',
     caption: 'Description placeholder',

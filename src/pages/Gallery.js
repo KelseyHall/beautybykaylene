@@ -4,14 +4,7 @@ import MasonryGallery from '../components/GalleryPage/DefaultGallery';
 // import GetintouchForm from '../components/GetInTouchForm';
 
 const galleryPage = () => {
-  return (
-    <div>
-      <div className="gallery-Default">
-        <MasonryGallery />
-        {/*<InstagramFeed />*/}
-      </div>
-    </div>
-  );
+  return <MasonryGallery />;
 };
 
 export default galleryPage;
