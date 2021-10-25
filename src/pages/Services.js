@@ -16,16 +16,17 @@ const servicesJumpToNav = [
   },
   {
     id: 2,
+    img: lashBrowIcon,
+    altText: 'lashes and brows',
+    title: 'lashes & brows',
+  },
+  {
+    id: 3,
     img: waxingIcon,
     altText: 'waxing',
     title: 'waxing',
   },
-  {
-    id: 3,
-    img: lashBrowIcon,
-    altText: 'lash and brows',
-    title: 'lash & brows',
-  },
+
   {
     id: 4,
     img: massageIcon,

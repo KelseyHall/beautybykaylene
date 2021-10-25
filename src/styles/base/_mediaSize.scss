@@ -45,9 +45,6 @@
       top: 0;
     }
     .services-pricing {
-      p {
-        font-size: $font-pricing;
-      }
       z-index: 1;
     }
     .service-top-col-2,
@@ -155,7 +152,7 @@
     img {
       width: 95% !important;
     }
-    p {
+    .servicesBlurb {
       text-align: justify;
     }
     .services-sub {
@@ -167,12 +164,6 @@
     }
     .stagger-bg {
       background: $purple-light;
-    }
-    .service-bottom-col {
-      color: $grey;
-    }
-    .service-bottom-col-2 {
-      color: $dark-grey;
     }
 
     .service-top-col,

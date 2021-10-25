@@ -24,10 +24,10 @@ const sortbyNav = [
   },
   {
     id: 3,
-    category: 'lash & brow',
+    category: 'lashes & brows',
     img: LashBrowIcon,
-    altText: 'lash-brow',
-    title: 'lash & brow',
+    altText: 'lashes-brows',
+    title: 'lashes & brows',
   },
   {
     id: 4,

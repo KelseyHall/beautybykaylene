@@ -7,24 +7,66 @@
   img {
     padding: 0 20px;
   }
+
+  .h2-title {
+    text-align: left;
+  }
+}
+.services-about-content {
+  .content {
+    display: inline-block;
+    padding: 60px 0;
+
+    .services-Img {
+      float: left;
+      width: 50%;
+      margin: 5px;
+    }
+  }
+}
+.services-pricing {
+  padding: 15px 0;
   .services-sub {
     float: left;
     width: 50%;
     padding: 10px;
+    list-style: none;
     li {
+      padding: 10px 0;
+    }
+    p {
+      margin: 0;
+    }
+    .service-namePrice {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+    }
+
+    .serviceDescription {
+      padding-top: 10px;
     }
   }
   .services-sub:nth-child(odd) {
     clear: left;
   }
-  .h2-title {
-    text-align: left;
-    padding: 0 20px;
-  }
-  .h3-title {
-    padding: 20px;
+  .content {
+    .price,
+    .serviceName {
+      font-size: $font-pricing !important;
+    }
+
+    .time {
+      padding-left: 10px;
+      font-size: $font-size-md;
+      white-space: nowrap;
+    }
+
+    .h3-title {
+      padding: 0 20px 10px;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
   }
 }
 .services-floating-nav {
@@ -46,86 +88,45 @@
     width: 30px;
   }
 }
-.jump-to-service-wrapper {
-  color: $dark-grey;
-}
-
-.services-about-content {
-  .content {
-    display: inline-block;
-    padding: 60px 0;
-
-    .services-Img {
-      float: left;
-      width: 50%;
-      margin: 5px;
-    }
-  }
-}
-
+.service-top-col,
 .service-bottom-col {
-  background: $purple-light;
   color: $dark-grey;
   text-align: left;
   position: relative;
+}
+.service-bottom-col {
+  background: $purple-light;
 }
 
 .service-top-col {
   background: $violet-light;
-  color: $grey;
-  text-align: left;
-  position: relative;
 }
 .service-bottom-col-2 {
   background: $violet-light;
-  color: $grey;
+  color: $dark-grey;
   position: relative;
 }
 .service-top-col-2 {
   background: $purple-light;
   color: $dark-grey;
 }
-
-.stagger-bg {
-  background: $purple-light;
+.stagger-bg,
+.stagger-bg-2 {
   height: 100%;
   position: relative;
   z-index: -5;
+}
+.stagger-bg {
+  background: $purple-light;
 }
 .stagger-bg-2 {
   background: $violet-light;
-  position: relative;
-  z-index: -5;
-  height: 100%;
 }
-.services-pricing {
-  padding: 45px 0;
-  .content {
-    p {
-      font-size: $font-pricing !important;
-    }
-    // color: $dark-grey;
-    .h2-title {
-      text-align: left;
-      padding: 20px;
-    }
-    .services-prices {
-      padding: 20px;
-    }
 
-    ul {
-      list-style: none;
-      padding-left: 0;
-      p {
-        display: inline-block;
-        margin: 0;
-      }
-    }
-  }
-}
 .jump-to-service-wrapper {
   @extend %pageCenter;
   padding: 30px 0;
+  color: $dark-grey;
   .jump-to-service {
     display: flex;
     justify-content: space-evenly;
