@@ -61,7 +61,12 @@
   background: $purple-light;
   padding: 65px 20px 20px;
   display: flex;
-
+  .beforeYouBookText {
+    text-align: center;
+    li {
+      list-style-type: none;
+    }
+  }
   .contactUs-content {
     text-align: justify;
     p {

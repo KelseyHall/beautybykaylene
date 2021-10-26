@@ -7,7 +7,7 @@ const DisplayServicesBlurb = () =>
   serviceBlurb.map(({ index, number, service, img, title, blurb }) => (
     <div key={index} className={`services-item-` + number}>
       <a href={`/services/#anchor-${service}`}>
-        <img src={img} alt={title + `-icon`} />
+        {/* <img src={img} alt={title + `-icon`} /> */}
         <h3 className="h3-title primary">{title}</h3>
         <p>{blurb}</p>
       </a>

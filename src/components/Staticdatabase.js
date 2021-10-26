@@ -34,17 +34,15 @@ export const serviceBlurb = [
     service: 'service1',
     img: nails,
     title: 'nails',
-    blurb:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elementum elit nisl elementum ut nulla. Pellentesque morbi eu, vulputate vulputate nunc, tempus.',
+    blurb: `It's more then just a polish - it's self-care!`,
   },
   {
     index: uuidv4(),
     number: 2,
     service: 'service2',
     img: lashBrow,
-    title: 'lashes and brows',
-    blurb:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elementum elit nisl elementum ut nulla. Pellentesque morbi eu, vulputate vulputate nunc, tempus.',
+    title: 'lashes & brows',
+    blurb: `Get ready for low-maintenance mornings.`,
   },
   {
     index: uuidv4(),
@@ -52,8 +50,7 @@ export const serviceBlurb = [
     service: 'service3',
     img: waxing,
     title: 'waxing',
-    blurb:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elementum elit nisl elementum ut nulla. Pellentesque morbi eu, vulputate vulputate nunc, tempus.',
+    blurb: `You want it waxed, I've got you covered.`,
   },
 
   {
@@ -62,8 +59,7 @@ export const serviceBlurb = [
     service: 'service4',
     img: massages,
     title: 'massages',
-    blurb:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elementum elit nisl elementum ut nulla. Pellentesque morbi eu, vulputate vulputate nunc, tempus.',
+    blurb: `Trust me. You need me to knead you!`,
   },
 ];
 
@@ -94,28 +90,28 @@ export const ServicesDescriptions = [
             serviceName: 'mini mani',
             price: 35,
             time: '1h',
-            description: `includes nail trim and file, cuticle push & gel polish`,
+            description: `hand soak, nail trim & file, cuticle care and finishing with a relaxing hand & arm massage`,
           },
           {
             id: uuidv4(),
             serviceName: 'standard mani',
             price: 45,
             time: '1h 30min',
-            description: `includes nail trim and file, cuticle care, gel polish, finishing with a relaxing hand and arm massage.`,
+            description: `nail trim & file, cuticle care, gel polish, finishing with a relaxing hand & arm massage`,
           },
           {
             id: uuidv4(),
             serviceName: 'spa mani',
             price: 60,
             time: '2h',
-            description: `includes all the standard care plus a paraffin treatment, finishing off with a relaxing hand and arm massage.`,
+            description: `the standard care plus a paraffin treatment, finishing with a relaxing hand & arm massage`,
           },
           {
             id: uuidv4(),
             serviceName: 'sculpted mani',
             price: '50+',
             time: '2h',
-            description: `includes the mini mani care plus a hard gel overlay on your natural nails`,
+            description: `the mini mani care plus a hard gel overlay on your natural nails`,
           },
         ],
       },
@@ -127,26 +123,27 @@ export const ServicesDescriptions = [
             serviceName: 'standard pedi',
             price: 50,
             time: '1h 30min',
-            description: `nail trim and file, cuticle and callus work, gel polish finished off with a relaxing foot and leg massage`,
+            description: `nail trim & file, cuticle & callus work, gel polish, finishing with a relaxing foot & leg massage`,
           },
           {
             id: uuidv4(),
             serviceName: 'spa pedi',
             price: 65,
             time: '2h',
-            description: `includes all the standard care, plus choice of paraffin treatment or sweet almond oil & dead sea salt scrub`,
+            description: `the standard care, plus choice of paraffin treatment or sweet almond oil & dead sea salt scrub, finishing with a relaxing foot & leg massage`,
           },
           {
             id: uuidv4(),
             serviceName: 'deluxe pedi',
             price: 75,
             time: '2h 30min',
-            description: `includes all the standard care, a sweet almond oil & dead sea salt scrub and a relaxing paraffin treatment`,
+            description: `the standard care, a sweet almond oil & dead sea salt scrub & a relaxing paraffin treatment, finishing with a relaxing foot & leg massage`,
           },
         ],
       },
       {
-        title: 'extras',
+        title: 'add ons',
+
         details: [
           {
             id: uuidv4(),
@@ -178,10 +175,30 @@ export const ServicesDescriptions = [
           },
           {
             id: uuidv4(),
-            serviceName: 'gel polish change',
+            serviceName: 'regular polish change',
             price: 30,
-            time: '1h 30min',
-            description: `for clients who have had a mani or pedi within 2 weeks. * excludes the mini mani`,
+            time: '30min',
+            description: `for clients who have had a mani or pedi within 2 weeks done by beauty by Kaylene. * excludes gel polish`,
+          },
+        ],
+      },
+      {
+        title: 'for Guys',
+
+        details: [
+          {
+            id: uuidv4(),
+            serviceName: 'mani',
+            price: '',
+            time: '',
+            description: '',
+          },
+          {
+            id: uuidv4(),
+            serviceName: 'pedi',
+            price: '',
+            time: '',
+            description: '',
           },
         ],
       },
@@ -279,53 +296,6 @@ export const ServicesDescriptions = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecteturpulvinar viverra eu sem maecenas leo. Ut donec commodo posuere acat. Massa adipiscing ac enim eget faucibus justo, ut. Felis luctusarcu, duis purus. Eget turpis sit proin ullamcorper. Ut morbi nequeat sed neque viverra sit dui. Lorem ipsum dolor sit amet,consectetur adipiscing elit. Consectetur pulvinar viverra eu semmaecenas leo. Ut donec commodo posuere ac at. Massa adipiscing acenim eget faucibus justo, ut. Felis luctus arcu, duis purus.',
     serviceDetails: [
       {
-        title: 'body',
-        details: [
-          {
-            id: uuidv4(),
-            serviceName: 'lower back',
-            price: 20,
-            time: '45min',
-            description: '',
-          },
-          {
-            id: uuidv4(),
-            serviceName: 'full back',
-            price: 55,
-            time: '1h',
-            description: '',
-          },
-          {
-            id: uuidv4(),
-            serviceName: 'glutes',
-            price: 30,
-            time: '45min',
-            description: '',
-          },
-          {
-            id: uuidv4(),
-            serviceName: 'stomach',
-            price: 40,
-            time: '1h',
-            description: '',
-          },
-          {
-            id: uuidv4(),
-            serviceName: 'lower back & glutes',
-            price: 40,
-            time: '1h 30min',
-            description: '',
-          },
-          {
-            id: uuidv4(),
-            serviceName: 'full back & glutes',
-            price: 75,
-            time: '1h 45min',
-            description: '',
-          },
-        ],
-      },
-      {
         title: 'kitty',
         details: [
           {
@@ -351,7 +321,7 @@ export const ServicesDescriptions = [
           },
           {
             id: uuidv4(),
-            serviceName: 'first time brazilian',
+            serviceName: 'brazilian',
             price: 65,
             time: '1h 45min',
             description:
@@ -362,7 +332,7 @@ export const ServicesDescriptions = [
             serviceName: 'upkeep brazilian',
             price: 55,
             time: '1h 30min',
-            description: '',
+            description: 'for my regular brazilian getters',
           },
         ],
       },
@@ -427,6 +397,7 @@ export const ServicesDescriptions = [
           },
         ],
       },
+
       {
         title: 'legs',
         details: [
@@ -435,7 +406,7 @@ export const ServicesDescriptions = [
             serviceName: 'feet & toes',
             price: 20,
             time: '15min',
-            description: '',
+            description: 'included free with leg wax or pedi when requested',
           },
           {
             id: uuidv4(),
@@ -463,6 +434,53 @@ export const ServicesDescriptions = [
             serviceName: 'full leg & bikini line',
             price: 85,
             time: '2h',
+            description: '',
+          },
+        ],
+      },
+      {
+        title: 'body',
+        details: [
+          {
+            id: uuidv4(),
+            serviceName: 'lower back',
+            price: 20,
+            time: '45min',
+            description: '',
+          },
+          {
+            id: uuidv4(),
+            serviceName: 'full back',
+            price: 55,
+            time: '1h',
+            description: '',
+          },
+          {
+            id: uuidv4(),
+            serviceName: 'glutes',
+            price: 30,
+            time: '45min',
+            description: '',
+          },
+          {
+            id: uuidv4(),
+            serviceName: 'stomach',
+            price: 40,
+            time: '1h',
+            description: '',
+          },
+          {
+            id: uuidv4(),
+            serviceName: 'lower back & glutes',
+            price: 40,
+            time: '1h 30min',
+            description: '',
+          },
+          {
+            id: uuidv4(),
+            serviceName: 'full back & glutes',
+            price: 75,
+            time: '1h 45min',
             description: '',
           },
         ],
@@ -614,27 +632,27 @@ export const ServicesDescriptions = [
         ],
       },
       {
-        title: 'hot stone',
+        title: 'add ons',
         details: [
           {
             id: uuidv4(),
-            serviceName: 'neck, shoulder & back',
-            price: 55,
-            time: '30min',
+            serviceName: 'hot stones',
+            price: 15,
+            time: '15min',
             description: '',
           },
           {
             id: uuidv4(),
-            serviceName: 'neck, shoulder & back',
-            price: 75,
-            time: '45min',
+            serviceName: 'dry brush',
+            price: 20,
+            time: '20min',
             description: '',
           },
           {
             id: uuidv4(),
-            serviceName: 'full body',
-            price: 90,
-            time: '60min',
+            serviceName: 'aromatherapy',
+            price: 10,
+            time: '',
             description: '',
           },
         ],

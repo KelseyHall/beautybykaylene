@@ -8,19 +8,14 @@ const AboutUsContent = () => {
         <hr className="homeUnderline" />
       </h1>
       <div className="about-us-selfie">
-        <img src={AboutUsImg} alt="headshot of Kaylene" />
+        {/*<img src={AboutUsImg} alt="headshot of Kaylene" />*/}
       </div>
 
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque mattis
-        faucibus tortor eu. Proin imperdiet sed nulla convallis consectetur
-        tristique ut non nisl. Consequat, morbi suscipit venenatis vel urna
-        tristique montes. Eu tristique sed congue venenatis arcu lacus, porta
-        leo ac. Vel tempus venenatis leo, cursus tristique et ut. Aliquam tellus
-        luctus malesuada at dictum suspendisse tristique mauris eget. Elit at
-        placerat nulla eget rutrum enim elementum risus diam. Non massa eu nunc
-        nibh metus. Consectetur nullam at auctor malesuada turpis libero
-        commodo. Ut dui, feugiat in massa sit amet, feugiat.
+        Here at Beauty by Kaylene, we pride ourselves in helping beautiful
+        people see how beautiful they truly are. <br /> When booking you can
+        guarantee that you will receive the most detailed self-care spa services
+        (filled with so much love).
       </p>
     </div>
   );

@@ -4,7 +4,7 @@ const ContactInfo = () => {
   return (
     <div className="contact-info-footer">
       <div className="info-wrapper">
-        <p className="primary">call or text</p>
+        <p className="primary">text</p>
         <p>
           <a className="secondary" href="tel:905-644-8880">
             905.644.8880

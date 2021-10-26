@@ -32,9 +32,9 @@
     background-position-x: -12px;
     background-position-y: -8px;
     padding: 40px 0 0 0;
-    background-size: 265px;
+    background-size: 215px;
 
-    width: 300px;
+    width: 207px;
 
     img {
       margin-left: 112px;
@@ -44,7 +44,7 @@
     }
   }
   p {
-    text-align: right;
+    text-align: center;
     padding: 30px;
   }
 }
@@ -90,6 +90,9 @@
   }
   &-card {
     @extend %pageCenter;
+    a {
+      text-decoration: none;
+    }
   }
   &-item-1,
   &-item-2,

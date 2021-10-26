@@ -11,7 +11,7 @@ const Footer = () => {
         <ContactInfo />
       </div>
       <p className="copyright">
-        © copyright 2021 | <a href="#privacyPolicy">privacy policy</a>
+        © copyright 2021 | <a href="#privacyPolicy">policies</a>
       </p>
     </div>
   );
