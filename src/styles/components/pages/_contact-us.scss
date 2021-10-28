@@ -63,6 +63,11 @@
   display: flex;
   .beforeYouBookText {
     text-align: center;
+  }
+  .beforeYouBookList {
+    text-align: center;
+    font-size: $font-size-md;
+    color: $dark-grey;
     li {
       list-style-type: none;
     }

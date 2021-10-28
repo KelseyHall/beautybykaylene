@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const ContactUsBlurb = () => {
   return (
     <div className="contactUs-content">
@@ -7,19 +7,18 @@ const ContactUsBlurb = () => {
       <hr />
       <p className="beforeYouBookText">
         Before you book please read our{' '}
-        <a href="#" className="secondary">
+        <Link to="/policies" className="secondary">
           policies
-        </a>
+        </Link>
       </p>
-      <p className="beforeYouBookText">
-        When booking please include:
-        <ul>
-          <li>your full name</li>
-          <li>location for your service</li>
-          <li>services interested in</li>
-          <li>a few dates & times that work for you</li>
-        </ul>
-      </p>
+      <p className="beforeYouBookText">When booking please include:</p>
+      <ul className="beforeYouBookList">
+        <li>your full name</li>
+        <li>location for your service</li>
+        <li>services interested in</li>
+        <li>a few dates & times that work for you</li>
+      </ul>
+
       <h1 className="h1-title primary">book appointment</h1>
       <h3 className="h3-title">
         <a className="secondary" href="tel:905-644-8880">

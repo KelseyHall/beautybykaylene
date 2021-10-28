@@ -2,7 +2,7 @@ import React from 'react';
 
 import SimpleLogo from '../images/simpleKayleneTitle.png';
 import ContactInfo from './ContactInfo';
-
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <div>
@@ -11,7 +11,7 @@ const Footer = () => {
         <ContactInfo />
       </div>
       <p className="copyright">
-        © copyright 2021 | <a href="#privacyPolicy">policies</a>
+        © copyright 2021 | <Link to="/policies">policies</Link>
       </p>
     </div>
   );

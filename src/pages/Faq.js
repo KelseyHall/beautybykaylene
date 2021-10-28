@@ -1,49 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import NailIcon from '../images/nails.png';
-import WaxingIcon from '../images/waxing.png';
-import LashBrowIcon from '../images/lash-brow.png';
-import MassageIcon from '../images/massage.png';
-import GeneralIcon from '../images/general.png';
+
 // import GetintouchForm from '../components/GetInTouchForm';
 
-import { faqQuestions } from '../components/Staticdatabase';
-const sortbyNav = [
-  {
-    id: 1,
-    category: 'nails',
-    img: NailIcon,
-    altText: 'nails',
-    title: 'nails',
-  },
-  {
-    id: 2,
-    category: 'waxing',
-    img: WaxingIcon,
-    altText: 'waxing',
-    title: 'waxing',
-  },
-  {
-    id: 3,
-    category: 'lashes & brows',
-    img: LashBrowIcon,
-    altText: 'lashes-brows',
-    title: 'lashes & brows',
-  },
-  {
-    id: 4,
-    category: 'massage',
-    img: MassageIcon,
-    altText: 'massage',
-    title: 'massage',
-  },
-  {
-    id: 5,
-    category: 'general',
-    img: GeneralIcon,
-    altText: 'general',
-    title: 'general',
-  },
-];
+import { faqQuestions, faqSortbyNav } from '../components/Staticdatabase';
 
 const FaqPage = () => {
   const [categorySearch, setCategorySearch] = useState('');
@@ -67,7 +26,7 @@ const FaqPage = () => {
   };
 
   const SortByService = () =>
-    sortbyNav.map(({ id, category, img, altText, title }) => {
+    faqSortbyNav.map(({ id, category, img, altText, title }) => {
       return (
         <li key={id}>
           <button

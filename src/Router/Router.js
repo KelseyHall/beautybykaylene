@@ -8,6 +8,7 @@ import FaqPage from '../pages/Faq';
 import FormPage from '../pages/FormPage';
 import PageNotFound from '../pages/404';
 import { Route, Switch } from 'react-router-dom';
+import Policies from '../components/Policies/policesPage';
 
 const NavRouter = () => (
   <Switch>
@@ -17,6 +18,7 @@ const NavRouter = () => (
     <Route path="/ContactUs" component={ContactUsPage} />
     <Route path="/faq" component={FaqPage} />
     <Route path="/form" component={FormPage} />
+    <Route path="/policies" component={Policies} />
     <Route path="*" component={PageNotFound} />
   </Switch>
 );

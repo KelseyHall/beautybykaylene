@@ -2,7 +2,7 @@ import React from 'react';
 import AreasOfService from '../components/ContactUsPage/AreasOfService';
 import ContactUsBlurb from '../components/ContactUsPage/ContactsUsBlurb';
 // import GetintouchForm from '../components/GetInTouchForm';
-
+import { Link } from 'react-router-dom';
 const contactUsPage = () => {
   return (
     <div className="main-container">
@@ -12,21 +12,10 @@ const contactUsPage = () => {
           <h3 className=" h3-title primary">have questions? </h3>
           <p> Check out our FAQ page to see if we already answered! </p>
 
-          <a className="button" href={'/faq'}>
+          <Link className="button" to={'/faq'}>
             FAQ page
-          </a>
+          </Link>
         </div>
-
-        {/*
-        <div className="contactUs-column-1">
-          <ContactUsBlurb />
-        </div>
-        <div className="contactUs-column-2">
-            <div className="get-in-touch-form">
-            <GetintouchForm />
-        </div>
-        </div>
-        */}
       </div>
       <div className="client-forms">
         <p className="secondary">

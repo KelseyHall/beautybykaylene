@@ -10,17 +10,17 @@ import './styles/style.scss';
 function App() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
-      <div className="App">
-        <BrowserRouter>
+      <BrowserRouter>
+        <div className="App">
           <header className="App-header">
             <HeaderNav />
           </header>
           <NavRouter />
-        </BrowserRouter>
-      </div>
-      <footer style={{ marginTop: 'auto' }}>
-        <Footer />
-      </footer>
+        </div>
+        <footer style={{ marginTop: 'auto' }}>
+          <Footer />
+        </footer>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutUsImg from '../../images/temp-coverphoto.jpg';
+// import AboutUsImg from '../../images/temp-coverphoto.jpg';
 const AboutUsContent = () => {
   return (
     <div className="about-us">

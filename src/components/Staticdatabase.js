@@ -15,6 +15,12 @@ import picture3 from '../images/horizonal-img-1.jpg';
 import picture4 from '../images/horizonal-img-2.jpg';
 import picture5 from '../images/vertical-img-1.jpg';
 
+//services Nav
+import nailIcon from '../images/nails.png';
+import waxingIcon from '../images/waxing.png';
+import lashBrowIcon from '../images/lash-brow.png';
+import massageIcon from '../images/massage.png';
+
 //servicesPagePlaceHolder
 import placeholder from '../images/services-placeholder.jpg';
 
@@ -26,6 +32,14 @@ import galleryPicture4 from '../images/vertical-img-2.jpg';
 import galleryPicture5 from '../images/square-img.jpg';
 
 import placeholderPdf from '../pdfs/pdfplaceholder.pdf';
+
+//Faq Nav Icons
+import NailIcon from '../images/nails.png';
+import WaxingIcon from '../images/waxing.png';
+import LashBrowIcon from '../images/lash-brow.png';
+import MassageIcon from '../images/massage.png';
+import GeneralIcon from '../images/general.png';
+
 //HomePage services
 export const serviceBlurb = [
   {
@@ -70,6 +84,39 @@ export const CarouselSlides = [
   { key: uuidv4(), content: <img src={picture3} alt="3" /> },
   { key: uuidv4(), content: <img src={picture4} alt="4" /> },
   { key: uuidv4(), content: <img src={picture5} alt="5" /> },
+];
+//Services sorting Nav
+
+export const servicesNav = [
+  {
+    id: 1,
+    category: 'nails',
+    img: nailIcon,
+    altText: 'nails',
+    title: 'nails',
+  },
+  {
+    id: 2,
+    category: 'lashes & brows',
+    img: lashBrowIcon,
+    altText: 'lashes and brows',
+    title: 'lashes & brows',
+  },
+  {
+    id: 3,
+    category: 'waxing',
+    img: waxingIcon,
+    altText: 'waxing',
+    title: 'waxing',
+  },
+
+  {
+    id: 4,
+    category: 'massage',
+    img: massageIcon,
+    altText: 'massage',
+    title: 'massage',
+  },
 ];
 
 //Services content
@@ -741,6 +788,45 @@ export const GalleryDatabase = [
     title: 'Picture Title',
     caption: 'Description placeholder',
     altText: 'picture',
+  },
+];
+
+//FAQ sort Nav
+export const faqSortbyNav = [
+  {
+    id: 1,
+    category: 'nails',
+    img: NailIcon,
+    altText: 'nails',
+    title: 'nails',
+  },
+  {
+    id: 2,
+    category: 'waxing',
+    img: WaxingIcon,
+    altText: 'waxing',
+    title: 'waxing',
+  },
+  {
+    id: 3,
+    category: 'lashes & brows',
+    img: LashBrowIcon,
+    altText: 'lashes-brows',
+    title: 'lashes & brows',
+  },
+  {
+    id: 4,
+    category: 'massage',
+    img: MassageIcon,
+    altText: 'massage',
+    title: 'massage',
+  },
+  {
+    id: 5,
+    category: 'general',
+    img: GeneralIcon,
+    altText: 'general',
+    title: 'general',
   },
 ];
 

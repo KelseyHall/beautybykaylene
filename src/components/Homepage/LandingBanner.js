@@ -1,5 +1,6 @@
 import React from 'react';
 import BannerImg from '../../images/landingBanner.jpg';
+import { Link } from 'react-router-dom';
 const LandingBanner = () => {
   return (
     <div className="home-banner">
@@ -12,9 +13,9 @@ const LandingBanner = () => {
           too!
         </p>
         <p>Professional esthetics services delivered to your front door!</p>
-        <a href="/contactus" className="button">
+        <Link to="/contactus" className="button">
           book now
-        </a>
+        </Link>
       </div>
       <img src={BannerImg} alt="banner-img" />
     </div>
