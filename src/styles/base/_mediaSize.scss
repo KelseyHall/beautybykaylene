@@ -86,6 +86,34 @@
       }
     }
   }
+  //Services Page
+  .services-jump-to-service-wrapper {
+    .sort-by-service {
+      ul {
+        li {
+          img {
+            width: 80px !important;
+          }
+          p {
+            font-size: $font-size-md !important;
+          }
+        }
+      }
+    }
+  }
+  //FAQ PAGE
+  .faq-sort-by-service {
+    ul {
+      li {
+        img {
+          width: 80px !important;
+        }
+        p {
+          font-size: $font-size-md !important;
+        }
+      }
+    }
+  }
   .Faq-statement {
     margin: auto 20px !important;
     padding: 0 !important;
@@ -111,25 +139,27 @@
     }
   }
   .about-us {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background: $violet-light;
     width: 100%;
     padding: 0 2%;
     margin: 40px auto;
+    &-blurb-content {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+    }
     p {
       text-align: justify !important;
       padding: 10px 2% !important;
     }
   }
-  .testimonials {
-    background-size: 70px !important;
-    padding-top: 60px !important;
-    p {
-      font-size: $font-size-sm !important;
-    }
-  }
+  // .testimonials {
+  //   background-size: 70px !important;
+  //   padding-top: 60px !important;
+  //   p {
+  //     font-size: $font-size-sm !important;
+  //   }
+  // }
   .gallery {
     padding: 20px 0 40px !important;
     .carousel-gallery {
@@ -181,6 +211,7 @@
       text-align: center !important;
     }
   }
+
   //contact page
   .areas-of-service {
     p {
@@ -199,20 +230,6 @@
     }
     &-column-2 {
       display: none;
-    }
-  }
-
-  //FAQ PAGE
-  .sort-by-service {
-    ul {
-      li {
-        img {
-          width: 80px !important;
-        }
-        p {
-          font-size: $font-size-md !important;
-        }
-      }
     }
   }
 }
@@ -277,36 +294,36 @@
   .homeUnderline {
     width: 80%;
   }
-  .testimonials-wrapper {
-    .h1-title {
-      margin-bottom: 30px;
-    }
-    .testimonials {
-      width: 90% !important;
-      background-size: 50px !important;
-      p {
-        width: 80% !important;
-      }
-    }
-  }
-  .jump-to-service-wrapper {
-    width: 95% !important;
+  // .testimonials-wrapper {
+  //   .h1-title {
+  //     margin-bottom: 30px;
+  //   }
+  //   .testimonials {
+  //     width: 90% !important;
+  //     background-size: 50px !important;
+  //     p {
+  //       width: 80% !important;
+  //     }
+  //   }
+  // }
+  // .jump-to-service-wrapper {
+  //   width: 95% !important;
 
-    .jump-to-service {
-      .nav-item-1 {
-        width: 50%;
-      }
-      a {
-        padding: 10px;
-      }
-      p {
-        font-size: $font-size-xs;
-      }
-      img {
-        width: 55px !important;
-      }
-    }
-  }
+  //   .jump-to-service {
+  //     .nav-item-1 {
+  //       width: 50%;
+  //     }
+  //     a {
+  //       padding: 10px;
+  //     }
+  //     p {
+  //       font-size: $font-size-xs;
+  //     }
+  //     img {
+  //       width: 55px !important;
+  //     }
+  //   }
+  // }
   .services-floating-nav {
     ul {
       width: 102vw !important;
@@ -331,41 +348,39 @@
       border-bottom: 1px solid $dirty-gold-faded !important;
       border-left: none !important;
       border-right: none !important;
-      img {
-        width: 47% !important;
-      }
+
       p {
-        width: 47%;
+        // width: 47%;
         font-size: $font-size-xs !important;
       }
-      .h3-title {
-        width: 47%;
-      }
+      // .h3-title {
+      //   width: 47%;
+      // }
     }
-
-    &-item-1,
-    &-item-3 {
-      .h3-title,
-      p {
-        float: right;
-        text-align: left !important;
-      }
-      img {
-        float: left;
-        align-items: center;
-      }
-    }
-    &-item-2,
-    &-item-4 {
-      .h3-title,
-      p {
-        float: left;
-        text-align: right !important;
-      }
-      img {
-        float: right;
-      }
-    }
+    //OLD one with Icon Photo
+    // &-item-1,
+    // &-item-3 {
+    //   .h3-title,
+    //   p {
+    //     float: right;
+    //     text-align: left !important;
+    //   }
+    //   // img {
+    //   //   float: left;
+    //   //   align-items: center;
+    //   // }
+    // }
+    // &-item-2,
+    // &-item-4 {
+    //   .h3-title,
+    //   p {
+    //     float: left;
+    //     text-align: right !important;
+    //   }
+    //   // img {
+    //   //   float: right;
+    //   // }
+    // }
   }
   .services {
     padding: 30px 0 !important;
@@ -387,7 +402,24 @@
       flex: 1 1;
     }
   }
-
+  .services-jump-to-service-wrapper {
+    .sort-by-service {
+      ul {
+        justify-content: space-evenly !important;
+        li {
+          img {
+            width: 35px;
+          }
+          p {
+            font-size: $font-size-md !important;
+          }
+        }
+      }
+    }
+  }
+  .services-about-content .content {
+    padding: 10px 0 !important;
+  }
   .services-content {
     width: 100%;
     .stagger-bg,
@@ -407,32 +439,33 @@
       border-bottom: 50px solid $violet-light;
     }
   }
+}
 
-  //contact us page
-  .areas-of-service {
-    .commuting-chart {
-      flex-direction: column;
-      align-items: flex-start !important;
-    }
-    iframe {
-      height: 300px !important;
-    }
-  }
-  .contactUs {
+//contact us page
+.areas-of-service {
+  .commuting-chart {
     flex-direction: column;
+    align-items: flex-start !important;
   }
+  iframe {
+    height: 300px !important;
+  }
+}
+.contactUs {
+  flex-direction: column;
+}
 
-  //FAQ PAGE
-  .sort-by-service {
-    ul {
-      justify-content: space-evenly !important;
-      li {
-        img {
-          width: 70px;
-        }
-        p {
-          font-size: $font-size-md !important;
-        }
+//FAQ PAGE
+
+.faq-sort-by-service {
+  ul {
+    justify-content: space-evenly !important;
+    li {
+      img {
+        width: 35px;
+      }
+      p {
+        font-size: $font-size-md !important;
       }
     }
   }

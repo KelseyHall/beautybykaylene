@@ -25,27 +25,26 @@
 }
 .about-us {
   @extend %pageCenter;
-
-  .about-us-selfie {
-    background-image: url('../../../images/plantbackground.png');
-    background-repeat: no-repeat;
-    background-position-x: -12px;
-    background-position-y: -8px;
-    padding: 40px 0 0 0;
-    background-size: 215px;
-
-    width: 207px;
-
-    img {
-      margin-left: 112px;
-      border-radius: 50%;
+  &-blurb-content {
+    display: flex;
+    .about-us-img {
+      // margin-left: 112px;
+      // border-radius: 50%;
       width: 200px;
       height: 200px;
     }
-  }
-  p {
-    text-align: center;
-    padding: 30px;
+    &-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .about-us-button {
+        padding: 10px 20px;
+      }
+      p {
+        text-align: center;
+        padding: 30px;
+      }
+    }
   }
 }
 
@@ -107,8 +106,12 @@
       text-align: center;
       font-size: $font-size-md;
     }
-    img {
+    .iconImg {
       width: 150px;
+      height: auto;
+    }
+    .downArrow {
+      width: 20px;
       height: auto;
     }
   }

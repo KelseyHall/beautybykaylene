@@ -2,7 +2,7 @@ import React from 'react';
 
 import BannerImg from '../../images/placeholder-2.jpg';
 import { serviceBlurb } from '../Staticdatabase';
-
+import downArrow from '../../images/downArrow.png';
 const DisplayServicesBlurb = () =>
   serviceBlurb.map(({ index, number, service, img, title, blurb }) => (
     <div key={index} className={`services-item-` + number}>
@@ -10,6 +10,7 @@ const DisplayServicesBlurb = () =>
         {/* <img src={img} alt={title + `-icon`} /> */}
         <h3 className="h3-title primary">{title}</h3>
         <p>{blurb}</p>
+        <img src={downArrow} className="downArrow" alt={downArrow} />
       </a>
     </div>
   ));

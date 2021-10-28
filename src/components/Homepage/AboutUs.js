@@ -1,5 +1,7 @@
 import React from 'react';
-// import AboutUsImg from '../../images/temp-coverphoto.jpg';
+import AboutUsImg from '../../images/plantbackground.png';
+import { Link } from 'react-router-dom';
+
 const AboutUsContent = () => {
   return (
     <div className="about-us">
@@ -7,16 +9,20 @@ const AboutUsContent = () => {
         about us
         <hr className="homeUnderline" />
       </h1>
-      <div className="about-us-selfie">
-        {/*<img src={AboutUsImg} alt="headshot of Kaylene" />*/}
+      <div className="about-us-blurb-content">
+        <img src={AboutUsImg} className="about-us-img" alt="pretty plant" />
+        <div className="about-us-blurb-content-text">
+          <p>
+            Here at Beauty by Kaylene, we pride ourselves in helping beautiful
+            people see how beautiful they truly are. <br /> When booking you can
+            guarantee that you will receive the most detailed self-care spa
+            services (filled with so much love).
+          </p>
+          <Link to="/aboutUs" className="about-us-button button">
+            Find out more about us
+          </Link>
+        </div>
       </div>
-
-      <p>
-        Here at Beauty by Kaylene, we pride ourselves in helping beautiful
-        people see how beautiful they truly are. <br /> When booking you can
-        guarantee that you will receive the most detailed self-care spa services
-        (filled with so much love).
-      </p>
     </div>
   );
 };

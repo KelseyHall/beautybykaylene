@@ -44,7 +44,7 @@ const FaqPage = () => {
     <div className="faq-backdrop">
       <div className="main-container Faq">
         <h2 className="h2-title primary">frequently asked questions</h2>
-        <div className="sort-by-service">
+        <div className="faq-sort-by-service">
           <h3 className="nav-title primary">sort by service</h3>
           <ul>
             <SortByService />

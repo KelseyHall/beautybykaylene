@@ -27,6 +27,7 @@ const Services = () => {
       return (
         <li key={id}>
           <button
+            to={`anchor-service${id}`}
             className="service-links"
             onClick={FilterByCategory(category)}
           >
@@ -39,7 +40,7 @@ const Services = () => {
 
   return (
     <div>
-      <div className="jump-to-service-wrapper">
+      <div className="services-jump-to-service-wrapper">
         <div className="sort-by-service">
           <p className="nav-text primary">sort by service</p>
           <ul>

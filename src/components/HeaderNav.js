@@ -78,7 +78,7 @@ const HeaderNav = () => {
           <li>
             <div className="nav-quick-contact">
               <p>
-                text or call us
+                text
                 <br />
                 <a className="nav-contact" href="tel:905-644-8880">
                   905.644.8880

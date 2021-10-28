@@ -1,6 +1,6 @@
 .services-content {
   @extend %pageCenter;
-  margin-top: 60px;
+  margin-top: 20px;
   margin-bottom: 40px;
   .h2-title,
   p,
@@ -10,6 +10,44 @@
 
   .h2-title {
     text-align: left;
+  }
+}
+.services-jump-to-service-wrapper {
+  @extend %pageCenter;
+  .nav-title {
+    padding: 20px;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    li {
+      text-align: center;
+      p {
+        color: $dark-grey;
+        font-size: $font-nav;
+        margin: 0;
+      }
+    }
+    .service-links {
+      background: none;
+      border: none;
+    }
+  }
+  .view-all-button {
+    background: none;
+    border: none;
+    p {
+      color: $dark-grey;
+      font-size: $font-size-md;
+    }
+  }
+
+  img {
+    width: 115px;
   }
 }
 .services-about-content {
