@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 
 const AboutUsContent = () => {
   return (
-    <div className="about-us">
+    <div className="about-us-homePage">
       <h1 className="h1-title primary">
         about us
         <hr className="homeUnderline" />
       </h1>
-      <div className="about-us-blurb-content">
+      <div className="about-us-homePage-blurb-content">
         <img src={AboutUsImg} className="about-us-img" alt="pretty plant" />
-        <div className="about-us-blurb-content-text">
+        <div className="about-us-homePage-blurb-content-text">
           <p>
             Here at Beauty by Kaylene, we pride ourselves in helping beautiful
             people see how beautiful they truly are. <br /> When booking you can

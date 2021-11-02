@@ -12,6 +12,26 @@
     text-align: left;
   }
 }
+
+// .jump-to-service-wrapper {
+//   @extend %pageCenter;
+//   padding: 30px 0;
+//   color: $dark-grey;
+//   .jump-to-service {
+//     display: flex;
+//     justify-content: space-evenly;
+
+//     img {
+//       width: 127px;
+//     }
+
+//     a {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//     }
+//   }
+// }
 .services-jump-to-service-wrapper {
   @extend %pageCenter;
   .nav-title {
@@ -160,24 +180,4 @@
 }
 .stagger-bg-2 {
   background: $violet-light;
-}
-
-.jump-to-service-wrapper {
-  @extend %pageCenter;
-  padding: 30px 0;
-  color: $dark-grey;
-  .jump-to-service {
-    display: flex;
-    justify-content: space-evenly;
-
-    img {
-      width: 127px;
-    }
-
-    a {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
 }

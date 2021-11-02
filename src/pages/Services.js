@@ -5,6 +5,7 @@ import { Link } from 'react-scroll';
 // import lashBrowIcon from '../images/lash-brow.png';
 // import massageIcon from '../images/massage.png';
 import Services from '../components/ServicesPage/newServicesPage';
+import { ServicesDescriptions } from '../components/Staticdatabase';
 // import GetintouchForm from '../components/GetInTouchForm';
 
 // const servicesJumpToNav = [
@@ -64,7 +65,7 @@ const ServicesPage = () => {
         <div className="jump-to-service"><ServiceJumpToNavDisplay /></div>
       </div>*/}
 
-      <Services />
+      <Services list={ServicesDescriptions} />
 
       <div className="services-floating-nav">
         {/*<ServiceJumpToNavDisplay />*/}

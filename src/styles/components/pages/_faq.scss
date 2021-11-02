@@ -1,4 +1,7 @@
 .Faq {
+  @extend %pageCenter;
+
+  padding: 30px;
   .h2-title {
     text-align: center;
   }
@@ -46,10 +49,4 @@
   img {
     width: 115px;
   }
-}
-.Faq {
-  @extend %pageCenter;
-
-  // width: 1000px;
-  padding: 30px;
 }

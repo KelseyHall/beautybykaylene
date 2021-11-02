@@ -53,9 +53,9 @@
       }
     }
 
-    &__checkbox {
-      display: none;
-    }
+    // &__checkbox {
+    //   display: none;
+    // }
 
     &__menu {
       display: flex;
@@ -93,13 +93,6 @@
     }
   }
 
-  // // Toggle the hamburger menu in mobile view
-  // .hide-item {
-  //   display: none;
-  // }
-  // .show-item {
-  //   display: block;
-  // }
   //Change from menu to close icon on tap
   .close_menu {
     svg.menu {

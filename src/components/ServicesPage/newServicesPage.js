@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { ServicesDescriptions, servicesNav } from '../Staticdatabase';
+import { servicesNav } from '../Staticdatabase';
 
 //to Determine what background class
 const isEven = (n) => {
@@ -8,7 +8,7 @@ const isEven = (n) => {
 };
 const WhichRow = (idx) => (isEven(idx) ? '' : '-2');
 
-const Services = () => {
+const Services = ({ list }) => {
   const [categorySearch, setCategorySearch] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const FilterByCategory = (e) => () => {
@@ -16,7 +16,7 @@ const Services = () => {
   };
 
   useEffect(() => {
-    const results = ServicesDescriptions.filter((item) =>
+    const results = list.filter((item) =>
       item.service.includes(categorySearch)
     );
     setSearchResults(results);
@@ -42,7 +42,7 @@ const Services = () => {
     <div>
       <div className="services-jump-to-service-wrapper">
         <div className="sort-by-service">
-          <p className="nav-text primary">sort by service</p>
+          <h3 className="nav-text primary">sort by service</h3>
           <ul>
             <SortByService />
           </ul>
