@@ -30,8 +30,12 @@ const ContactUsBlurb = () => {
             beautybykaylene@gmail.com
           </a>
         </p>
-        <a href="#fb" className="button online-booking">
-          book with Facebook
+        <a
+          href="https://www.fresha.com/a/beauty-by-kaylene-mobile-spa-port-hope-toronto-rd-u3ztt3oj/booking?menu=true&dppub=true&employeeId=1328692"
+          target="_blank"
+          className="button online-booking"
+        >
+          book online
         </a>
       </div>
       <p className="beforeYouBookText">

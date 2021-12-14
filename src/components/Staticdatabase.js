@@ -391,7 +391,24 @@ export const ServicesDescriptions = [
     linkedinHandle: 'anchor-service3',
     service: 'ladies waxing ',
     image: placeholder,
-    blurb: `Booking every 4-6 weeks is recommended to keep on top of the hair growth cycles and make it the most comfortable experience for you! Facial waxing can be repeated prior to 4 weeks pending personal hair growth. Soft or hard wax available. <p>waxing cycles : - intimates 3-6 weeks - face 2-3 weeks - underarms 2 weeks - body 3-4 weeks</p>`,
+    blurb: (
+      <p>
+        Booking every 4-6 weeks is recommended to keep on top of the hair growth
+        cycles and make it the most comfortable experience for you! Facial
+        waxing can be repeated prior to 4 weeks pending personal hair growth.
+        Soft or hard wax available.
+        <p>
+          waxing cycles :
+          <ul style={{ display: 'flex', flexDirection: 'column' }}>
+            <li>intimates 3-6 weeks</li>
+            <li>face 2-3 weeks</li>
+            <li>underarms 2 weeks</li>
+            <li>body 3-4 weeks</li>
+          </ul>
+        </p>
+      </p>
+    ),
+
     serviceDetails: [
       {
         title: 'intimates',
@@ -422,8 +439,7 @@ export const ServicesDescriptions = [
             serviceName: 'brazilian',
             price: 65,
             time: '1h 45min',
-            description: `everything from front to back! Choose to leave some in the front, just let me know at our appointment! ${'\n'}
-             *If its been over 3 months since your last appointment`,
+            description: `everything from front to back! Choose to leave some in the front, just let me know at our appointment!\n*If its been over 3 months since your last appointment`,
           },
           {
             id: uuidv4(),

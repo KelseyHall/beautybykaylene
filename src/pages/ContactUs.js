@@ -17,14 +17,14 @@ const contactUsPage = () => {
           </Link>
         </div>
       </div>
-      <div className="client-forms">
+      {/* <div className="client-forms">
         <p className="secondary">
           new client? new service? download the required form
         </p>
         <a href="/form" className="button">
           click here!
         </a>
-      </div>
+  </div>*/}
       <AreasOfService />
     </div>
   );
