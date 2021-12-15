@@ -9,11 +9,11 @@ import lashBrow from '../images/lash-brow.png';
 import massages from '../images/massage.png';
 
 //home page carousel
-import picture from '../images/square-img.jpg';
-import picture2 from '../images/vertical-img-2.jpg';
-import picture3 from '../images/horizonal-img-1.jpg';
-import picture4 from '../images/horizonal-img-2.jpg';
-import picture5 from '../images/vertical-img-1.jpg';
+// import picture from '../images/square-img.jpg';
+// import picture2 from '../images/vertical-img-2.jpg';
+// import picture3 from '../images/horizonal-img-1.jpg';
+// import picture4 from '../images/horizonal-img-2.jpg';
+// import picture5 from '../images/vertical-img-1.jpg';
 
 //services Nav
 import nailIcon from '../images/nails.png';
@@ -23,15 +23,24 @@ import massageIcon from '../images/massage.png';
 
 //servicesPagePlaceHolder
 import placeholder from '../images/services-placeholder.jpg';
-import nailservice from '../images/nailblurbphoto.jpg';
+
+//services section photos
 import massageservice from '../images/massageblurbphoto.jpg';
+import nailservice from '../images/nailblurbphoto.jpg';
 
 //galleryPage
-import galleryPicture from '../images/horizonal-img-1.jpg';
-import galleryPicture2 from '../images/horizonal-img-2.jpg';
-import galleryPicture3 from '../images/vertical-img-1.jpg';
-import galleryPicture4 from '../images/vertical-img-2.jpg';
-import galleryPicture5 from '../images/square-img.jpg';
+import galleryPicture1 from '../images/gallery/20211003_145523.jpg';
+import galleryPicture2 from '../images/gallery/20211003_191507.jpg';
+import galleryPicture3 from '../images/gallery/20211003_191547.jpg';
+import galleryPicture4 from '../images/gallery/20211016_145438.jpg';
+import galleryPicture5 from '../images/gallery/20211017_125401.jpg';
+import galleryPicture6 from '../images/gallery/20211104_210319.jpg';
+import galleryPicture7 from '../images/gallery/20211104_210337.jpg';
+import galleryPicture8 from '../images/gallery/20211115_161519.jpg';
+import galleryPicture9 from '../images/gallery/20211130_092216.jpg';
+import galleryPicture10 from '../images/gallery/20211201_121704.jpg';
+import galleryPicture11 from '../images/gallery/20211203_154033.jpg';
+import galleryPicture12 from '../images/gallery/20211204_111132.jpg';
 
 import placeholderPdf from '../pdfs/pdfplaceholder.pdf';
 
@@ -81,11 +90,11 @@ export const serviceBlurb = [
 
 //HomePage carousel
 export const CarouselSlides = [
-  { key: uuidv4(), content: <img src={picture} alt="1" /> },
-  { key: uuidv4(), content: <img src={picture2} alt="2" /> },
-  { key: uuidv4(), content: <img src={picture3} alt="3" /> },
-  { key: uuidv4(), content: <img src={picture4} alt="4" /> },
-  { key: uuidv4(), content: <img src={picture5} alt="5" /> },
+  { key: uuidv4(), content: <img src={galleryPicture1} alt="1" /> },
+  { key: uuidv4(), content: <img src={galleryPicture5} alt="2" /> },
+  { key: uuidv4(), content: <img src={galleryPicture6} alt="3" /> },
+  { key: uuidv4(), content: <img src={galleryPicture9} alt="4" /> },
+  { key: uuidv4(), content: <img src={galleryPicture10} alt="5" /> },
 ];
 //Services sorting Nav
 
@@ -771,83 +780,99 @@ export const ServicesDescriptions = [
 export const GalleryDatabase = [
   {
     id: uuidv4(),
-    className: 'wide',
-    img: galleryPicture,
-    title: 'Picture Title',
-    caption: 'Description placeholder',
-    altText: 'picture1',
+    className: 'tall wide',
+    img: galleryPicture1,
+    title: ' ',
+    caption: ' ',
+    altText: '',
   },
   {
     id: uuidv4(),
-    className: 'tall wide',
+    className: 'tall ',
     img: galleryPicture2,
-    title: 'Picture Title',
-    caption: 'Description placeholder',
-    altText: 'picture2',
-  },
-  {
-    id: uuidv4(),
-    className: 'tall wide',
-    img: galleryPicture4,
-    title: 'Picture Title',
-    caption: 'Description placeholder',
-    altText: 'picture',
-  },
-  {
-    id: uuidv4(),
-    className: '',
-    img: galleryPicture3,
-    title: 'Picture Title',
-    caption: 'Description placeholder',
-    altText: 'picture',
-  },
-  {
-    id: uuidv4(),
-    className: 'tall wide',
-    img: galleryPicture5,
-    title: 'Picture Title',
-    caption: 'Description placeholder',
-    altText: 'picture',
+    title: ' ',
+    caption: ' ',
+    altText: '',
   },
   {
     id: uuidv4(),
     className: 'tall',
-    img: galleryPicture4,
-    title: 'Picture Title',
-    caption: 'Description placeholder',
-    altText: 'picture',
+    img: galleryPicture3,
+    title: ' ',
+    caption: ' ',
+    altText: '',
   },
   {
     id: uuidv4(),
     className: '',
+    img: galleryPicture4,
+    title: ' ',
+    caption: ' ',
+    altText: '',
+  },
+  {
+    id: uuidv4(),
+    className: 'tall wide',
     img: galleryPicture5,
-    title: 'Picture Title',
-    caption: 'Description placeholder',
-    altText: 'picture',
+    title: ' ',
+    caption: ' ',
+    altText: '',
+  },
+  {
+    id: uuidv4(),
+    className: 'tall',
+    img: galleryPicture6,
+    title: ' ',
+    caption: ' ',
+    altText: '',
+  },
+  {
+    id: uuidv4(),
+    className: '',
+    img: galleryPicture7,
+    title: ' ',
+    caption: ' ',
+    altText: '',
   },
   {
     id: uuidv4(),
     className: 'wide',
-    img: galleryPicture,
-    title: 'Picture Title',
-    caption: 'Description placeholder',
-    altText: 'picture',
+    img: galleryPicture8,
+    title: ' ',
+    caption: ' ',
+    altText: '',
   },
   {
     id: uuidv4(),
     className: 'tall',
-    img: galleryPicture5,
-    title: 'Picture Title',
-    caption: 'Description placeholder',
-    altText: 'picture',
+    img: galleryPicture9,
+    title: ' ',
+    caption: ' ',
+    altText: '',
   },
   {
     id: uuidv4(),
     className: '',
-    img: galleryPicture5,
-    title: 'Picture Title',
-    caption: 'Description placeholder',
-    altText: 'picture',
+    img: galleryPicture10,
+    title: ' ',
+    caption: '',
+    altText: '',
+  },
+  {
+    id: uuidv4(),
+    className: '',
+    img: galleryPicture11,
+    title: '',
+    caption: '',
+    altText: '',
+  },
+  {
+    id: uuidv4(),
+    className: '',
+    img: galleryPicture12,
+    title: '',
+    caption: '',
+    altText: '',
   },
 ];
 

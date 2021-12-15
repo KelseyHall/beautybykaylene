@@ -5,7 +5,7 @@
 
 .gallery-masonry-grid {
   @extend %pageCenter;
-
+  max-width: 1080px;
   .tall {
     grid-row: span 2;
   }
