@@ -25,8 +25,9 @@ import massageIcon from '../images/massage.png';
 import placeholder from '../images/services-placeholder.jpg';
 
 //services section photos
-import massageservice from '../images/massageblurbphoto.jpg';
-import nailservice from '../images/nailblurbphoto.jpg';
+import massageService from '../images/massageblurbphoto.jpg';
+import nailService from '../images/nailblurbphoto.jpg';
+import lashbrowService from '../images/lashbrowblurbphoto.jpg';
 
 //galleryPage
 import galleryPicture1 from '../images/gallery/20211003_145523.jpg';
@@ -136,7 +137,7 @@ export const ServicesDescriptions = [
     id: uuidv4(),
     linkedinHandle: 'anchor-service1',
     service: 'nails',
-    image: nailservice,
+    image: nailService,
     blurb:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecteturpulvinar viverra eu sem maecenas leo. Ut donec commodo posuere acat. Massa adipiscing ac enim eget faucibus justo, ut. Felis luctusarcu, duis purus. Eget turpis sit proin ullamcorper. Ut morbi nequeat sed neque viverra sit dui. Lorem ipsum dolor sit amet,consectetur adipiscing elit. Consectetur pulvinar viverra eu semmaecenas leo. Ut donec commodo posuere ac at. Massa adipiscing acenim eget faucibus justo, ut. Felis luctus arcu, duis purus. Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.',
     serviceDetails: [
@@ -310,7 +311,7 @@ export const ServicesDescriptions = [
     id: uuidv4(),
     linkedinHandle: 'anchor-service2',
     service: 'lashes & brows',
-    image: placeholder,
+    image: lashbrowService,
     blurb:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecteturpulvinar viverra eu sem maecenas leo. Ut donec commodo posuere acat. Massa adipiscing ac enim eget faucibus justo, ut. Felis luctusarcu, duis purus. Eget turpis sit proin ullamcorper. Ut morbi nequeat sed neque viverra sit dui. Lorem ipsum dolor sit amet,consectetur adipiscing elit. Consectetur pulvinar viverra eu semmaecenas leo. Ut donec commodo posuere ac at. Massa adipiscing acenim eget faucibus justo, ut. Felis luctus arcu, duis purus.',
     serviceDetails: [
@@ -710,7 +711,7 @@ export const ServicesDescriptions = [
     id: uuidv4(),
     linkedinHandle: 'anchor-service4',
     service: 'massage',
-    image: massageservice,
+    image: massageService,
     blurb:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecteturpulvinar viverra eu sem maecenas leo. Ut donec commodo posuere acat. Massa adipiscing ac enim eget faucibus justo, ut. Felis luctusarcu, duis purus. Eget turpis sit proin ullamcorper. Ut morbi nequeat sed neque viverra sit dui. Lorem ipsum dolor sit amet,consectetur adipiscing elit. Consectetur pulvinar viverra eu semmaecenas leo. Ut donec commodo posuere ac at. Massa adipiscing acenim eget faucibus justo, ut. Felis luctus arcu, duis purus.',
     serviceDetails: [

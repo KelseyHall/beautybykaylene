@@ -4,10 +4,34 @@ import { Link } from 'react-scroll';
 // import waxingIcon from '../images/waxing.png';
 // import lashBrowIcon from '../images/lash-brow.png';
 // import massageIcon from '../images/massage.png';
-import Services from '../components/ServicesPage/newServicesPage';
+import Services from '../components/ServicesPage/Services';
 import { ServicesDescriptions } from '../components/Staticdatabase';
 // import GetintouchForm from '../components/GetInTouchForm';
 
+const ServicesPage = () => {
+  return (
+    <div className="main-container" id="topOfPage">
+      {/*<div className="jump-to-service-wrapper">
+        <p className="nav-text primary">Jump to...</p>
+        <div className="jump-to-service"><ServiceJumpToNavDisplay /></div>
+      </div>*/}
+
+      <Services list={ServicesDescriptions} />
+
+      <div className="services-floating-nav">
+        {/*<ServiceJumpToNavDisplay />*/}
+
+        <div key={'backToTop'}>
+          <Link to="topOfPage" spy={true} smooth={true} duration={500}>
+            back to top ^
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ServicesPage;
 // const servicesJumpToNav = [
 //   {
 //     id: 1,
@@ -56,28 +80,3 @@ import { ServicesDescriptions } from '../components/Staticdatabase';
 //       </div>
 //     );
 //   });
-
-const ServicesPage = () => {
-  return (
-    <div className="main-container" id="topOfPage">
-      {/*<div className="jump-to-service-wrapper">
-        <p className="nav-text primary">Jump to...</p>
-        <div className="jump-to-service"><ServiceJumpToNavDisplay /></div>
-      </div>*/}
-
-      <Services list={ServicesDescriptions} />
-
-      <div className="services-floating-nav">
-        {/*<ServiceJumpToNavDisplay />*/}
-
-        <div key={'backToTop'}>
-          <Link to="topOfPage" spy={true} smooth={true} duration={500}>
-            back to top ^
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default ServicesPage;

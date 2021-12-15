@@ -33,6 +33,7 @@ const ContactUsBlurb = () => {
         <a
           href="https://www.fresha.com/a/beauty-by-kaylene-mobile-spa-port-hope-toronto-rd-u3ztt3oj/booking?menu=true&dppub=true&employeeId=1328692"
           target="_blank"
+          rel="noreferrer"
           className="button online-booking"
         >
           book online
