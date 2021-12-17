@@ -1,22 +1,22 @@
 import React from 'react';
 
 import { GalleryDatabase } from '../Staticdatabase';
-const options = {
-  settings: {
-    overlayColor: '#f6f1f7f2',
+// const options = {
+//   settings: {
+//     overlayColor: '#f6f1f7f2',
 
-    // showThumbnailsButton: false,
-  },
-  buttons: {
-    showThumbnailsButton: false,
-    showDownloadButton: false,
-    showFullscreenButton: false,
-    showAutoplayButton: false,
-  },
-  caption: {
-    captionColor: '#636363',
-  },
-};
+//     // showThumbnailsButton: false,
+//   },
+//   buttons: {
+//     showThumbnailsButton: false,
+//     showDownloadButton: false,
+//     showFullscreenButton: false,
+//     showAutoplayButton: false,
+//   },
+//   caption: {
+//     captionColor: '#636363',
+//   },
+// };
 
 const MasonryGalleryPhoto = () =>
   GalleryDatabase.map(({ id, className, img, title, caption, altText }) => (

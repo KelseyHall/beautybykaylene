@@ -115,7 +115,9 @@
     padding: 0 2%;
     margin: 40px auto;
     &-blurb-content {
-      flex-direction: column;
+      flex-direction: column !important;
+      align-items: center;
+      padding: 0 2%;
     }
     p {
       text-align: justify !important;
@@ -186,6 +188,7 @@
 
   //contact page
   .areas-of-service {
+    padding: 0 2%;
     p {
       font-size: $font-size-md;
     }
