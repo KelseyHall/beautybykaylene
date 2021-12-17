@@ -1,5 +1,5 @@
 import React from 'react';
-import { SRLWrapper } from 'simple-react-lightbox';
+
 import { GalleryDatabase } from '../Staticdatabase';
 const options = {
   settings: {
@@ -29,11 +29,9 @@ const MasonryGalleryPhoto = () =>
 
 const MasonryGallery = () => {
   return (
-    <SRLWrapper options={options}>
-      <div className="gallery-masonry-grid">
-        <MasonryGalleryPhoto />
-      </div>
-    </SRLWrapper>
+    <div className="gallery-masonry-grid">
+      <MasonryGalleryPhoto />
+    </div>
   );
 };
 
