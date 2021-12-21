@@ -1,6 +1,11 @@
 //popup background
-.css-10yc0wa {
-  background-color: $purple-opacity-low !important;
+.react-simple-image-viewer__modal {
+  background-color: $violet-light !important;
+  .react-simple-image-viewer__close,
+  .react-simple-image-viewer__previous,
+  .react-simple-image-viewer__next {
+    color: $dark-purple !important;
+  }
 }
 
 .gallery-masonry-grid {
