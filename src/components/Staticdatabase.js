@@ -918,21 +918,124 @@ export const faqSortbyNav = [
 
 //FAQ Page
 export const faqQuestions = [
+  //nails
   {
     id: uuidv4(),
     category: 'nails',
-    question:
-      'nails Lorem ipsum dolor sit amet, ipsum dolor sit amet consectetur adipiscing eli?',
-    answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsanfeugiat integer risus libero pulvinar tellus senectus sapien. Ultrices tellus odio nisl non nibh lacinia. Consectetur metus odio magna volutpatin. Rutrum adipiscing convallis facilisis vestibulum eleifend inullamcorper laoreet enim. Placerat quis donec dolor et at mattis atfeugiat nibh. Sit nibh faucibus at vitae quis eros, molestie luctus.Viverra mauris pulvinar sed volutpat. In viverra arcu purus sed purusvel amet vel.',
+    question: `How long does gel polish last?`,
+    answer: (
+      <p>
+        Gel is expected to last for up to 2 weeks on fingers and can last from
+        2-4 weeks on toes, with chip free wear!
+        <br />
+        I've had clients that can get up to 4 weeks on their fingers, it just
+        depends on lifestyle and how good you can follow the aftercare! I also
+        do my best and take my time to ensure that I do a proper prep of the
+        nail plate, ensuring the strongest bond possible.
+      </p>
+    ),
+  },
+  {
+    id: uuidv4(),
+    category: 'nails',
+    question: `How often should I have a Structured Mani?`,
+    answer: `This one varies from person to person, but for someone trying to grow their nails out to a desired length, a hard gel overlay fill should be done every 2-3 weeks. This prevents breakage of the nails that can't support the length and weight, while keeping the Matrix of the nail safe from damage (that is where the nail plate grows from). `,
+  },
+  {
+    id: uuidv4(),
+    category: 'nails',
+    question: `My gel is lifting, why is that?`,
+    answer: (
+      <div>
+        <p>
+          While gel polish is definitely stronger than regular polish, you still
+          have to be careful with it - especially for the first 24 hours!
+          <br />
+          That means:
+        </p>
+
+        <ul>
+          <li>no soaking in water! Wear gloves to do the dishes!</li>
+          <li>
+            no filing your nails or gel polish AT ALL! This breaks the seal and
+            allows water and oils in between the free edge, and the bond will
+            likely lift
+          </li>
+          <li>
+            no opening boxes/cans with your new nails, a knife works for both of
+            those beautifully
+          </li>
+          <li>
+            use cuticle oil daily to help keep your nails healthy and strong,
+            also helping your nails to not dry out or lift away from the gel
+            polish/overlay
+          </li>
+        </ul>
+      </div>
+    ),
+  },
+  //waxing
+  {
+    id: uuidv4(),
+    category: 'waxing',
+    question: 'How do I prepare for a Brazilian Wax?',
+    answer: `Please have a minimum of 3 weeks of hair growth after shaving. This allows for all 3 cycles of hair growth to be grown out so you will get the best wax possible. Avoid caffeine the day of your wax. Caffeine restricts blood vessels so skin does not get as much blood flow; which in turn will increase sensitivity. Taking an Ibuprofen 30 minutes before your wax will help with sensitivity and inflammation.`,
   },
   {
     id: uuidv4(),
     category: 'waxing',
-    question: 'waxing Lorem ipsum dolor sit amet, consectetur adipiscing eli?',
-    answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt inneque, sed quis arcu turpis gravida aliquam dignissim. Bibendum netussed amet id eleifend bibendum convallis. Dui odio purus, laoreet felismorbi nisi, tellus vitae. Ultricies urna porta est in tellus consecteturfaucibus convallis dictum. Risus hendrerit maecenas nec non cras egetelementum. Tellus phasellus nulla urna morbi. In tincidunt elit nullamaecenas. Neque, aliquam id aenean risus eget metus lectus felis in. Eudictum eu, ac quis sit non. Cursus sagittis et ullamcorper non pharetra,fringilla mauris. Ut et enim proin lectus purus. Cursus vulputate atfaucibus varius purus vitae fermentum. Lorem ullamcorper vitae volutpatsit consectetur faucibus suspendisse tortor integer. Rutrum venenatisquam leo in at vitae turpis pretium vitae. Pellentesque feugiat arcucras at. Nibh non pharetra donec egestas euismod purus vestibulum. Namfringilla dui varius nec ac morbi sollicitudin sit fermentum. Et congue',
+    question: 'How often should I make an appointment?',
+    answer: `It is recommended to wait 4-6 weeks in between appointments.
+      Please do not shave in between your appointments, this can irritate the hair follicle and cause ingrown hairs.`,
   },
+  {
+    id: uuidv4(),
+    category: 'waxing',
+    question: 'What are the benefits of waxing?',
+    answer: `Waxing any hair on your body you will experience softer, finer and more sparse hair growth over time. The best benefit of consistent waxing is it get's easier! Instead of waxing hair with deep roots, we will be waxing baby hair, so it should get less painful with every appointment!`,
+  },
+  {
+    id: uuidv4(),
+    category: 'waxing',
+    question: `Is waxing sanitary?`,
+    answer: `Yes!! I never double dip wax sticks whether it's for facial or body waxing. This is to protect your health and prevent spreading harmful bacteria. No double dipping is the number one thing yon need to look for - wherever you get waxed!`,
+  },
+  {
+    id: uuidv4(),
+    category: 'waxing',
+    question: `Can I tan before or after my wax?`,
+    answer: (
+      <div>
+        <p>
+          Please wait 3-5 days after tanning to get waxed. This is so your skin
+          will not "lift" during your waxing appointment. You should wait about
+          2-3 days after your wax to tan. Waxing takes dead skin off so you will
+          be more photosensitive and prone to burning.
+        </p>
+        <p>
+          If you are spray tanning, I recommend to wax first then wait a minimum
+          of 24 hours before spray tanning.
+        </p>
+      </div>
+    ),
+  },
+  {
+    id: uuidv4(),
+    category: 'waxing',
+    question: `Do I need to trim before I come in for my wax? `,
+    answer: (
+      <p>
+        Here's the thing. I've seen it all; the long, the short, the
+        unexfoliated. There is no need to try to make your body hair look
+        "presentable" before I rip it out of you! And truth be told, it is SO
+        MUCH EASIER to wax hair that is too long than to risk an uneven wax
+        because you trimmed parts to short.
+        <br />
+        So, no. Please do not trim before seeing me. I'll take care of it all.
+      </p>
+    ),
+  },
+  //lash and brows
   {
     id: uuidv4(),
     category: 'lashes & brows',
@@ -941,6 +1044,7 @@ export const faqQuestions = [
     answer:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsanfeugiat integer risus libero pulvinar tellus senectus sapien. Ultrices tellus odio nisl non nibh lacinia. Consectetur metus odio magna volutpatin. Rutrum adipiscing convallis facilisis vestibulum eleifend inullamcorper laoreet enim. Placerat quis donec dolor et at mattis atfeugiat nibh. Sit nibh faucibus at vitae quis eros, molestie luctus.Viverra mauris pulvinar sed volutpat. In viverra arcu purus sed purusvel amet vel.',
   },
+  //massage
   {
     id: uuidv4(),
     category: 'massage',
@@ -949,6 +1053,7 @@ export const faqQuestions = [
     answer:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsanfeugiat integer risus libero pulvinar tellus senectus sapien. Ultrices tellus odio nisl non nibh lacinia. Consectetur metus odio magna volutpatin. Rutrum adipiscing convallis facilisis vestibulum eleifend inullamcorper laoreet enim. Placerat quis donec dolor et at mattis atfeugiat nibh. Sit nibh faucibus at vitae quis eros, molestie luctus.Viverra mauris pulvinar sed volutpat. In viverra arcu purus sed purusvel amet vel.',
   },
+  //general
   {
     id: uuidv4(),
     category: 'general',
