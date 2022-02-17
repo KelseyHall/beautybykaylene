@@ -23,7 +23,7 @@ import lashBrowIcon from '../images/lash-brow.png';
 import massageIcon from '../images/massage.png';
 
 //servicesPageplaceholder
-import placeholder from '../images/services-placeholder.jpg';
+// import placeholder from '../images/services-placeholder.jpg';
 
 //services section photos
 import massageServiceImg from '../images/services-massage-blurb.jpg';
