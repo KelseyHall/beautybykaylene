@@ -12,7 +12,7 @@ const Footer = () => {
         <ContactInfo />
       </div>
       <p className="copyright">
-        © copyright 2022 | <Link to="/policies">policies</Link> |
+        © copyright 2022 | <Link to="/policies">policies</Link> |{' '}
         <Link to="/faq">FAQ'S</Link>
       </p>
     </div>

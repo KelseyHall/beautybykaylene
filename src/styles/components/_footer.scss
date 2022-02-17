@@ -34,6 +34,7 @@ footer {
   p {
     color: $dark-purple;
     text-align: center;
+
     font-size: $font-size-sm;
     a {
       color: $dark-purple;
@@ -48,5 +49,6 @@ footer {
   }
   .copyright {
     padding: 10px;
+    text-transform: capitalize;
   }
 }
