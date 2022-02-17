@@ -17,6 +17,9 @@ body {
   color: $dark-green;
 }
 
+.capitalize {
+  font-variant-caps: all-petite-caps;
+}
 //titles
 .h1-title {
   text-align: center;
@@ -68,4 +71,10 @@ p {
 .li::before {
   content: '•';
   padding-right: 3px;
+}
+
+//link
+a,
+a:active {
+  color: $dark-green;
 }

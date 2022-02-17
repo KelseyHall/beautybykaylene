@@ -23,11 +23,13 @@ import lashBrowIcon from '../images/lash-brow.png';
 import massageIcon from '../images/massage.png';
 
 //servicesPageplaceholder
-import placeholder from '../images/services-placeholder.jpg';
+// import placeholder from '../images/services-placeholder.jpg';
 
 //services section photos
 import massageServiceImg from '../images/services-massage-blurb.jpg';
 // import massageService from '../images/massageblurbphoto.jpg';
+import waxWomenService from '../images/waxing-service-blurb.jpg';
+import waxMenService from '../images/mens-wax-blurb.jpg';
 import nailService from '../images/nailblurbphoto.jpg';
 import lashbrowService from '../images/lashbrowblurbphoto.jpg';
 // import lashbrowService from '../images/lashes-service-img.jpeg';
@@ -464,7 +466,7 @@ export const ServicesDescriptions = [
     id: uuidv4(),
     linkedinHandle: 'anchor-service3',
     service: 'ladies waxing ',
-    image: placeholder,
+    image: waxWomenService,
     blurb: (
       <span>
         Get your skin feeling fresh and smooth, for longer with waxing!
@@ -702,7 +704,7 @@ export const ServicesDescriptions = [
     id: uuidv4(),
     linkedinHandle: '',
     service: `men's waxing`,
-    image: placeholder,
+    image: waxMenService,
     blurb: (
       <span>
         Get your skin feeling fresh and smooth, for longer with waxing!

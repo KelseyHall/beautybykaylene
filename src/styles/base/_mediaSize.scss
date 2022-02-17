@@ -20,7 +20,6 @@
   .services-content {
     margin: 40px 0;
     .services-about-content {
-      margin: 0;
       z-index: 1;
       top: 0;
     }
@@ -91,7 +90,7 @@
   //home page
   .home-banner {
     flex-wrap: wrap;
-    flex-direction: column-reverse;
+    // flex-direction: column-reverse;
     &-content {
       width: 100% !important;
       padding: 0 2% !important;
@@ -122,6 +121,12 @@
     .carousel-gallery {
       height: 330px;
     }
+  }
+  .about-us-homePage,
+  .testimonial,
+  .services,
+  .gallery {
+    padding: 20px 0 60px !important;
   }
 
   //services page
@@ -318,12 +323,14 @@
       display: none;
     }
     .service-top-col {
+      margin-top: 10px;
       border-top: 50px solid $purple-light;
     }
     .service-bottom-col {
       border-bottom: 50px solid $purple-light;
     }
     .service-top-col-2 {
+      margin-top: 10px;
       border-top: 50px solid $violet-light;
     }
     .service-bottom-col-2 {
@@ -377,7 +384,7 @@
           display: block !important;
         }
         &__item {
-          margin: 0 1.3rem;
+          margin: 0 0.9rem;
           text-align: center;
         }
       }
