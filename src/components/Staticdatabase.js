@@ -359,8 +359,23 @@ export const ServicesDescriptions = [
     linkedinHandle: 'anchor-service2',
     service: 'lashes & brows',
     image: lashbrowService,
-    blurb:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecteturpulvinar viverra eu sem maecenas leo. Ut donec commodo posuere acat. Massa adipiscing ac enim eget faucibus justo, ut. Felis luctusarcu, duis purus. Eget turpis sit proin ullamcorper. Ut morbi nequeat sed neque viverra sit dui. Lorem ipsum dolor sit amet,consectetur adipiscing elit. Consectetur pulvinar viverra eu semmaecenas leo. Ut donec commodo posuere ac at. Massa adipiscing acenim eget faucibus justo, ut. Felis luctus arcu, duis purus.',
+    blurb: (
+      <span>
+        Wake up ready to take on the day! Your mornings are about to be a
+        breeze.
+        <br /> <br />
+        Lift those lashes with a semi-permanent curl that lasts up to 9 weeks,
+        and add a tint to make them pop, giving you the most effortless and
+        maintenance free look, everyday!
+        <br /> <br />
+        Have unruly brows that wont stay in place, or want them to be fuller
+        looking? <br />
+        Then a brow lamination might be just what you need. With a consultation
+        we will discuss the end goal and what is needed to achieve the brows of
+        your dreams. <br /> <br /> Please visit our{' '}
+        {<Link to="/faq">{`FAQ’s`}</Link>}
+      </span>
+    ),
     serviceDetails: [
       {
         title: '',
@@ -687,19 +702,29 @@ export const ServicesDescriptions = [
     image: placeholder,
     blurb: (
       <span>
-        Wake up ready to take on the day! Your mornings are about to be a
-        breeze.
-        <br /> <br />
-        Lift those lashes with a semi-permanent curl that lasts up to 9 weeks,
-        and add a tint to make them pop, giving you the most effortless and
-        maintenance free look, everyday!
-        <br /> <br />
-        Have unruly brows that wont stay in place, or want them to be fuller
-        looking? <br />
-        Then a brow lamination might be just what you need. With a consultation
-        we will discuss the end goal and what is needed to achieve the brows of
-        your dreams. <br /> <br /> Please visit our{' '}
-        {<Link to="/faq">{`FAQ’s`}</Link>}
+        Get your skin feeling fresh and smooth, for longer with waxing!
+        <br />
+        It’s time to put the razor down and treat your skin right.
+        <br />
+        <br />
+        Both hard and soft wax are used, if you have a preference please contact
+        us before booking.
+        <br />
+        <br />
+        Please visit our {<Link to="/faq">{`FAQ’s`}</Link>}
+        <br />
+        <br />
+        Booking every 4-6 weeks is recommended to keep on top of the hair growth
+        cycles and make it the most comfortable experience for you! Facial
+        waxing can be repeated prior to 4 weeks pending personal hair growth.
+        Soft or hard wax available.
+        <span className="ul">
+          waxing cycles :<br />
+          <span className="li">intimates 3-6 weeks</span>
+          <span className="li">face 2-3 weeks</span>
+          <span className="li">underarms 2 weeks</span>
+          <span className="li">body 3-4 weeks</span>
+        </span>
       </span>
     ),
     serviceDetails: [
