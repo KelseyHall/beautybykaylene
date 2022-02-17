@@ -29,17 +29,23 @@
   }
   .services-area-1,
   .services-area-2,
-  .services-area-3 {
+  .services-area-3,
+  .services-area-4,
+  .services-area-5 {
     margin-top: 10px;
     display: flex;
     align-items: center;
+    flex-direction: column;
     p {
       margin: 0 0 0 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .icon {
-      width: 65px;
-      height: 24px;
+      width: 100%;
+      height: 20px;
     }
   }
 
@@ -47,10 +53,16 @@
     background-color: $dark-green;
   }
   .services-area-2 .icon {
-    background-color: $pink;
+    background-color: red;
   }
   .services-area-3 .icon {
+    background-color: $pink;
+  }
+  .services-area-4 .icon {
     background-color: $dark-purple;
+  }
+  .services-area-5 .icon {
+    background-color: blue;
   }
 }
 

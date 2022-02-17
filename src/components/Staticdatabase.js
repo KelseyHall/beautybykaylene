@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { v4 as uuidv4 } from 'uuid';
 
@@ -138,8 +139,38 @@ export const ServicesDescriptions = [
     linkedinHandle: 'anchor-service1',
     service: 'nails',
     image: nailService,
-    blurb:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecteturpulvinar viverra eu sem maecenas leo. Ut donec commodo posuere acat. Massa adipiscing ac enim eget faucibus justo, ut. Felis luctusarcu, duis purus. Eget turpis sit proin ullamcorper. Ut morbi nequeat sed neque viverra sit dui. Lorem ipsum dolor sit amet,consectetur adipiscing elit. Consectetur pulvinar viverra eu semmaecenas leo. Ut donec commodo posuere ac at. Massa adipiscing acenim eget faucibus justo, ut. Felis luctus arcu, duis purus. Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.Felis luctus arcu, duis purus.',
+    blurb: (
+      <span>
+        Get your attitude back with a fresh polish! Enjoy a relaxing (or much
+        needed) manicure or pedicure in the comfort of your own home. Sit back
+        and watch your favorite show, listen to some music, or dive into that
+        book you’ve been meaning to finish up!
+        <br />
+        <br />
+        Manicures include a hand soak, nail shaping and cuticle work, followed
+        with cuticle oil, a moisturizing hand and arm massage, finished off with
+        a polish.
+        <br />
+        <br />
+        Pedicures include a foot soak with Dead Sea Salts, a nail trim and file,
+        cuticle and callus care, cuticle oil, an exfoliating foot and leg
+        massage using a sweet almond oil & dead sea salt scrub, finished off
+        with a polish.
+        <br />
+        <br />
+        Polish is optional. Please select Gel Manicure/Pedicure or French
+        Manicure/Pedicure if you wish for gel polish and/or French Tips. The Gel
+        Manicure is a dry manicure. The Gel Pedicure includes a massage with
+        lotion after polishing, in lieu of the salt scrub.
+        <br />
+        <br />
+        *If you currently have on gel polish, please book the “gel polish
+        removal” add-on along with your appointment. Additional fees may apply.
+        <br />
+        <br />
+        Please visit our {<Link to="/faq">{`FAQ’s`}</Link>}
+      </span>
+    ),
     serviceDetails: [
       {
         title: 'fingers',
@@ -165,6 +196,13 @@ export const ServicesDescriptions = [
             time: '2h',
             description: `dry manicure including nail prep with a hard gel overlay on your natural nails`,
           },
+          {
+            id: uuidv4(),
+            serviceName: 'french mani',
+            price: '55',
+            time: '2h',
+            description: ``,
+          },
         ],
       },
       {
@@ -172,7 +210,7 @@ export const ServicesDescriptions = [
         details: [
           {
             id: uuidv4(),
-            serviceName: 'spa pedi',
+            serviceName: 'salt glow pedicure',
             price: 40,
             time: '1h 30min',
             description: `Dead Sea Salts foot soak, nail trim and file, cuticle and callus care, cuticle oil, a relaxing foot and leg massage using a sweet almond oil & dead sea salt scrub, finished off with a pretty polish. Polish is optional. `,
@@ -183,6 +221,13 @@ export const ServicesDescriptions = [
             price: 50,
             time: '1h 30min',
             description: `Dead Sea Salts foot soak, nail trim & file, cuticle & callus work, gel polish, finished off with a relaxing foot & leg massage`,
+          },
+          {
+            id: uuidv4(),
+            serviceName: 'french pedi',
+            price: 60,
+            time: '1h 30min',
+            description: ``,
           },
         ],
       },
@@ -196,7 +241,8 @@ export const ServicesDescriptions = [
             serviceName: 'nail design',
             price: '5+',
             time: '15min+',
-            description: '',
+            description:
+              'nail art *can only be added onto gel polish manicure/pedicure',
           },
           {
             id: uuidv4(),
@@ -214,11 +260,12 @@ export const ServicesDescriptions = [
           },
           {
             id: uuidv4(),
-            serviceName: 'gel removal',
-            price: 20,
+            serviceName: 'sculpting gel removal',
+            price: 25,
             time: '1h',
-            description: `* already included in mani & pedi services for returning clients`,
+            description: `* gel removal is FREE if I have applied your current gel polish for you and you are booking another mani/pedi experience`,
           },
+
           {
             id: uuidv4(),
             serviceName: 'regular polish change',
@@ -312,8 +359,23 @@ export const ServicesDescriptions = [
     linkedinHandle: 'anchor-service2',
     service: 'lashes & brows',
     image: lashbrowService,
-    blurb:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecteturpulvinar viverra eu sem maecenas leo. Ut donec commodo posuere acat. Massa adipiscing ac enim eget faucibus justo, ut. Felis luctusarcu, duis purus. Eget turpis sit proin ullamcorper. Ut morbi nequeat sed neque viverra sit dui. Lorem ipsum dolor sit amet,consectetur adipiscing elit. Consectetur pulvinar viverra eu semmaecenas leo. Ut donec commodo posuere ac at. Massa adipiscing acenim eget faucibus justo, ut. Felis luctus arcu, duis purus.',
+    blurb: (
+      <span>
+        Wake up ready to take on the day! Your mornings are about to be a
+        breeze.
+        <br /> <br />
+        Lift those lashes with a semi-permanent curl that lasts up to 9 weeks,
+        and add a tint to make them pop, giving you the most effortless and
+        maintenance free look, everyday!
+        <br /> <br />
+        Have unruly brows that wont stay in place, or want them to be fuller
+        looking? <br />
+        Then a brow lamination might be just what you need. With a consultation
+        we will discuss the end goal and what is needed to achieve the brows of
+        your dreams. <br /> <br /> Please visit our{' '}
+        {<Link to="/faq">{`FAQ’s`}</Link>}
+      </span>
+    ),
     serviceDetails: [
       {
         title: '',
@@ -402,21 +464,31 @@ export const ServicesDescriptions = [
     service: 'ladies waxing ',
     image: placeholder,
     blurb: (
-      <p>
+      <span>
+        Get your skin feeling fresh and smooth, for longer with waxing!
+        <br />
+        It’s time to put the razor down and treat your skin right.
+        <br />
+        <br />
+        Both hard and soft wax are used, if you have a preference please contact
+        us before booking.
+        <br />
+        <br />
+        Please visit our {<Link to="/faq">{`FAQ’s`}</Link>}
+        <br />
+        <br />
         Booking every 4-6 weeks is recommended to keep on top of the hair growth
         cycles and make it the most comfortable experience for you! Facial
         waxing can be repeated prior to 4 weeks pending personal hair growth.
         Soft or hard wax available.
-        <p>
-          waxing cycles :
-          <ul style={{ display: 'flex', flexDirection: 'column' }}>
-            <li>intimates 3-6 weeks</li>
-            <li>face 2-3 weeks</li>
-            <li>underarms 2 weeks</li>
-            <li>body 3-4 weeks</li>
-          </ul>
-        </p>
-      </p>
+        <span className="ul">
+          waxing cycles :<br />
+          <span className="li">intimates 3-6 weeks</span>
+          <span className="li">face 2-3 weeks</span>
+          <span className="li">underarms 2 weeks</span>
+          <span className="li">body 3-4 weeks</span>
+        </span>
+      </span>
     ),
 
     serviceDetails: [
@@ -442,7 +514,7 @@ export const ServicesDescriptions = [
             serviceName: 'bumkini',
             price: 50,
             time: '1h',
-            description: `a little more than the underwear line, all the way around to the cheeks!`,
+            description: `a little more than the bikini line, all the way around to the cheeks!`,
           },
           {
             id: uuidv4(),
@@ -498,6 +570,20 @@ export const ServicesDescriptions = [
             price: 14,
             time: '15min',
             description: ``,
+          },
+          {
+            id: uuidv4(),
+            serviceName: 'full face',
+            price: 50,
+            time: '1h',
+            description: ``,
+          },
+          {
+            id: uuidv4(),
+            serviceName: '',
+            price: '',
+            time: '',
+            description: `*Add On Services Only`,
           },
         ],
       },
@@ -605,27 +691,6 @@ export const ServicesDescriptions = [
             time: '2h',
             description: 'reg $95',
           },
-          {
-            id: uuidv4(),
-            serviceName: 'brow & lip wax',
-            price: 25,
-            time: '45min',
-            description: 'waxing of the eyebrows and upper lip. reg $26',
-          },
-          {
-            id: uuidv4(),
-            serviceName: 'brow, lip & chin wax',
-            price: 33,
-            time: '1h',
-            description: `waxing of the eyebrows, upper lip and chin. reg $36`,
-          },
-          {
-            id: uuidv4(),
-            serviceName: 'the works',
-            price: 45,
-            time: '1h 15min',
-            description: `waxing of the eyebrows, upper lip, chin, and sideburns/cheeks. reg $50`,
-          },
         ],
       },
     ],
@@ -635,8 +700,33 @@ export const ServicesDescriptions = [
     linkedinHandle: '',
     service: `men's waxing`,
     image: placeholder,
-    blurb:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecteturpulvinar viverra eu sem maecenas leo. Ut donec commodo posuere acat. Massa adipiscing ac enim eget faucibus justo, ut. Felis luctusarcu, duis purus. Eget turpis sit proin ullamcorper. Ut morbi nequeat sed neque viverra sit dui. Lorem ipsum dolor sit amet,consectetur adipiscing elit. Consectetur pulvinar viverra eu semmaecenas leo. Ut donec commodo posuere ac at. Massa adipiscing acenim eget faucibus justo, ut. Felis luctus arcu, duis purus.',
+    blurb: (
+      <span>
+        Get your skin feeling fresh and smooth, for longer with waxing!
+        <br />
+        It’s time to put the razor down and treat your skin right.
+        <br />
+        <br />
+        Both hard and soft wax are used, if you have a preference please contact
+        us before booking.
+        <br />
+        <br />
+        Please visit our {<Link to="/faq">{`FAQ’s`}</Link>}
+        <br />
+        <br />
+        Booking every 4-6 weeks is recommended to keep on top of the hair growth
+        cycles and make it the most comfortable experience for you! Facial
+        waxing can be repeated prior to 4 weeks pending personal hair growth.
+        Soft or hard wax available.
+        <span className="ul">
+          waxing cycles :<br />
+          <span className="li">intimates 3-6 weeks</span>
+          <span className="li">face 2-3 weeks</span>
+          <span className="li">underarms 2 weeks</span>
+          <span className="li">body 3-4 weeks</span>
+        </span>
+      </span>
+    ),
     serviceDetails: [
       {
         title: 'body',
@@ -712,8 +802,23 @@ export const ServicesDescriptions = [
     linkedinHandle: 'anchor-service4',
     service: 'massage',
     image: massageService,
-    blurb:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecteturpulvinar viverra eu sem maecenas leo. Ut donec commodo posuere acat. Massa adipiscing ac enim eget faucibus justo, ut. Felis luctusarcu, duis purus. Eget turpis sit proin ullamcorper. Ut morbi nequeat sed neque viverra sit dui. Lorem ipsum dolor sit amet,consectetur adipiscing elit. Consectetur pulvinar viverra eu semmaecenas leo. Ut donec commodo posuere ac at. Massa adipiscing acenim eget faucibus justo, ut. Felis luctus arcu, duis purus.',
+    blurb: (
+      <span>
+        A soothing warm oil massage to bring peace and mindfulness to your day.
+        <br />
+        <br />
+        Aromatherapy available to add at time of booking.
+        <br />
+        <br />
+        Option of one add-on to elevate your massage: <br />
+        Soothing Hot Stones or Exfoliating Dry Brush (you get to take it home!)
+        <br />
+        <br />
+        *Relaxation massages are performed by a skilled Esthetician, therefore
+        do not qualify for insurance reimbursement. Please visit our{' '}
+        {<Link to="/faq">{`FAQ’s`}</Link>}
+      </span>
+    ),
     serviceDetails: [
       {
         title: 'relaxation',
@@ -761,9 +866,9 @@ export const ServicesDescriptions = [
           {
             id: uuidv4(),
             serviceName: 'dry brush',
-            price: 20,
+            price: 30,
             time: '20min',
-            description: '',
+            description: 'clients get to keep brush',
           },
           {
             id: uuidv4(),
@@ -924,7 +1029,7 @@ export const faqQuestions = [
     category: 'nails',
     question: `How long does gel polish last?`,
     answer: (
-      <p>
+      <span>
         Gel is expected to last for up to 2 weeks on fingers and can last from
         2-4 weeks on toes, with chip free wear!
         <br />
@@ -932,7 +1037,7 @@ export const faqQuestions = [
         depends on lifestyle and how good you can follow the aftercare! I also
         do my best and take my time to ensure that I do a proper prep of the
         nail plate, ensuring the strongest bond possible.
-      </p>
+      </span>
     ),
   },
   {
@@ -946,33 +1051,44 @@ export const faqQuestions = [
     category: 'nails',
     question: `My gel is lifting, why is that?`,
     answer: (
-      <div>
-        <p>
+      <span>
+        <span>
           While gel polish is definitely stronger than regular polish, you still
           have to be careful with it - especially for the first 24 hours!
           <br />
-          That means:
-        </p>
+        </span>
 
-        <ul>
-          <li>no soaking in water! Wear gloves to do the dishes!</li>
-          <li>
+        <span className="ul">
+          That means:
+          <span className="li">
+            no soaking in water! Wear gloves to do the dishes!
+          </span>
+          <span className="li">
             no filing your nails or gel polish AT ALL! This breaks the seal and
             allows water and oils in between the free edge, and the bond will
             likely lift
-          </li>
-          <li>
+          </span>
+          <span className="li">
             no opening boxes/cans with your new nails, a knife works for both of
             those beautifully
-          </li>
-          <li>
+          </span>
+          <span className="li">
             use cuticle oil daily to help keep your nails healthy and strong,
             also helping your nails to not dry out or lift away from the gel
             polish/overlay
-          </li>
-        </ul>
-      </div>
+          </span>
+        </span>
+      </span>
     ),
+  },
+  {
+    id: uuidv4(),
+    category: 'nails',
+    question: `How long does gel polish last?`,
+    answer: ` Polishes used are vegan friendly and Big5-Free from Bio Seaweed Gel Canada.
+    BeBio Nail Lacquer gets up to 7+ days of wear, traditional polish, good for frequent changes in color.
+    Gel Polish gets 2+ weeks of no-chip wear, promotes natural nail growth and strengthens nails.
+    Sculpting Gel gets 2+ weeks of wear with all the benefits of Gel polish, just with added strength for your growing nails.`,
   },
   //waxing
   {
@@ -998,25 +1114,23 @@ export const faqQuestions = [
     id: uuidv4(),
     category: 'waxing',
     question: `Is waxing sanitary?`,
-    answer: `Yes!! I never double dip wax sticks whether it's for facial or body waxing. This is to protect your health and prevent spreading harmful bacteria. No double dipping is the number one thing yon need to look for - wherever you get waxed!`,
+    answer: `Yes!! I never double dip wax sticks whether it's for facial or body waxing. This is to protect your health and prevent spreading harmful bacteria. No double dipping is the number one thing you need to look for - wherever you get waxed!`,
   },
   {
     id: uuidv4(),
     category: 'waxing',
     question: `Can I tan before or after my wax?`,
     answer: (
-      <div>
-        <p>
-          Please wait 3-5 days after tanning to get waxed. This is so your skin
-          will not "lift" during your waxing appointment. You should wait about
-          2-3 days after your wax to tan. Waxing takes dead skin off so you will
-          be more photosensitive and prone to burning.
-        </p>
-        <p>
-          If you are spray tanning, I recommend to wax first then wait a minimum
-          of 24 hours before spray tanning.
-        </p>
-      </div>
+      <span>
+        Please wait 3-5 days after tanning to get waxed. This is so your skin
+        will not "lift" during your waxing appointment. You should wait about
+        2-3 days after your wax to tan. Waxing takes dead skin off so you will
+        be more photosensitive and prone to burning.
+        <br />
+        <br />
+        If you are spray tanning, I recommend to wax first then wait a minimum
+        of 24 hours before spray tanning.
+      </span>
     ),
   },
   {
@@ -1024,15 +1138,16 @@ export const faqQuestions = [
     category: 'waxing',
     question: `Do I need to trim before I come in for my wax? `,
     answer: (
-      <p>
+      <span>
         Here's the thing. I've seen it all; the long, the short, the
         unexfoliated. There is no need to try to make your body hair look
         "presentable" before I rip it out of you! And truth be told, it is SO
         MUCH EASIER to wax hair that is too long than to risk an uneven wax
         because you trimmed parts to short.
         <br />
+        <br />
         So, no. Please do not trim before seeing me. I'll take care of it all.
-      </p>
+      </span>
     ),
   },
   //lash and brows

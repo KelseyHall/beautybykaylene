@@ -41,7 +41,7 @@ hr {
   background: $dark-purple;
   color: #fff;
   border: none;
-  font-size: $font-size-ml;
+  font-size: $font-size-md;
   padding: 6px;
   // width: 120px;
   border-radius: 9px;
@@ -49,5 +49,20 @@ hr {
 
 //text paragraphs
 p {
-  font-size: $font-size-ml;
+  font-size: $font-size-md;
+}
+
+//mock list
+.ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.li {
+  margin-left: 8px;
+  padding: 5px 0;
+}
+.li::before {
+  content: '•';
+  padding-right: 3px;
 }

@@ -62,7 +62,7 @@ const Services = ({ list }) => {
           idx,
           linkedinHandle,
         }) => (
-          <div className="services-content" id={linkedinHandle}>
+          <div className="services-content" id={linkedinHandle} key={id}>
             <div
               className={
                 'services-about-content  service-top-col' + WhichRow(idx)
@@ -81,7 +81,7 @@ const Services = ({ list }) => {
               <div className="content">
                 <div className="services-item">
                   {serviceDetails.map(({ title, details }) => (
-                    <ul className="services-sub">
+                    <ul className="services-sub" key={id + title}>
                       <h3 className="h3-title secondary">{title}</h3>
                       {details.map(
                         ({ id, serviceName, price, time, description }) => (
