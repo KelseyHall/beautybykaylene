@@ -10,24 +10,48 @@ const AreasOfService = () => {
       <div className="areas-of-service-map">
         <iframe
           title="areasOfService"
-          src="https://www.google.com/maps/d/u/0/embed?mid=1BprHgYXUWWoGpVG2Vu_S7-r0TgSDQ2-K"
+          src="https://www.google.com/maps/d/embed?mid=1xvikXkXgCH2z0ktkjAsUYGHQZwQWPwJ3&ehbc=2E312F"
         ></iframe>
       </div>
 
       <div className="commuting-chart">
         <div className="services-area-1">
           <div className="icon"></div>
-          <p>free commute</p>
+          <p>
+            <span>Tier 1</span>
+            <span> No Travel Fee</span>
+            <span> {`<10 min one way`}</span>
+          </p>
         </div>
 
         <div className="services-area-2">
           <div className="icon"></div>
-          <p>$5-10 commuting fee</p>
+          <p>
+            <span> Tier 2 </span> <span> $10 Travel Fee</span>
+            <span> {`<20 min one way`}</span>
+          </p>
         </div>
 
         <div className="services-area-3">
           <div className="icon"></div>
-          <p>$15-20 commuting fee</p>
+          <p>
+            <span> Tier 3</span> <span> $20 Travel Fee</span>
+            <span> {`<30 min one way`}</span>
+          </p>
+        </div>
+        <div className="services-area-4">
+          <div className="icon"></div>
+          <p>
+            <span> Tier 4</span> <span> $30 Travel Fee</span>
+            <span> {`<45 min one way`}</span>
+          </p>
+        </div>
+        <div className="services-area-5">
+          <div className="icon"></div>
+          <p>
+            <span> Tier 5 </span> <span> $40 Travel Fee</span>
+            <span> {`<60 min one way`}</span>
+          </p>
         </div>
       </div>
       <p className="blurb">
