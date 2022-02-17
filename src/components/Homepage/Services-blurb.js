@@ -1,6 +1,6 @@
 import React from 'react';
 
-import BannerImg from '../../images/placeholder-2.jpg';
+import BannerImg from '../../images/servicesHomepageBanner.jpg';
 import { serviceBlurb } from '../Staticdatabase';
 import downArrow from '../../images/downArrow.png';
 const DisplayServicesBlurb = () =>

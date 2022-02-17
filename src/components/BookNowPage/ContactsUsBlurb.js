@@ -21,7 +21,7 @@ const ContactUsBlurb = () => {
       <div className="book-info">
         <h1 className="h1-title primary">book appointment</h1>
         <h3 className="h3-title">
-          <a className="secondary" href="tel:905-644-8880">
+          <a className="h2-title secondary" href="tel:905-644-8880">
             905.644.8880
           </a>
         </h3>

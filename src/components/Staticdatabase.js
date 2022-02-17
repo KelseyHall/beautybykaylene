@@ -22,13 +22,15 @@ import waxingIcon from '../images/waxing.png';
 import lashBrowIcon from '../images/lash-brow.png';
 import massageIcon from '../images/massage.png';
 
-//servicesPagePlaceHolder
+//servicesPageplaceholder
 import placeholder from '../images/services-placeholder.jpg';
 
 //services section photos
-import massageService from '../images/massageblurbphoto.jpg';
+import massageServiceImg from '../images/services-massage-blurb.jpg';
+// import massageService from '../images/massageblurbphoto.jpg';
 import nailService from '../images/nailblurbphoto.jpg';
 import lashbrowService from '../images/lashbrowblurbphoto.jpg';
+// import lashbrowService from '../images/lashes-service-img.jpeg';
 
 //galleryPage
 import galleryPicture1 from '../images/gallery/20211003_145523.jpg';
@@ -177,28 +179,28 @@ export const ServicesDescriptions = [
         details: [
           {
             id: uuidv4(),
-            serviceName: 'spa mani',
+            serviceName: 'spa manicure',
             price: 40,
             time: '1h 30min',
             description: `hand soak, nail shaping and cuticle work followed with cuticle oil, a moisturizing hand and arm massage finished off with a polish! Polish is optional.`,
           },
           {
             id: uuidv4(),
-            serviceName: 'gel mani',
+            serviceName: 'gel manicure',
             price: 45,
             time: '1h 30min',
             description: `dry manicure including a nail trim and file, cuticle care, gel polish finished off with a relaxing hand and arm massage. `,
           },
           {
             id: uuidv4(),
-            serviceName: 'sculpted mani',
+            serviceName: 'sculpted manicure',
             price: '55+',
             time: '2h',
             description: `dry manicure including nail prep with a hard gel overlay on your natural nails`,
           },
           {
             id: uuidv4(),
-            serviceName: 'french mani',
+            serviceName: 'french manicure',
             price: '55',
             time: '2h',
             description: ``,
@@ -217,14 +219,14 @@ export const ServicesDescriptions = [
           },
           {
             id: uuidv4(),
-            serviceName: 'gel pedi',
+            serviceName: 'gel pedicure',
             price: 50,
             time: '1h 30min',
             description: `Dead Sea Salts foot soak, nail trim & file, cuticle & callus work, gel polish, finished off with a relaxing foot & leg massage`,
           },
           {
             id: uuidv4(),
-            serviceName: 'french pedi',
+            serviceName: 'french pedicure',
             price: 60,
             time: '1h 30min',
             description: ``,
@@ -263,7 +265,7 @@ export const ServicesDescriptions = [
             serviceName: 'sculpting gel removal',
             price: 25,
             time: '1h',
-            description: `* gel removal is FREE if I have applied your current gel polish for you and you are booking another mani/pedi experience`,
+            description: `* gel removal is FREE if I have applied your current gel polish for you and you are booking another manicure/pedicure experience`,
           },
 
           {
@@ -271,7 +273,7 @@ export const ServicesDescriptions = [
             serviceName: 'regular polish change',
             price: 30,
             time: '30min',
-            description: `for clients who have had a mani or pedi within 2 weeks done by beauty by Kaylene. * excludes gel polish`,
+            description: `for clients who have had a manicure or pedicure within 2 weeks done by beauty by Kaylene. * excludes gel polish`,
           },
         ],
       },
@@ -281,17 +283,17 @@ export const ServicesDescriptions = [
         details: [
           {
             id: uuidv4(),
-            serviceName: 'gel mani & spa pedi',
+            serviceName: 'gel manicure & spa pedicure',
             price: 85,
             time: '3h',
-            description: `enjoy a relaxing (or much needed) gel mani & pedi in the comfort of your own home. Sit back and watch your favourite show, or listen to your favourite music if you'd like!`,
+            description: `enjoy a relaxing (or much needed) gel manicure & pedicure in the comfort of your own home. Sit back and watch your favourite show, or listen to your favourite music if you'd like!`,
           },
           {
             id: uuidv4(),
-            serviceName: 'gel mani & gel pedi',
+            serviceName: 'gel manicure & gel pedicure',
             price: 95,
             time: '3h',
-            description: `enjoy a relaxing (or much needed) gel mani & gel pedi in the comfort of your own home. Sit back and watch your favourite show, or listen to your favourite music if you'd like!`,
+            description: `enjoy a relaxing (or much needed) gel manicure & gel pedicure in the comfort of your own home. Sit back and watch your favourite show, or listen to your favourite music if you'd like!`,
           },
         ],
       },
@@ -302,7 +304,7 @@ export const ServicesDescriptions = [
         details: [
           {
             id: uuidv4(),
-            serviceName: 'mini mani',
+            serviceName: 'mini manicure',
             price: 15,
             time: '45min',
             description: `includes a mini soak, nail prep, cuticle oil and a mini hand massage. Finished off with a pretty polish. To get a longer lasting polish, choose to upgrade to gel! `,
@@ -310,7 +312,7 @@ export const ServicesDescriptions = [
 
           {
             id: uuidv4(),
-            serviceName: 'mini pedi',
+            serviceName: 'mini pedicure',
             price: 20,
             time: '45min',
             description: `includes a mini foot soak, nail prep, foot scrub, cuticle oil and a mini foot massage, finished off with a pretty polish.`,
@@ -338,14 +340,14 @@ export const ServicesDescriptions = [
         details: [
           {
             id: uuidv4(),
-            serviceName: 'mani',
+            serviceName: 'manicure',
             price: '',
             time: '',
             description: '',
           },
           {
             id: uuidv4(),
-            serviceName: 'pedi',
+            serviceName: 'pedicure',
             price: '',
             time: '',
             description: '',
@@ -596,7 +598,8 @@ export const ServicesDescriptions = [
             serviceName: 'feet & toes',
             price: 20,
             time: '15min',
-            description: 'included free with leg wax or pedi when requested',
+            description:
+              'included free with leg wax or pedicure when requested',
           },
           {
             id: uuidv4(),
@@ -801,7 +804,7 @@ export const ServicesDescriptions = [
     id: uuidv4(),
     linkedinHandle: 'anchor-service4',
     service: 'massage',
-    image: massageService,
+    image: massageServiceImg,
     blurb: (
       <span>
         A soothing warm oil massage to bring peace and mindfulness to your day.
@@ -815,8 +818,9 @@ export const ServicesDescriptions = [
         <br />
         <br />
         *Relaxation massages are performed by a skilled Esthetician, therefore
-        do not qualify for insurance reimbursement. Please visit our{' '}
-        {<Link to="/faq">{`FAQ’s`}</Link>}
+        do not qualify for insurance reimbursement.
+        <br />
+        <br /> Please visit our {<Link to="/faq">{`FAQ’s`}</Link>}
       </span>
     ),
     serviceDetails: [
@@ -1043,7 +1047,7 @@ export const faqQuestions = [
   {
     id: uuidv4(),
     category: 'nails',
-    question: `How often should I have a Structured Mani?`,
+    question: `How often should I have a Structured Manicure?`,
     answer: `This one varies from person to person, but for someone trying to grow their nails out to a desired length, a hard gel overlay fill should be done every 2-3 weeks. This prevents breakage of the nails that can't support the length and weight, while keeping the Matrix of the nail safe from damage (that is where the nail plate grows from). `,
   },
   {

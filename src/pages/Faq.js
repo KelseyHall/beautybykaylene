@@ -33,35 +33,33 @@ const FaqPage = () => {
             className="service-links"
             onClick={FilterByCategory(category)}
           >
-            <img src={img} alt={`${altText}-icon`} />
-            <p>{title}</p>
+            {/*<img src={img} alt={`${altText}-icon`} />*/}
+            <p> {title}</p>
           </button>
         </li>
       );
     });
 
   return (
-    <div className="faq-backdrop">
-      <div className="main-container Faq">
-        <h2 className="h2-title primary">frequently asked questions</h2>
-        <div className="faq-sort-by-service">
-          <h3 className="nav-title primary">sort by service</h3>
-          <ul>
-            <SortByService />
-          </ul>
+    <div className="main-container Faq">
+      <h2 className="h2-title primary">frequently asked questions</h2>
+      <div className="faq-sort-by-service">
+        <h3 className="nav-title primary">sort by service</h3>
+        <ul>
+          <SortByService />
+        </ul>
 
-          <button className="view-all-button" onClick={FilterByCategory('')}>
-            <p>view all</p>
-          </button>
-        </div>
-        <h1 className="primary">{<WhichTitle />}</h1>
-        {searchResults.map(({ id, question, answer }) => (
-          <div key={id} className="QA">
-            <p className="question-bold secondary">{question}</p>
-            <p>{answer}</p>
-          </div>
-        ))}
+        <button className="view-all-button" onClick={FilterByCategory('')}>
+          <p>view all</p>
+        </button>
       </div>
+      <h1 className="h2-title primary">{<WhichTitle />}</h1>
+      {searchResults.map(({ id, question, answer }) => (
+        <div key={id} className="QA">
+          <p className="question-bold secondary">{question}</p>
+          <p>{answer}</p>
+        </div>
+      ))}
     </div>
   );
 };
