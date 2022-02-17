@@ -442,7 +442,7 @@ export const ServicesDescriptions = [
             serviceName: 'bumkini',
             price: 50,
             time: '1h',
-            description: `a little more than the underwear line, all the way around to the cheeks!`,
+            description: `a little more than the bikini line, all the way around to the cheeks!`,
           },
           {
             id: uuidv4(),
@@ -998,7 +998,7 @@ export const faqQuestions = [
     id: uuidv4(),
     category: 'waxing',
     question: `Is waxing sanitary?`,
-    answer: `Yes!! I never double dip wax sticks whether it's for facial or body waxing. This is to protect your health and prevent spreading harmful bacteria. No double dipping is the number one thing yon need to look for - wherever you get waxed!`,
+    answer: `Yes!! I never double dip wax sticks whether it's for facial or body waxing. This is to protect your health and prevent spreading harmful bacteria. No double dipping is the number one thing you need to look for - wherever you get waxed!`,
   },
   {
     id: uuidv4(),

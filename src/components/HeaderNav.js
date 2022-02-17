@@ -71,8 +71,8 @@ const HeaderNav = () => {
             className="navHeader__menu__item"
             onClick={() => setIsOpen(false)}
           >
-            <NavLink to="/contactUs" activeClassName="active">
-              contact us
+            <NavLink to="/booknow" activeClassName="active">
+              book now
             </NavLink>
           </li>
           <li>

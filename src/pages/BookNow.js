@@ -1,9 +1,9 @@
 import React from 'react';
-import AreasOfService from '../components/ContactUsPage/AreasOfService';
-import ContactUsBlurb from '../components/ContactUsPage/ContactsUsBlurb';
+import AreasOfService from '../components/BookNowPage/AreasOfService';
+import ContactUsBlurb from '../components/BookNowPage/ContactsUsBlurb';
 // import GetintouchForm from '../components/GetInTouchForm';
 import { Link } from 'react-router-dom';
-const contactUsPage = () => {
+const bookNowPage = () => {
   return (
     <div className="main-container">
       <div className="contactUs">
@@ -30,4 +30,4 @@ const contactUsPage = () => {
   );
 };
 
-export default contactUsPage;
+export default bookNowPage;
