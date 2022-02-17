@@ -6,13 +6,13 @@
     text-align: center;
   }
 }
-.faq-backdrop {
-  background-image: url('../../../images/backdrop.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: top;
-}
+// .faq-backdrop {
+//   background-image: url('../../../images/backdrop.jpg');
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-position-y: top;
+// }
 .faq-sort-by-service {
   .nav-title {
     padding: 20px;
@@ -21,15 +21,19 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
     padding-left: 0;
     li {
       text-align: center;
       p {
+        background-color: $purple-light;
         color: $dark-grey;
-        font-size: $font-nav;
+        font-size: $font-nav-sm;
+
         margin: 0;
+        padding: 5px 10px;
+        border-radius: 10px;
       }
     }
     .service-links {

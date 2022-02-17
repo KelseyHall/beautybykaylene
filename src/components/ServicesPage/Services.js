@@ -31,7 +31,7 @@ const Services = ({ list }) => {
             className="service-links"
             onClick={FilterByCategory(category)}
           >
-            <img src={img} alt={`${altText}-icon`} />
+            {/*<img src={img} alt={`${altText}-icon`} />*/}
             <p>{title}</p>
           </button>
         </li>
@@ -42,13 +42,13 @@ const Services = ({ list }) => {
     <div>
       <div className="services-jump-to-service-wrapper">
         <div className="sort-by-service">
-          <h3 className="nav-text primary">sort by service</h3>
+          {/*<h3 className="nav-text primary">sort by service</h3>*/}
           <ul>
+            <button className="view-all-button" onClick={FilterByCategory('')}>
+              <p>view all</p>
+            </button>
             <SortByService />
           </ul>
-          <button className="view-all-button" onClick={FilterByCategory('')}>
-            <p>view all</p>
-          </button>
         </div>
       </div>
 

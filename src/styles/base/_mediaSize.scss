@@ -186,7 +186,7 @@
     font-size: $font-title-md;
   }
   p {
-    font-size: $font-size-md;
+    font-size: $font-size-sm;
   }
 
   .App-header {
@@ -291,6 +291,11 @@
         }
       }
     }
+    .view-all-button {
+      p {
+        font-size: $font-size-sm !important;
+      }
+    }
   }
   .services-floating-nav {
     ul {
@@ -380,5 +385,15 @@
   }
   .nav-quick-contact {
     display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .services-jump-to-service-wrapper {
+    .sort-by-service {
+      ul {
+        flex-direction: column;
+      }
+    }
   }
 }

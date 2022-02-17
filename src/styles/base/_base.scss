@@ -21,12 +21,15 @@ body {
 .h1-title {
   text-align: center;
   font-size: $font-title-lg;
+  font-variant-caps: all-petite-caps;
 }
 .h2-title {
   font-size: $font-title-md;
+  font-variant-caps: all-petite-caps;
 }
 .h3-title {
   font-size: $font-title-sm;
+  font-variant-caps: all-petite-caps;
 }
 hr {
   width: 95%;

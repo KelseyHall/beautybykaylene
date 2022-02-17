@@ -9,7 +9,7 @@ const bookNowPage = () => {
       <div className="contactUs">
         <ContactUsBlurb />
         <div className="Faq-statement">
-          <h3 className=" h3-title primary">have questions? </h3>
+          <h3 className=" h2-title primary">have questions? </h3>
           <p> Check out our FAQ page to see if we already answered! </p>
 
           <Link className="button" to={'/faq'}>
