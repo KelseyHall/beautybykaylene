@@ -55,10 +55,19 @@ const HeaderNav = () => {
             className="navHeader__menu__item"
             onClick={() => setIsOpen(false)}
           >
+            <NavLink to="/aboutus" activeClassName="active">
+              about us
+            </NavLink>
+          </li>
+          <li
+            className="navHeader__menu__item"
+            onClick={() => setIsOpen(false)}
+          >
             <NavLink to="/services" activeClassName="active">
               services
             </NavLink>
           </li>
+
           <li
             className="navHeader__menu__item"
             onClick={() => setIsOpen(false)}
