@@ -27,7 +27,7 @@ const Services = ({ list }) => {
       return (
         <li key={id}>
           <a
-            to={`anchor-service${id}`}
+            href={`#anchor-service${id}`}
             className="service-links"
             onClick={FilterByCategory(category)}
           >
