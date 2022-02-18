@@ -48,9 +48,13 @@ hr {
   color: #fff;
   border: none;
   font-size: $font-size-md;
-  padding: 6px;
+  padding: 6px 12px;
   // width: 120px;
   border-radius: 9px;
+}
+.button:hover {
+  background: $violet;
+  color: $dark-grey !important;
 }
 
 //text paragraphs
@@ -77,4 +81,8 @@ p {
 a,
 a:active {
   color: $dark-green;
+  text-decoration: none;
+}
+a:hover {
+  color: $dark-purple;
 }

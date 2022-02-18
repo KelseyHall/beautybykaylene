@@ -33,8 +33,7 @@ const FaqPage = () => {
             className="service-links"
             onClick={FilterByCategory(category)}
           >
-            {/*<img src={img} alt={`${altText}-icon`} />*/}
-            <p> {title}</p>
+            <p>{title}</p>
           </button>
         </li>
       );
@@ -49,8 +48,11 @@ const FaqPage = () => {
           <SortByService />
         </ul>
 
-        <button className="view-all-button" onClick={FilterByCategory('')}>
-          <p>view all</p>
+        <button
+          className="button view-all-button"
+          onClick={FilterByCategory('')}
+        >
+          <span>view all</span>
         </button>
       </div>
       <h1 className="h2-title primary">{<WhichTitle />}</h1>

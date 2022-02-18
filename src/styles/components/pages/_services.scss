@@ -28,11 +28,15 @@
     padding-left: 0;
     li {
       text-align: center;
-      p {
-        color: $dark-grey;
-        font-size: $font-size-md;
-        margin: 0;
-      }
+    }
+    a {
+      color: $dark-grey;
+      font-size: $font-size-md;
+      margin: 0;
+      cursor: pointer;
+    }
+    a:hover {
+      color: $dark-green;
     }
     .service-links {
       background: none;
@@ -42,10 +46,14 @@
   .view-all-button {
     background: none;
     border: none;
-    p {
+    span {
       color: $dark-grey;
       font-size: $font-size-md;
       margin: 0;
+      cursor: pointer;
+    }
+    span:hover {
+      color: $dark-green;
     }
   }
 

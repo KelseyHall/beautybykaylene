@@ -26,14 +26,14 @@ const Services = ({ list }) => {
     servicesNav.map(({ id, category, img, altText, title }) => {
       return (
         <li key={id}>
-          <button
-            to={`anchor-service${id}`}
+          <a
+            href={`#anchor-service${id}`}
             className="service-links"
             onClick={FilterByCategory(category)}
           >
             {/*<img src={img} alt={`${altText}-icon`} />*/}
-            <p>{title}</p>
-          </button>
+            {title}
+          </a>
         </li>
       );
     });
@@ -45,7 +45,7 @@ const Services = ({ list }) => {
           {/*<h3 className="nav-text primary">sort by service</h3>*/}
           <ul>
             <button className="view-all-button" onClick={FilterByCategory('')}>
-              <p>view all</p>
+              <span> view all </span>
             </button>
             <SortByService />
           </ul>
