@@ -29,13 +29,12 @@ const FaqPage = () => {
     faqSortbyNav.map(({ id, category, img, altText, title }) => {
       return (
         <li key={id}>
-          <button
-            className="service-links"
+          <a
+            className="button service-links"
             onClick={FilterByCategory(category)}
           >
-            {/*<img src={img} alt={`${altText}-icon`} />*/}
-            <p> {title}</p>
-          </button>
+            {title}
+          </a>
         </li>
       );
     });
@@ -49,9 +48,9 @@ const FaqPage = () => {
           <SortByService />
         </ul>
 
-        <button className="view-all-button" onClick={FilterByCategory('')}>
-          <p>view all</p>
-        </button>
+        <a className=" button view-all-button" onClick={FilterByCategory('')}>
+          view all
+        </a>
       </div>
       <h1 className="h2-title primary">{<WhichTitle />}</h1>
       {searchResults.map(({ id, question, answer }) => (

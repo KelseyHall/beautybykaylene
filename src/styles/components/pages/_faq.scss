@@ -26,25 +26,23 @@
     padding-left: 0;
     li {
       text-align: center;
-      p {
-        background-color: $purple-light;
-        color: $dark-grey;
-        font-size: $font-nav-sm;
-
-        margin: 0;
-        padding: 5px 10px;
-        border-radius: 10px;
-      }
     }
     .service-links {
-      background: none;
       border: none;
+
+      // background-color: $purple-light;
+      // color: $dark-grey;
+      // font-size: $font-nav-sm;
+
+      margin: 0;
+      padding: 5px 20px;
+      border-radius: 10px;
     }
   }
   .view-all-button {
     background: none;
     border: none;
-    p {
+    a {
       color: $dark-grey;
       font-size: $font-size-md;
     }

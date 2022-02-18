@@ -1,5 +1,8 @@
 import React from 'react';
 import BannerImg from '../../images/bannerWebsite.jpg';
+// import BannerImg from '../../images/verticalbanner-1.jpg';
+// import BannerImg from '../../images/verticalbanner-2.jpg';
+
 import { Link } from 'react-router-dom';
 const LandingBanner = () => {
   return (
