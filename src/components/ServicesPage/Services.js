@@ -44,9 +44,9 @@ const Services = ({ list }) => {
         <div className="sort-by-service">
           {/*<h3 className="nav-text primary">sort by service</h3>*/}
           <ul>
-            <a className="view-all-button" onClick={FilterByCategory('')}>
-              view all
-            </a>
+            <button className="view-all-button" onClick={FilterByCategory('')}>
+              <span> view all </span>
+            </button>
             <SortByService />
           </ul>
         </div>

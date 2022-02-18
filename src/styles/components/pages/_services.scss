@@ -46,13 +46,13 @@
   .view-all-button {
     background: none;
     border: none;
-    a {
+    span {
       color: $dark-grey;
       font-size: $font-size-md;
       margin: 0;
       cursor: pointer;
     }
-    a:hover {
+    span:hover {
       color: $dark-green;
     }
   }
