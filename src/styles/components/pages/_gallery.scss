@@ -1,10 +1,10 @@
 //popup background
 .react-simple-image-viewer__modal {
-  background-color: $violet-light !important;
+  background-color: $primary-lighter !important;
   .react-simple-image-viewer__close,
   .react-simple-image-viewer__previous,
   .react-simple-image-viewer__next {
-    color: $dark-purple !important;
+    color: $primary-dark !important;
   }
 }
 
@@ -23,7 +23,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    background-color: $violet-light;
+    background-color: $primary-lighter;
   }
 }
 

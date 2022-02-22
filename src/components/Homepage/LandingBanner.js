@@ -40,7 +40,7 @@ const LandingBanner = () => {
           Durham and Quite West.
         </p>
 
-        <Link to="/contactus" className="button">
+        <Link to="/booknow" className="button">
           book now
         </Link>
       </div>
