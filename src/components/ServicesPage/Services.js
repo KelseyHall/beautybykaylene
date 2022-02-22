@@ -69,7 +69,7 @@ const Services = ({ list }) => {
               }
             >
               <div className={'content'}>
-                <h2 className="h2-title secondary">{service}</h2>
+                <h2 className="h2-title primary-dark">{service}</h2>
                 <img src={image} className="services-Img" alt="service-theme" />
                 <p className="servicesBlurb">{blurb}</p>
               </div>
@@ -82,7 +82,7 @@ const Services = ({ list }) => {
                 <div className="services-item">
                   {serviceDetails.map(({ title, details }) => (
                     <ul className="services-sub" key={id + title}>
-                      <h3 className="h3-title secondary">{title}</h3>
+                      <h3 className="h3-title primary-dark">{title}</h3>
                       {details.map(
                         ({ id, serviceName, price, time, description }) => (
                           <li key={id}>

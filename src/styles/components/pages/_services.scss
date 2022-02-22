@@ -71,6 +71,9 @@
       width: 50%;
       margin: 5px;
     }
+    .servicesBlurb {
+      color: $secondary-dark;
+    }
   }
 }
 .services-pricing {
@@ -98,6 +101,7 @@
     .serviceDescription {
       padding-top: 10px;
       font-size: $font-size-sm;
+      color: $secondary;
     }
   }
   .services-sub:nth-child(odd) {
@@ -107,6 +111,7 @@
     .price,
     .serviceName {
       font-size: $font-pricing !important;
+      color: $secondary-dark;
     }
 
     .time {
@@ -130,7 +135,7 @@
   display: flex;
   justify-content: space-evenly;
   color: $accents-secondary;
-  background-color: $secondary-dark;
+  background-color: $primary-lighter;
   width: 100%;
   align-items: center;
   padding: 10px;
@@ -152,11 +157,11 @@
 }
 
 .service-top-col {
-  background: $secondary-light;
+  background: $secondary-lightest;
   margin-top: 40px;
 }
 .service-bottom-col-2 {
-  background: $secondary-lighter;
+  background: $secondary-lightest;
   color: $accents-secondary;
   position: relative;
 }
@@ -172,8 +177,8 @@
   z-index: -5;
 }
 .stagger-bg {
-  background: $primary-lighter;
+  background: $primary-light;
 }
 .stagger-bg-2 {
-  background: $secondary-lighter;
+  background: $secondary-lightest;
 }
