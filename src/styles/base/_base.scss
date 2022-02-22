@@ -13,8 +13,14 @@ body {
 .primary {
   color: $primary;
 }
+.primary-dark {
+  color: $primary-dark;
+}
 .secondary {
   color: $secondary;
+}
+.secondary-dark {
+  color: $secondary-dark;
 }
 .accents-primary {
   color: $accents-primary;
@@ -40,7 +46,7 @@ body {
 hr {
   width: 95%;
   border: none;
-  border-top: 1px solid $dirty-gold;
+  border-top: 1px solid $secondary;
 }
 .homeUnderline {
   width: 500px;
