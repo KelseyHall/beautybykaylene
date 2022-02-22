@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const ContactUsBlurb = () => {
   return (
     <div className="contactUs-content">
-      <h1 className="h1-title primary">get in touch</h1>
+      <h1 className="h1-title secondary">get in touch</h1>
       <hr />
       <p className="beforeYouBookText">
         Before you book please read our{' '}
@@ -19,17 +19,8 @@ const ContactUsBlurb = () => {
         <li>a few dates & times that work for you</li>
       </ul>
       <div className="book-info">
-        <h1 className="h1-title primary">book appointment</h1>
-        <h3 className="h3-title">
-          <a className="h2-title " href="tel:905-644-8880">
-            905.644.8880
-          </a>
-        </h3>
-        <p className="email-us">
-          <a href="mailto:beautybykaylene@gmail.com">
-            beautybykaylene@gmail.com
-          </a>
-        </p>
+        <h1 className="h1-title secondary">book appointment</h1>
+
         <a
           href="https://www.fresha.com/a/beauty-by-kaylene-mobile-spa-port-hope-toronto-rd-u3ztt3oj/booking?menu=true&dppub=true&employeeId=1328692"
           target="_blank"
@@ -39,10 +30,26 @@ const ContactUsBlurb = () => {
           book online
         </a>
       </div>
-      <p className="beforeYouBookText">
+      {/* <p className="beforeYouBookText">
         I will get back to you in 1-2 days with a confirmation, approximately
         how long we will be to complete the service, and some other information
         for the day of! See map below for service areas.
+  </p>*/}
+      <div className="Faq-statement">
+        <h3 className=" h2-title secondary">have questions? </h3>
+        <p> Check out our FAQ page to see if we already answered! </p>
+
+        <Link className="button" to={'/faq'}>
+          FAQ page
+        </Link>
+      </div>
+      <h3 className="h3-title">
+        <a className="h2-title " href="tel:905-644-8880">
+          905.644.8880
+        </a>
+      </h3>
+      <p className="email-us">
+        <a href="mailto:beautybykaylene@gmail.com">beautybykaylene@gmail.com</a>
       </p>
     </div>
   );

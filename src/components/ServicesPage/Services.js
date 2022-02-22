@@ -3,13 +3,14 @@ import React, { useState, useEffect } from 'react';
 import { servicesNav } from '../Staticdatabase';
 
 //to Determine what background class
-const isEven = (n) => {
-  return n % 2 === 0;
-};
-const WhichRow = (idx) => (isEven(idx) ? '' : '-2');
+// const isEven = (n) => {
+//   return n % 2 === 0;
+// };
+// const WhichRow = (idx) => (isEven(idx) ? '' : '-2');
 
 const Services = ({ list }) => {
   const [categorySearch, setCategorySearch] = useState('');
+  const [visible, setVisible] = useState(false);
   const [searchResults, setSearchResults] = useState([]);
   const FilterByCategory = (e) => () => {
     setCategorySearch(e);
@@ -63,26 +64,20 @@ const Services = ({ list }) => {
           linkedinHandle,
         }) => (
           <div className="services-content" id={linkedinHandle} key={id}>
-            <div
-              className={
-                'services-about-content  service-top-col' + WhichRow(idx)
-              }
-            >
+            <div className={'services-about-content  service-top-col'}>
               <div className={'content'}>
-                <h2 className="h2-title primary-dark">{service}</h2>
+                <h2 className="h2-title secondary-dark">{service}</h2>
                 <img src={image} className="services-Img" alt="service-theme" />
                 <p className="servicesBlurb">{blurb}</p>
               </div>
             </div>
-            <div className={'stagger-bg' + WhichRow(idx)}></div>
-            <div
-              className={'services-pricing  service-bottom-col' + WhichRow(idx)}
-            >
+            <div className={'stagger-bg'}></div>
+            <div className={'services-pricing  service-bottom-col'}>
               <div className="content">
                 <div className="services-item">
                   {serviceDetails.map(({ title, details }) => (
                     <ul className="services-sub" key={id + title}>
-                      <h3 className="h3-title primary-dark">{title}</h3>
+                      <h3 className="h3-title secondary-dark">{title}</h3>
                       {details.map(
                         ({ id, serviceName, price, time, description }) => (
                           <li key={id}>
@@ -94,7 +89,22 @@ const Services = ({ list }) => {
 
                               <p className="price">{`$${price}`}</p>
                             </div>
-                            <p className="serviceDescription">{`${description}`}</p>
+                            <span>
+                              <button
+                                style={{
+                                  background: 'none',
+                                  border: 'none',
+                                  textAlign: 'center',
+                                  width: '100%',
+                                }}
+                                onClick={() => setVisible(!visible)}
+                              >
+                                {visible ? 'v' : '^'}
+                              </button>{' '}
+                              {visible && (
+                                <p className="serviceDescription">{`${description}`}</p>
+                              )}
+                            </span>
                           </li>
                         )
                       )}

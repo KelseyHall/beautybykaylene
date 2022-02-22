@@ -1,6 +1,6 @@
 .areas-of-service {
-  @extend %pageCenter;
-  margin: 70px auto;
+  // margin: 70px auto;
+  width: 50%;
   h1 {
     text-align: center;
     hr {
@@ -50,7 +50,7 @@
   }
 
   .services-area-1 .icon {
-    background-color: $accents-secondary;
+    background-color: $accents-primary-light;
   }
   .services-area-2 .icon {
     background-color: rgb(198, 69, 69);
@@ -69,9 +69,13 @@
 .contactUs {
   @extend %pageCenter;
   margin-top: 60px;
-  background: $secondary-lightest;
+  background: $primary-lightest;
   padding: 65px 20px 20px;
   display: flex;
+  .h1-title,
+  .h3-title {
+    margin: 0;
+  }
 
   .beforeYouBookList {
     font-size: $font-size-md;
@@ -87,6 +91,8 @@
     align-content: center;
     text-align: center;
     align-items: center;
+    margin-right: 30px;
+    width: 60%;
     .book-info {
       padding: 25px 0;
       * {
@@ -97,10 +103,7 @@
       color: $accents-secondary;
       margin: 5px 0;
     }
-    .h1-title,
-    .h3-title {
-      margin: 0;
-    }
+
     .h3-title a {
       color: $accents-primary;
     }
