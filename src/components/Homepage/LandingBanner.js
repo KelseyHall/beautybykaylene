@@ -9,7 +9,7 @@ const LandingBanner = () => {
     <div className="home-banner">
       <img src={BannerImg} alt="banner-img" />
       <div className="home-banner-content">
-        <h2 className="h2-title primary ">Welcome!</h2>
+        <h2 className="h2-title secondary ">Welcome!</h2>
         <p>
           {' '}
           If this is your first time visiting, thanks for stopping by, and I

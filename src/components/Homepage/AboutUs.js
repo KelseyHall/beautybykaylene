@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const AboutUsContent = () => {
   return (
     <div className="about-us-homePage">
-      <h1 className="h1-title primary">
+      <h1 className="h1-title secondary">
         about us
         <hr className="homeUnderline" />
       </h1>

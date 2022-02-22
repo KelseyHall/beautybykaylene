@@ -46,14 +46,14 @@ body {
 hr {
   width: 95%;
   border: none;
-  border-top: 1px solid $secondary;
+  border-top: 1px solid $secondary-light;
 }
 .homeUnderline {
   width: 500px;
 }
 //buttons
 .button {
-  background: $primary;
+  background: $secondary;
   color: #fff;
   border: none;
   font-size: $font-size-md;
@@ -62,7 +62,7 @@ hr {
   border-radius: 9px;
 }
 .button:hover {
-  background: $secondary;
+  background: $primary;
   color: #fff !important;
 }
 

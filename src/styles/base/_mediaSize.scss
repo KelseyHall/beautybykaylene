@@ -256,8 +256,8 @@
     &-item-2,
     &-item-3,
     &-item-4 {
-      border-top: 1px solid $dirty-gold-faded !important;
-      border-bottom: 1px solid $dirty-gold-faded !important;
+      border-top: 1px solid ($secondary + 100) !important;
+      border-bottom: 1px solid ($secondary + 100) !important;
       border-left: none !important;
       border-right: none !important;
 
@@ -318,23 +318,22 @@
   }
   .services-content {
     width: 100%;
-    .stagger-bg,
-    .stagger-bg-2 {
+    .stagger-bg {
       display: none;
     }
+    // .service-top-col {
+    //   margin-top: 10px;
+    //   border-top: 50px solid $primary-light;
+    // }
+    // .service-bottom-col {
+    //   border-bottom: 50px solid $primary-light;
+    // }
     .service-top-col {
       margin-top: 10px;
-      border-top: 50px solid $primary-lighter;
+      border-top: 50px solid $primary-lightest;
     }
     .service-bottom-col {
-      border-bottom: 50px solid $primary-lighter;
-    }
-    .service-top-col-2 {
-      margin-top: 10px;
-      border-top: 50px solid $secondary-lighter;
-    }
-    .service-bottom-col-2 {
-      border-bottom: 50px solid $secondary-lighter;
+      border-bottom: 50px solid $primary-lightest;
     }
   }
 

@@ -26,7 +26,7 @@
     margin: 0 auto;
     flex-direction: column;
 
-    border-bottom: 1px solid $dirty-gold;
+    border-bottom: 1px solid ($secondary + 100);
     ul {
       padding: 0;
     }
@@ -132,7 +132,7 @@
   // padding-top: 10px;
   margin: 20px 10px;
   text-align: left;
-  border-top: 1px solid $dirty-gold;
+  border-top: 1px solid $secondary;
   p {
     color: $accents-secondary-light;
     font-size: $font-nav-sm;

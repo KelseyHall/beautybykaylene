@@ -8,7 +8,7 @@ const DisplayServicesBlurb = () =>
     <div key={index} className={`services-item-` + number}>
       <a href={`/services/#anchor-${service}`}>
         {/* <img src={img} alt={title + `-icon`} /> */}
-        <h3 className="h3-title primary">{title}</h3>
+        <h3 className="h3-title secondary">{title}</h3>
         <p>{blurb}</p>
         <img src={downArrow} className="downArrow" alt={downArrow} />
       </a>
@@ -17,10 +17,10 @@ const DisplayServicesBlurb = () =>
 const HomeServicesBlurb = () => {
   return (
     <div className="services">
-      <h1 className="h1-title primary">
+      <img src={BannerImg} alt="services-banner" className="banner" />
+      <h1 className="h1-title secondary">
         services <hr className="homeUnderline" />
       </h1>
-      <img src={BannerImg} alt="services-banner" className="banner" />
       <div className="services-bg">
         <div className="services-card">
           <DisplayServicesBlurb />
