@@ -30,13 +30,13 @@
       text-align: center;
     }
     a {
-      color: $dark-grey;
+      color: $accents-secondary;
       font-size: $font-size-md;
       margin: 0;
       cursor: pointer;
     }
     a:hover {
-      color: $dark-green;
+      color: $accents-primary;
     }
     .service-links {
       background: none;
@@ -47,13 +47,13 @@
     background: none;
     border: none;
     span {
-      color: $dark-grey;
+      color: $accents-secondary;
       font-size: $font-size-md;
       margin: 0;
       cursor: pointer;
     }
     span:hover {
-      color: $dark-green;
+      color: $accents-primary;
     }
   }
 
@@ -129,8 +129,8 @@
   z-index: 100;
   display: flex;
   justify-content: space-evenly;
-  color: $dark-grey;
-  background-color: $violet;
+  color: $accents-secondary;
+  background-color: $secondary-dark;
   width: 100%;
   align-items: center;
   padding: 10px;
@@ -143,27 +143,27 @@
 }
 .service-top-col,
 .service-bottom-col {
-  color: $dark-grey;
+  color: $accents-secondary;
   text-align: left;
   position: relative;
 }
 .service-bottom-col {
-  background: $purple-light;
+  background: $primary-lighter;
 }
 
 .service-top-col {
-  background: $violet-light;
+  background: $secondary-light;
   margin-top: 40px;
 }
 .service-bottom-col-2 {
-  background: $violet-light;
-  color: $dark-grey;
+  background: $secondary-lighter;
+  color: $accents-secondary;
   position: relative;
 }
 .service-top-col-2 {
   margin-top: 40px;
-  background: $purple-light;
-  color: $dark-grey;
+  background: $secondary-light;
+  color: $accents-secondary;
 }
 .stagger-bg,
 .stagger-bg-2 {
@@ -172,8 +172,8 @@
   z-index: -5;
 }
 .stagger-bg {
-  background: $purple-light;
+  background: $primary-lighter;
 }
 .stagger-bg-2 {
-  background: $violet-light;
+  background: $secondary-lighter;
 }

@@ -11,10 +11,13 @@ body {
 
 //color titles
 .primary {
-  color: $dark-purple;
+  color: $primary;
 }
 .secondary {
-  color: $dark-green;
+  color: $secondary;
+}
+.accents-primary {
+  color: $accents-primary;
 }
 
 .capitalize {
@@ -44,7 +47,7 @@ hr {
 }
 //buttons
 .button {
-  background: $dark-purple;
+  background: $primary;
   color: #fff;
   border: none;
   font-size: $font-size-md;
@@ -53,8 +56,8 @@ hr {
   border-radius: 9px;
 }
 .button:hover {
-  background: $violet;
-  color: $dark-grey !important;
+  background: $secondary;
+  color: #fff !important;
 }
 
 //text paragraphs
@@ -80,9 +83,9 @@ p {
 //link
 a,
 a:active {
-  color: $dark-green;
+  color: $accents-primary;
   text-decoration: none;
 }
 a:hover {
-  color: $dark-purple;
+  color: $primary;
 }

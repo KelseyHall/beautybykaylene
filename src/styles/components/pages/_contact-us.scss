@@ -21,7 +21,7 @@
     justify-content: space-between;
     p {
       font-size: $font-size-sm;
-      color: $grey;
+      color: $accents-secondary-light;
     }
     .blurb {
       margin-top: 20px !important;
@@ -50,7 +50,7 @@
   }
 
   .services-area-1 .icon {
-    background-color: $green;
+    background-color: $accents-secondary;
   }
   .services-area-2 .icon {
     background-color: rgb(198, 69, 69);
@@ -59,7 +59,7 @@
     background-color: rgb(247, 140, 121);
   }
   .services-area-4 .icon {
-    background-color: $dark-purple;
+    background-color: $primary;
   }
   .services-area-5 .icon {
     background-color: rgb(89, 131, 189);
@@ -69,13 +69,13 @@
 .contactUs {
   @extend %pageCenter;
   margin-top: 60px;
-  background: $purple-light;
+  background: $secondary-lightest;
   padding: 65px 20px 20px;
   display: flex;
 
   .beforeYouBookList {
     font-size: $font-size-md;
-    color: $dark-grey;
+    color: $accents-secondary;
     padding-left: 0;
     li {
       list-style-type: none;
@@ -94,7 +94,7 @@
       }
     }
     p {
-      color: $dark-grey;
+      color: $accents-secondary;
       margin: 5px 0;
     }
     .h1-title,
@@ -102,11 +102,11 @@
       margin: 0;
     }
     .h3-title a {
-      color: $dark-green;
+      color: $accents-primary;
     }
     .email-us {
       a {
-        color: $dark-green;
+        color: $accents-primary;
       }
     }
     .online-booking {
@@ -122,9 +122,9 @@
     margin: auto;
     padding: 0 60px;
     text-align: center;
-    color: $dark-grey;
+    color: $accents-secondary;
     a:hover {
-      color: $violet-light;
+      color: $accents-primary-light;
     }
   }
 }
@@ -135,7 +135,7 @@
   flex-direction: column;
   align-items: center;
   a:hover {
-    color: $violet-light;
+    color: $accents-primary-light;
   }
 }
 

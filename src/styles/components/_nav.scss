@@ -12,10 +12,10 @@
     text-align: left;
     justify-self: end;
     text-decoration: none;
-    color: $dark-grey;
+    color: $accents-secondary;
   }
   .active {
-    color: $dark-purple !important;
+    color: $primary !important;
   }
   .navHeader {
     @extend %pageCenter;
@@ -41,7 +41,7 @@
 
       svg {
         width: 1.7rem;
-        fill: $green;
+        fill: $accents-secondary-light;
       }
       .close {
         display: none;
@@ -74,7 +74,7 @@
 
       &__item {
         a {
-          color: $grey;
+          color: $accents-secondary-light;
           // width: auto;
           font-family: $default-font;
           font-size: $font-nav;
@@ -83,13 +83,13 @@
           text-decoration: none;
         }
         a:hover {
-          color: $dark-purple;
+          color: $primary;
         }
       }
 
       svg {
         width: 1.5rem;
-        fill: $dark-green;
+        fill: $accents-primary;
       }
     }
   }
@@ -134,13 +134,13 @@
   text-align: left;
   border-top: 1px solid $dirty-gold;
   p {
-    color: $grey;
+    color: $accents-secondary-light;
     font-size: $font-nav-sm;
     margin-bottom: 0;
     margin-top: 10px;
   }
   a {
-    color: $dark-green !important;
+    color: $secondary !important;
   }
   a:hover {
     background: none !important;

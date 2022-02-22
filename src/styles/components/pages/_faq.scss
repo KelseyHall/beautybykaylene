@@ -30,7 +30,7 @@
     .service-links {
       border: none;
 
-      background-color: $dark-purple;
+      background-color: $primary;
       color: white;
       font-size: $font-nav-sm;
 
@@ -42,19 +42,19 @@
       }
     }
     .service-links:hover {
-      background-color: $purple-light;
-      color: $dark-grey;
+      background-color: $primary;
+      color: $accents-secondary;
     }
   }
   .view-all-button {
     background: none;
     border: none;
     span {
-      color: $dark-grey;
+      color: $accents-secondary;
       font-size: $font-size-md;
     }
     span:hover {
-      color: $dark-green;
+      color: $accents-primary;
     }
   }
 
