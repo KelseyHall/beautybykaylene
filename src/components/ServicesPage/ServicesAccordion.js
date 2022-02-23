@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import downArrow from '../../images/smallDownArrow.png';
 import upArrow from '../../images/smallUpArrow.png';
 const ServicesAccordion = ({ serviceName, price, time, description }) => {
-  //   const isOpen = false;
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const handleToggle = () => setIsOpen((prev) => !prev);
   const showContent = () => {
     if (description.length > 0) {
