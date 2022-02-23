@@ -87,10 +87,13 @@ const HeaderNav = () => {
           <li>
             <div className="nav-quick-contact">
               <p>
-                text
-                <br />
-                <a className="nav-contact" href="tel:905-644-8880">
-                  905.644.8880
+                <a
+                  className="button navBookButton"
+                  href="https://www.fresha.com/a/beauty-by-kaylene-mobile-spa-port-hope-toronto-rd-u3ztt3oj/booking?menu=true&dppub=true&employeeId=1328692"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  quick booking
                 </a>
               </p>
               <p>our socials</p>
@@ -110,14 +113,14 @@ const HeaderNav = () => {
           </li>
         </ul>
       </nav>
-      <div className="floating-socials">
+      {/*<div className="floating-socials">
         <a href={FacebookLink} target="_blank" rel="noreferrer">
           <img src={FacebookIcon} alt="facebook-icon" />
         </a>
         <a href={InstagramLink} target="_blank" rel="noreferrer">
           <img src={InstaIcon} alt="instagram-icon" />
         </a>
-      </div>
+  </div>*/}
     </div>
   );
 };
