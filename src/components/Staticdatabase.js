@@ -184,21 +184,21 @@ export const ServicesDescriptions = [
             serviceName: 'spa manicure',
             price: 40,
             time: '1h 30min',
-            description: `hand soak, nail shaping and cuticle work followed with cuticle oil, a moisturizing hand and arm massage finished off with a polish! Polish is optional.`,
+            description: `Hand soak, nail shaping and cuticle work followed with cuticle oil, a moisturizing hand and arm massage finished off with a polish! Polish is optional.`,
           },
           {
             id: uuidv4(),
             serviceName: 'gel manicure',
             price: 45,
             time: '1h 30min',
-            description: `dry manicure including a nail trim and file, cuticle care, gel polish finished off with a relaxing hand and arm massage. `,
+            description: `Dry manicure including a nail trim and file, cuticle care, gel polish finished off with a relaxing hand and arm massage. `,
           },
           {
             id: uuidv4(),
             serviceName: 'sculpted manicure',
             price: '55+',
             time: '2h',
-            description: `dry manicure including nail prep with a hard gel overlay on your natural nails`,
+            description: `Dry manicure including nail prep with a hard gel overlay on your natural nails`,
           },
           {
             id: uuidv4(),
@@ -242,11 +242,10 @@ export const ServicesDescriptions = [
         details: [
           {
             id: uuidv4(),
-            serviceName: 'nail design',
+            serviceName: 'nail art',
             price: '5+',
             time: '15min+',
-            description:
-              'nail art *can only be added onto gel polish manicure/pedicure',
+            description: 'Can only be added onto gel polish manicure/pedicure',
           },
           {
             id: uuidv4(),
@@ -260,14 +259,22 @@ export const ServicesDescriptions = [
             serviceName: 'paraffin treatment',
             price: 10,
             time: '25min',
-            description: '',
+            description:
+              'Envelop your skin in a delicious peach oil paraffin wrap that will leave your skin feeling silky smooth! ',
+          },
+          {
+            id: uuidv4(),
+            serviceName: 'gel polish removal',
+            price: 20,
+            time: '30min',
+            description: `* Gel polish removal is FREE if I have applied your current gel polish for you and you are booking another manicure/pedicure experience.`,
           },
           {
             id: uuidv4(),
             serviceName: 'sculpting gel removal',
             price: 25,
             time: '1h',
-            description: `* gel removal is FREE if I have applied your current gel polish for you and you are booking another manicure/pedicure experience`,
+            description: `* I will not fill another artist's work. Please book a full removal along with your sculpted manicure if it is your first time seeing me and you have another product on your nails.`,
           },
 
           {
@@ -275,7 +282,7 @@ export const ServicesDescriptions = [
             serviceName: 'regular polish change',
             price: 30,
             time: '30min',
-            description: `for clients who have had a manicure or pedicure within 2 weeks done by beauty by Kaylene. * excludes gel polish`,
+            description: `For clients who have had a manicure or pedicure within 2 weeks done by beauty by Kaylene. * excludes gel polish`,
           },
         ],
       },
@@ -285,17 +292,24 @@ export const ServicesDescriptions = [
         details: [
           {
             id: uuidv4(),
-            serviceName: 'gel manicure & spa pedicure',
+            serviceName: 'french manicure & french pedicure',
+            price: 60,
+            time: '3h',
+            description: ``,
+          },
+          {
+            id: uuidv4(),
+            serviceName: 'salt glow pedicure',
             price: 85,
             time: '3h',
-            description: `enjoy a relaxing (or much needed) gel manicure & pedicure in the comfort of your own home. Sit back and watch your favourite show, or listen to your favourite music if you'd like!`,
+            description: `Enjoy a relaxing (or much needed) gel manicure & pedicure in the comfort of your own home. Sit back and watch your favourite show, or listen to your favourite music if you'd like!`,
           },
           {
             id: uuidv4(),
             serviceName: 'gel manicure & gel pedicure',
             price: 95,
             time: '3h',
-            description: `enjoy a relaxing (or much needed) gel manicure & gel pedicure in the comfort of your own home. Sit back and watch your favourite show, or listen to your favourite music if you'd like!`,
+            description: `Enjoy a relaxing (or much needed) gel manicure & gel pedicure in the comfort of your own home. Sit back and watch your favourite show, or listen to your favourite music if you'd like!`,
           },
         ],
       },
@@ -309,7 +323,7 @@ export const ServicesDescriptions = [
             serviceName: 'mini manicure',
             price: 15,
             time: '45min',
-            description: `includes a mini soak, nail prep, cuticle oil and a mini hand massage. Finished off with a pretty polish. To get a longer lasting polish, choose to upgrade to gel! `,
+            description: `Includes a mini soak, nail prep, cuticle oil and a mini hand massage. Finished off with a pretty polish. To get a longer lasting polish, choose to upgrade to gel! `,
           },
 
           {
@@ -317,14 +331,14 @@ export const ServicesDescriptions = [
             serviceName: 'mini pedicure',
             price: 20,
             time: '45min',
-            description: `includes a mini foot soak, nail prep, foot scrub, cuticle oil and a mini foot massage, finished off with a pretty polish.`,
+            description: `Includes a mini foot soak, nail prep, foot scrub, cuticle oil and a mini foot massage, finished off with a pretty polish.`,
           },
           {
             id: uuidv4(),
             serviceName: 'upgrade to gel polish - add on',
             price: 5,
             time: '5min',
-            description: `to get a longer lasting polish`,
+            description: `To get a longer lasting polish`,
           },
           {
             id: uuidv4(),
@@ -332,7 +346,7 @@ export const ServicesDescriptions = [
             price: 10,
             time: '20min',
             description:
-              'price includes 1 accent nail on each hand, price increases if more is wanted.',
+              'Price includes 1 accent nail on each hand, price increases if more is wanted.',
           },
         ],
       },
@@ -504,28 +518,28 @@ export const ServicesDescriptions = [
             serviceName: 'bikini',
             price: 30,
             time: '30min',
-            description: `clean up the sides and a little off the top, if you'd like!`,
+            description: `Clean up the sides and a little off the top, if you'd like!`,
           },
           {
             id: uuidv4(),
             serviceName: 'full bikini',
             price: 40,
             time: '45min',
-            description: `everything off the front, leave a strip or triangle if desired`,
+            description: `Everything off the front, leave a strip or triangle if desired`,
           },
           {
             id: uuidv4(),
             serviceName: 'bumkini',
             price: 50,
             time: '1h',
-            description: `a little more than the bikini line, all the way around to the cheeks!`,
+            description: `A little more than the bikini line, all the way around to the cheeks!`,
           },
           {
             id: uuidv4(),
             serviceName: 'brazilian',
             price: 65,
             time: '1h 45min',
-            description: `everything from front to back! Choose to leave some in the front, just let me know at our appointment!\n*If its been over 3 months since your last appointment`,
+            description: `Everything from front to back! Choose to leave some in the front, just let me know at our appointment!\n*If its been over 3 months since your last appointment`,
           },
           {
             id: uuidv4(),
@@ -533,10 +547,11 @@ export const ServicesDescriptions = [
             price: 55,
             time: '1h 30min',
             description:
-              'to be booked only if you have seen me for a Brazilian within the last 2 months.',
+              'To be booked only if you have seen me for a Brazilian within the last 2 months.',
           },
         ],
       },
+
       {
         title: 'face',
         details: [
@@ -582,14 +597,8 @@ export const ServicesDescriptions = [
             time: '1h',
             description: ``,
           },
-          {
-            id: uuidv4(),
-            serviceName: '',
-            price: '',
-            time: '',
-            description: `*Add On Services Only`,
-          },
         ],
+        disclaimer: '* Add On Services Only',
       },
 
       {
@@ -601,14 +610,14 @@ export const ServicesDescriptions = [
             price: 20,
             time: '15min',
             description:
-              'included free with leg wax or pedicure when requested',
+              'Included free with leg wax or pedicure when requested',
           },
           {
             id: uuidv4(),
             serviceName: 'half leg',
             price: 40,
             time: '45min',
-            description: `choice of upper or lower leg`,
+            description: `Choice of upper or lower leg`,
           },
 
           {
@@ -687,14 +696,14 @@ export const ServicesDescriptions = [
             serviceName: 'brazilian & underarms',
             price: 80,
             time: '2h',
-            description: `a deal on the two best (IMO) body waxing services you can get! reg $85`,
+            description: `A deal on the two best (IMO) body waxing services you can get! reg $85`,
           },
           {
             id: uuidv4(),
             serviceName: 'full leg & bikini line',
             price: 85,
             time: '2h',
-            description: 'reg $95',
+            description: 'Reg $95',
           },
         ],
       },
@@ -874,7 +883,7 @@ export const ServicesDescriptions = [
             serviceName: 'dry brush',
             price: 30,
             time: '20min',
-            description: 'clients get to keep brush',
+            description: 'Clients get to keep brush',
           },
           {
             id: uuidv4(),

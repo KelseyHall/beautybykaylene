@@ -15,6 +15,7 @@
 
 .services-jump-to-service-wrapper {
   @extend %pageCenter;
+  font-variant-caps: all-petite-caps;
   .nav-title {
     padding: 20px;
   }
@@ -46,6 +47,7 @@
   .view-all-button {
     background: none;
     border: none;
+    font-variant-caps: all-petite-caps;
     span {
       color: $accents-secondary;
       font-size: $font-size-md;
@@ -62,22 +64,29 @@
   }
 }
 .services-about-content {
-  .content {
-    display: inline-block;
-    padding: 0 0 30px;
-
-    .services-Img {
-      float: left;
-      width: 50%;
-      margin: 5px;
-    }
-    .servicesBlurb {
-      color: $secondary-dark;
-    }
+  display: inline-block;
+  padding-bottom: 30px;
+  .services-Img {
+    float: left;
+    width: 50%;
+    margin: 5px;
+  }
+  .servicesBlurb {
+    color: $secondary-dark;
   }
 }
 .services-pricing {
+  // display: flex;
+  // flex-wrap: wrap;
   padding: 15px 0;
+  .services-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .services-sub {
     float: left;
     width: 50%;
@@ -107,24 +116,34 @@
   .services-sub:nth-child(odd) {
     clear: left;
   }
-  .content {
-    .price,
-    .serviceName {
-      font-size: $font-pricing !important;
-      color: $secondary-dark;
-    }
 
-    .time {
-      padding-left: 10px;
-      font-size: $font-size-md;
-      white-space: nowrap;
-    }
+  .price,
+  .serviceName {
+    font-size: $font-pricing !important;
+    color: $secondary-dark;
+  }
 
-    .h3-title {
-      padding: 0 20px 10px;
-      margin-bottom: 0;
-      margin-top: 0;
-    }
+  .time {
+    padding-left: 10px;
+    font-size: $font-size-md;
+    white-space: nowrap;
+  }
+
+  .h3-title {
+    padding: 0 20px 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .individualDisclaimer {
+    color: $secondary-dark;
+  }
+  .disclaimer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    width: 100%;
+    margin-bottom: 40px;
   }
 }
 .services-floating-nav {
