@@ -1202,6 +1202,63 @@ export const faqQuestions = [
   },
 ];
 
+//Policies
+export const policies = [
+  {
+    id: uuidv4(),
+    title: 'Cancellation Policy  ',
+    body: (
+      <span>
+        <p>
+          I love all of my clients, and when you’re not there when I show up, or
+          you cancel or change your appointment at the last minute – I seriously
+          cry! Usually because I’m super pumped about seeing you, but also
+          because now someone else might miss their opportunity for some
+          self-care time.
+        </p>
+        <p>
+          With this in mind there is one small rule I enforce and ask that you
+          honor:{' '}
+        </p>
+        <p>
+          {' '}
+          Please give Beauty by Kaylene no less than 24 hours' notice to cancel
+          or change your appointment. Guests who do not, will be required to pay
+          50% of the cost of the service booked, payable on or before your next
+          appointment.{' '}
+        </p>
+        <p>Thank you for understanding and your kindness, </p>
+        <span className="signature"> Kay xo</span>{' '}
+      </span>
+    ),
+  },
+  {
+    id: uuidv4(),
+    title: 'Menstruation Policy ',
+    body: (
+      <span>
+        <p>
+          With Beauty by Kaylene you are able to wax while you are menstruating.{' '}
+        </p>
+        <p>
+          All that is asked is that you kindly insert a clean tampon or utilize
+          a menstruation cup prior to your service to ensure that proper
+          sanitation is maintained.{' '}
+        </p>
+        <p>
+          It is understandable that not every client will be comfortable with
+          this, so please plan ahead and book accordingly.{' '}
+        </p>
+        <p>
+          Canceling due to menstruation will still need to be mindful of our
+          *cancellation policy* to avoid any fees.{' '}
+        </p>
+        <span className="signature"> Kay xo</span>
+      </span>
+    ),
+  },
+];
+
 //Downloadable PDFS Page
 export const downloadablePdf = [
   {
