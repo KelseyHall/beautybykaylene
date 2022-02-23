@@ -26,9 +26,9 @@ const ServicesAccordion = ({ serviceName, price, time, description }) => {
           onClick={handleToggle}
         >
           {isOpen ? (
-            <img src={downArrow} alt="downArrow" />
+            <img src={downArrow} className="arrows" alt="downArrow" />
           ) : (
-            <img src={upArrow} alt="upArrow" />
+            <img src={upArrow} className="arrows" alt="upArrow" />
           )}
         </button>{' '}
         {isOpen && <p className="serviceDescription">{`${description}`}</p>}
