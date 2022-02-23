@@ -5,6 +5,17 @@ const ServicesAccordion = ({ serviceName, price, time, description }) => {
   //   const isOpen = false;
   const [isOpen, setIsOpen] = useState(false);
   const handleToggle = () => setIsOpen((prev) => !prev);
+  const showContent = () => {
+    if (description.length > 0) {
+      return isOpen ? (
+        <img src={downArrow} className="arrows" alt="downArrow" />
+      ) : (
+        <img src={upArrow} className="arrows" alt="upArrow" />
+      );
+    } else {
+      return;
+    }
+  };
   return (
     <li>
       <div className="service-namePrice">
@@ -25,11 +36,7 @@ const ServicesAccordion = ({ serviceName, price, time, description }) => {
           }}
           onClick={handleToggle}
         >
-          {isOpen ? (
-            <img src={downArrow} className="arrows" alt="downArrow" />
-          ) : (
-            <img src={upArrow} className="arrows" alt="upArrow" />
-          )}
+          {showContent()}
         </button>{' '}
         {isOpen && <p className="serviceDescription">{`${description}`}</p>}
       </span>
