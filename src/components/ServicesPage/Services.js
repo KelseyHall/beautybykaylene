@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 import { servicesNav } from '../Staticdatabase';
 
 //to Determine what background class
@@ -24,7 +24,7 @@ const Services = ({ list }) => {
   }, [categorySearch, list]);
 
   const SortByService = () =>
-    servicesNav.map(({ id, category, img, altText, title }) => {
+    servicesNav.map(({ id, category, title }) => {
       return (
         <li key={id}>
           <a
@@ -60,58 +60,61 @@ const Services = ({ list }) => {
           image,
           blurb,
           serviceDetails,
-          idx,
+
           linkedinHandle,
         }) => (
           <div className="services-content" id={linkedinHandle} key={id}>
             <div className={'services-about-content  service-top-col'}>
-              <div className={'content'}>
-                <h2 className="h2-title secondary-dark">{service}</h2>
-                <img src={image} className="services-Img" alt="service-theme" />
-                <p className="servicesBlurb">{blurb}</p>
-              </div>
+              <h2 className="h2-title secondary-dark">{service}</h2>
+              <img src={image} className="services-Img" alt="service-theme" />
+              <p className="servicesBlurb">{blurb}</p>
             </div>
             <div className={'stagger-bg'}></div>
             <div className={'services-pricing  service-bottom-col'}>
-              <div className="content">
-                <div className="services-item">
-                  {serviceDetails.map(({ title, details }) => (
-                    <ul className="services-sub" key={id + title}>
-                      <h3 className="h3-title secondary-dark">{title}</h3>
-                      {details.map(
-                        ({ id, serviceName, price, time, description }) => (
-                          <li key={id}>
-                            <div className="service-namePrice">
-                              <p className="serviceName">
-                                {serviceName}
-                                <span className="time">{`${time}`}</span>
-                              </p>
+              <div className="services-item">
+                {serviceDetails.map(({ title, details, disclaimer }) => (
+                  <ul className="services-sub" key={id + title}>
+                    <h3 className="h3-title secondary-dark">{title}</h3>
+                    {details.map(
+                      ({ id, serviceName, price, time, description }) => (
+                        <li key={id}>
+                          <div className="service-namePrice">
+                            <p className="serviceName">
+                              {serviceName}
+                              <span className="time">{`${time}`}</span>
+                            </p>
 
-                              <p className="price">{`$${price}`}</p>
-                            </div>
-                            <span>
-                              <button
-                                style={{
-                                  background: 'none',
-                                  border: 'none',
-                                  textAlign: 'center',
-                                  width: '100%',
-                                }}
-                                onClick={() => setVisible(!visible)}
-                              >
-                                {visible ? 'v' : '^'}
-                              </button>{' '}
-                              {visible && (
-                                <p className="serviceDescription">{`${description}`}</p>
-                              )}
-                            </span>
-                          </li>
-                        )
-                      )}
-                    </ul>
-                  ))}
-                </div>
+                            <p className="price">{`$${price}`}</p>
+                          </div>
+                          <span>
+                            <button
+                              style={{
+                                background: 'none',
+                                border: 'none',
+                                textAlign: 'center',
+                                width: '100%',
+                              }}
+                              onClick={() => setVisible(!visible)}
+                            >
+                              {visible ? 'v' : '^'}
+                            </button>{' '}
+                            {visible && (
+                              <p className="serviceDescription">{`${description}`}</p>
+                            )}
+                          </span>
+                        </li>
+                      )
+                    )}
+
+                    <p className="individualDisclaimer">{disclaimer}</p>
+                  </ul>
+                ))}
               </div>
+
+              <span className="disclaimer">
+                *Prices subject to change without notice.
+                <Link to="/policies">View our Cancellation Policy</Link>
+              </span>
             </div>
           </div>
         )

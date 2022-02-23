@@ -56,7 +56,7 @@ hr {
   background: $secondary;
   color: #fff;
   border: none;
-  font-size: $font-size-md;
+  // font-size: $font-size-md;
   padding: 6px 12px;
   // width: 120px;
   border-radius: 9px;
@@ -68,7 +68,7 @@ hr {
 
 //text paragraphs
 p {
-  font-size: $font-size-md;
+  font-size: $font-size-sm;
 }
 
 //mock list
@@ -91,6 +91,7 @@ a,
 a:active {
   color: $accents-primary;
   text-decoration: none;
+  cursor: pointer;
 }
 a:hover {
   color: $primary;

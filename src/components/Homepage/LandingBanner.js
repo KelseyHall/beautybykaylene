@@ -9,7 +9,7 @@ const LandingBanner = () => {
     <div className="home-banner">
       <img src={BannerImg} alt="banner-img" />
       <div className="home-banner-content">
-        <h2 className="h2-title secondary ">Welcome!</h2>
+        <h1 className="h1-title secondary ">Welcome!</h1>
         <p>
           {' '}
           If this is your first time visiting, thanks for stopping by, and I
@@ -23,8 +23,7 @@ const LandingBanner = () => {
 
         <p>
           With Beauty by Kaylene, you can rest assured knowing my favorite part
-          of this career is helping beautiful people see how beautiful they
-          truly are.
+          of this career is helping people see how beautiful they truly are.
         </p>
 
         <p>
@@ -40,8 +39,8 @@ const LandingBanner = () => {
           Durham and Quite West.
         </p>
 
-        <Link to="/booknow" className="button">
-          book now
+        <Link to="/booknow" className="button ">
+          BOOK NOW
         </Link>
       </div>
     </div>
