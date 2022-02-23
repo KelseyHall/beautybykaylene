@@ -8,7 +8,7 @@ import FaqPage from '../pages/Faq';
 import FormPage from '../pages/FormPage';
 import PageNotFound from '../pages/404';
 import { Route, Switch } from 'react-router-dom';
-import Policies from '../components/Policies/policesPage';
+import Policies from '../pages/policesPage';
 import AboutUs from '../pages/AboutUs';
 import bookNowPage from '../pages/BookNow';
 
