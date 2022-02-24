@@ -62,6 +62,7 @@
       }
     }
   }
+
   //FAQ PAGE
   .faq-sort-by-service {
     ul {
@@ -76,7 +77,7 @@
     }
   }
   .Faq-statement {
-    margin: auto 20px !important;
+    // margin: auto 20px !important;
     padding: 0 !important;
   }
 }
@@ -183,6 +184,12 @@
   //contact page
   .areas-of-service {
     padding: 0 2%;
+    width: 80% !important;
+    .commuting-chart {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
     p {
       font-size: $font-size-md;
     }
@@ -342,15 +349,21 @@
 
   //contact us page
   .areas-of-service {
+    margin-top: 40px;
+    width: 100% !important;
     .commuting-chart {
-      flex-direction: column;
+      flex-direction: row;
       align-items: flex-start !important;
+      justify-content: space-evenly !important;
     }
     iframe {
       height: 300px !important;
     }
   }
   .contactUs {
+    .contactUs-content {
+      width: 100% !important;
+    }
     flex-direction: column;
   }
 

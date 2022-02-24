@@ -35,14 +35,7 @@ const ContactUsBlurb = () => {
         how long we will be to complete the service, and some other information
         for the day of! See map below for service areas.
   </p>*/}
-      <div className="Faq-statement">
-        <h3 className=" h2-title secondary">have questions? </h3>
-        <p> Check out our FAQ page to see if we already answered! </p>
 
-        <Link className="button" to={'/faq'}>
-          FAQ page
-        </Link>
-      </div>
       <h3 className="h3-title">
         <a className="h2-title " href="tel:905-644-8880">
           905.644.8880
