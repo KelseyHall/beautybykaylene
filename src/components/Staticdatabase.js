@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 
 //home page service blurb
-import nails from '../images/nails.png';
-import waxing from '../images/waxing.png';
-import lashBrow from '../images/lash-brow.png';
-import massages from '../images/massage.png';
+// import nails from '../images/nails.png';
+// import waxing from '../images/waxing.png';
+// import lashBrow from '../images/lash-brow.png';
+// import massages from '../images/massage.png';
 
 //home page carousel
 // import picture from '../images/square-img.jpg';
@@ -17,10 +17,10 @@ import massages from '../images/massage.png';
 // import picture5 from '../images/vertical-img-1.jpg';
 
 //services Nav
-import nailIcon from '../images/nails.png';
-import waxingIcon from '../images/waxing.png';
-import lashBrowIcon from '../images/lash-brow.png';
-import massageIcon from '../images/massage.png';
+// import nailIcon from '../images/nails.png';
+// import waxingIcon from '../images/waxing.png';
+// import lashBrowIcon from '../images/lash-brow.png';
+// import massageIcon from '../images/massage.png';
 
 //servicesPageplaceholder
 // import placeholder from '../images/services-placeholder.jpg';
@@ -51,11 +51,11 @@ import galleryPicture12 from '../images/gallery/20211204_111132.jpg';
 import placeholderPdf from '../pdfs/pdfplaceholder.pdf';
 
 //Faq Nav Icons
-import NailIcon from '../images/nails.png';
-import WaxingIcon from '../images/waxing.png';
-import LashBrowIcon from '../images/lash-brow.png';
-import MassageIcon from '../images/massage.png';
-import GeneralIcon from '../images/general.png';
+// import NailIcon from '../images/nails.png';
+// import WaxingIcon from '../images/waxing.png';
+// import LashBrowIcon from '../images/lash-brow.png';
+// import MassageIcon from '../images/massage.png';
+// import GeneralIcon from '../images/general.png';
 
 //HomePage services
 export const serviceBlurb = [
@@ -63,7 +63,7 @@ export const serviceBlurb = [
     index: uuidv4(),
     number: 1,
     service: 'service1',
-    img: nails,
+    // img: nails,
     title: 'nails',
     blurb: `It's more then just a polish - it's self-care!`,
   },
@@ -71,7 +71,7 @@ export const serviceBlurb = [
     index: uuidv4(),
     number: 2,
     service: 'service2',
-    img: lashBrow,
+    // img: lashBrow,
     title: 'lashes & brows',
     blurb: `Get ready for low-maintenance mornings.`,
   },
@@ -79,7 +79,7 @@ export const serviceBlurb = [
     index: uuidv4(),
     number: 3,
     service: 'service3',
-    img: waxing,
+    // img: waxing,
     title: 'waxing',
     blurb: `You want it waxed, I've got you covered.`,
   },
@@ -88,7 +88,7 @@ export const serviceBlurb = [
     index: uuidv4(),
     number: 4,
     service: 'service4',
-    img: massages,
+    // img: massages,
     title: 'massages',
     blurb: `Trust me. You need me to knead you!`,
   },
@@ -108,21 +108,21 @@ export const servicesNav = [
   {
     id: 1,
     category: 'nails',
-    img: nailIcon,
+    // img: nailIcon,
     altText: 'nails',
     title: 'nails',
   },
   {
     id: 2,
     category: 'lashes & brows',
-    img: lashBrowIcon,
+    // img: lashBrowIcon,
     altText: 'lashes and brows',
     title: 'lashes & brows',
   },
   {
     id: 3,
     category: 'waxing',
-    img: waxingIcon,
+    // img: waxingIcon,
     altText: 'waxing',
     title: 'waxing',
   },
@@ -130,7 +130,7 @@ export const servicesNav = [
   {
     id: 4,
     category: 'massage',
-    img: massageIcon,
+    // img: massageIcon,
     altText: 'massage',
     title: 'massage',
   },
@@ -1002,35 +1002,35 @@ export const faqSortbyNav = [
   {
     id: 1,
     category: 'nails',
-    img: NailIcon,
+    // img: NailIcon,
     altText: 'nails',
     title: 'nails',
   },
   {
     id: 2,
     category: 'waxing',
-    img: WaxingIcon,
+    // img: WaxingIcon,
     altText: 'waxing',
     title: 'waxing',
   },
   {
     id: 3,
     category: 'lashes & brows',
-    img: LashBrowIcon,
+    // img: LashBrowIcon,
     altText: 'lashes-brows',
     title: 'lashes & brows',
   },
   {
     id: 4,
     category: 'massage',
-    img: MassageIcon,
+    // img: MassageIcon,
     altText: 'massage',
     title: 'massage',
   },
   {
     id: 5,
     category: 'general',
-    img: GeneralIcon,
+    // img: GeneralIcon,
     altText: 'general',
     title: 'general',
   },
