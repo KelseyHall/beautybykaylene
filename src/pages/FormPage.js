@@ -1,7 +1,7 @@
 import React from 'react';
 import { downloadablePdf } from '../components/Staticdatabase';
 
-const FormPage = () => {
+const FormPage = (props) => {
   return (
     <div className="main-container">
       <div className="form-page">

@@ -1,7 +1,7 @@
 import React from 'react';
 import notFoundCartoon from '../images/gossmani.png';
 
-const PageNotFound = () => {
+const PageNotFound = (props) => {
   return (
     <div className="pageNotFound">
       <h1 className="h1-title primary">Oops something went wrong</h1>

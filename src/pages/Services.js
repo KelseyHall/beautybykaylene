@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 import Services from '../components/ServicesPage/Services';
 import { ServicesDescriptions } from '../components/Staticdatabase';
 
-const ServicesPage = () => {
+const ServicesPage = (props) => {
   return (
     <div className="main-container" id="topOfPage">
       <Services list={ServicesDescriptions} />

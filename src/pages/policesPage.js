@@ -1,7 +1,7 @@
 import React from 'react';
 import PolicyAccordion from '../components/Policies/PolicyAccordion';
 import { policies } from '../components/Staticdatabase';
-const Policies = () => {
+const Policies = (props) => {
   return (
     <div className="main-container policies">
       <h1 className="h1-title secondary">Policies</h1>

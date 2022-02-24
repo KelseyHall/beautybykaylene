@@ -6,7 +6,7 @@ import LandingBanner from '../components/Homepage/LandingBanner';
 import CarouselGallery from '../components/Homepage/GalleryCarousel';
 // import GetintouchForm from '../components/GetInTouchForm';
 
-const HomePage = () => {
+const HomePage = (props) => {
   return (
     <div className="main-container">
       <LandingBanner />

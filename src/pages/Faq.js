@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 import { faqQuestions, faqSortbyNav } from '../components/Staticdatabase';
 
-const FaqPage = () => {
+const FaqPage = (props) => {
   const [categorySearch, setCategorySearch] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const FilterByCategory = (e) => () => {
