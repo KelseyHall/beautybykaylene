@@ -15,10 +15,12 @@
     }
     margin: 0 auto;
   }
+
   .commuting-chart {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     p {
       font-size: $font-size-sm;
       color: $accents-secondary-light;
@@ -119,16 +121,21 @@
       width: 100%;
     }
   }
-  .Faq-statement {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    padding: 0 60px;
-    text-align: center;
-    color: $accents-secondary;
-    a:hover {
-      color: $accents-primary-light;
-    }
+}
+.Faq-statement {
+  @extend %pageCenter;
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  padding: 30px 60px 50px;
+  text-align: center;
+  color: $accents-secondary;
+  width: fit-content;
+  background-color: $primary-lighter;
+  border: 2px dotted $secondary;
+  border-radius: 20px;
+  a:hover {
+    color: $accents-primary-light;
   }
 }
 .client-forms {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AboutUs = () => {
+const AboutUs = (props) => {
   return (
     <div>
       <h2>Temp About Us</h2>
