@@ -1227,7 +1227,7 @@ export const policies = [
           50% of the cost of the service booked, payable on or before your next
           appointment.{' '}
         </p>
-        <p>Thank you for understanding and your kindness, </p>
+        <p>Thank you for understanding and your kindness,</p>
         <span className="signature"> Kay xo</span>{' '}
       </span>
     ),
