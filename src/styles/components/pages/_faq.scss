@@ -30,7 +30,7 @@
     }
     .service-links {
       border: none;
-
+      font-variant: small-caps;
       background-color: $primary;
       color: white;
       font-size: $font-nav-sm;
@@ -50,6 +50,7 @@
   .view-all-button {
     background: none;
     border: none;
+    font-variant: small-caps;
     span {
       color: $accents-secondary;
       font-size: $font-size-md;
