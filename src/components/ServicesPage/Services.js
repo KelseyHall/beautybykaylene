@@ -65,6 +65,7 @@ const Services = ({ list }) => {
           linkedinHandle,
         }) => (
           <div className="services-content" id={linkedinHandle} key={id}>
+            <div className={'side-bg-content'}></div>
             <div className={'services-about-content  service-top-col'}>
               <h2 className="h2-title secondary-dark">{service}</h2>
               <img src={image} className="services-Img" alt="service-theme" />

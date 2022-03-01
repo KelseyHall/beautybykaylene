@@ -55,6 +55,11 @@ hr {
 .homeUnderline {
   width: 500px;
 }
+h1,
+h2,
+h3 {
+  font-family: $display-font;
+}
 //buttons
 .button {
   background: $secondary;
@@ -73,6 +78,7 @@ hr {
 //text paragraphs
 p {
   font-size: $font-size-sm;
+  max-width: 600px;
 }
 
 //mock list
