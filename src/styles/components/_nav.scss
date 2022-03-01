@@ -1,5 +1,5 @@
 .App-header {
-  font-family: $default-font;
+  font-family: $display-font;
   background: #fff;
   display: flex;
 
@@ -76,7 +76,7 @@
         a {
           color: $accents-secondary-light;
           // width: auto;
-          font-family: $default-font;
+          // font-family: $default-font;
           font-size: $font-nav;
           font-variant-caps: all-petite-caps;
           margin: 0 10px;

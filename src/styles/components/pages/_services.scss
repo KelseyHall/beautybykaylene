@@ -18,6 +18,7 @@
 .services-jump-to-service-wrapper {
   @extend %pageCenter;
   font-variant-caps: all-petite-caps;
+  font-family: $display-font;
   .nav-title {
     padding: 20px;
   }
@@ -123,6 +124,7 @@
   .serviceName {
     font-size: $font-pricing !important;
     color: $secondary-dark;
+    font-family: $display-font;
   }
 
   .time {
@@ -191,6 +193,10 @@
   margin-top: 40px;
   background: $primary-light;
   color: $accents-secondary;
+}
+.side-bg-content {
+  margin-top: 40px;
+  background: $primary-light;
 }
 .stagger-bg {
   height: 100%;

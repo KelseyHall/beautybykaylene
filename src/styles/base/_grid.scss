@@ -47,13 +47,18 @@
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 1fr 3fr;
   grid-auto-rows: minmax(50px, auto);
+  .side-bg-content {
+    grid-column: 1;
+    grid-row: 1/4;
+  }
   .service-top-col {
-    grid-column: 1/8;
+    grid-column: 2/8;
     grid-row: 1/4;
   }
   .stagger-bg {
     grid-row: 2/4;
   }
+
   .service-bottom-col {
     // padding-left: 16.66%;
     grid-column: 2/9;
@@ -68,9 +73,12 @@
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
   //services Page
   .services-content {
-    .service-top-col {
-      grid-column: 1/8;
-    }
+    // .side-bg-content {
+    //   grid-column: 1;
+    // }
+    // .service-top-col {
+    //   grid-column: 2/8;
+    // }
     .service-bottom-col {
       padding: 0;
       grid-column: 2/8;
@@ -95,6 +103,9 @@
       grid-column: 1/9;
       grid-row: 2/8;
       z-index: -1;
+    }
+    .side-bg-content {
+      display: none;
     }
   }
 }

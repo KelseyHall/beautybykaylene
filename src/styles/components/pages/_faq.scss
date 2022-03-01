@@ -5,6 +5,10 @@
   .h2-title {
     text-align: center;
   }
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 // .faq-backdrop {
 //   background-image: url('../../../images/backdrop.jpg');
@@ -24,6 +28,7 @@
     justify-content: space-around;
     list-style: none;
     padding-left: 0;
+    font-family: $display-font;
     li {
       margin: 7px 0;
       text-align: center;

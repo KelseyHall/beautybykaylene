@@ -49,7 +49,14 @@ $dirty-gold-faded: (#ede8e5);
   src: url('../../fonts/Marmelad/Marmelad-Regular.ttf');
   font-weight: lighter;
 }
-$default-font: 'Marmelad';
+@font-face {
+  font-family: 'Catamaran';
+  src: url('../../fonts/Catamaran/Catamaran-VariableFont_wght.ttf');
+}
+// Font family
+$display-font: 'Marmelad';
+$default-font: 'Catamaran';
+// $default-type: 'marmelad';
 
 //Font-size
 
@@ -82,9 +89,6 @@ $font-size-md: 1.063rem;
 $font-size-ml: 1.25rem;
 //22px = 1.375rem
 $font-size-lg: 1.375rem;
-
-// Font family
-$default-type: 'marmelad';
 
 //Media break points
 $layout-breakpoint-med: 960px;
