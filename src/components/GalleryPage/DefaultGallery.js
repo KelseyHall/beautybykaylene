@@ -43,6 +43,7 @@ const MasonryGalleryPhoto = () => {
         <div key={id} className={'photocard ' + className}>
           <img
             src={img}
+            className={'photocard-img'}
             onClick={() => openImageViewer(images.indexOf(img))}
             alt={altText}
             key={id}

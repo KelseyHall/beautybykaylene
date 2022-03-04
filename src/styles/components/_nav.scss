@@ -3,20 +3,12 @@
   background: #fff;
   display: flex;
 
-  img {
+  .headerImg {
     // float: right;
     width: 80%;
     margin: 0 10%;
   }
-  a {
-    text-align: left;
-    justify-self: end;
-    text-decoration: none;
-    color: $accents-secondary;
-  }
-  .active {
-    color: $primary !important;
-  }
+
   .navHeader {
     @extend %pageCenter;
 
@@ -32,7 +24,7 @@
     }
 
     &__toggle {
-      background: none !important;
+      background: none;
       border: none;
       position: absolute;
       cursor: pointer;
@@ -52,10 +44,6 @@
         margin-top: 0.2rem;
       }
     }
-
-    // &__checkbox {
-    //   display: none;
-    // }
 
     &__menu {
       display: flex;
@@ -77,12 +65,15 @@
           color: $accents-secondary-light;
           // width: auto;
           // font-family: $default-font;
-          font-size: $font-nav;
+          font-size: $font-fluid-nav;
           font-variant-caps: all-petite-caps;
           margin: 0 10px;
           text-decoration: none;
         }
         a:hover {
+          color: $primary;
+        }
+        .active {
           color: $primary;
         }
       }
@@ -114,18 +105,18 @@
   }
 }
 
-.floating-socials {
-  display: flex;
-  flex-direction: column;
-  right: 0;
-  z-index: 1;
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.5);
-  img {
-    margin: 2px 0;
-    width: 34px;
-  }
-}
+// .floating-socials {
+//   display: flex;
+//   flex-direction: column;
+//   right: 0;
+//   z-index: 1;
+//   position: fixed;
+//   background-color: rgba(255, 255, 255, 0.5);
+//   img {
+//     margin: 2px 0;
+//     width: 34px;
+//   }
+// }
 
 .nav-quick-contact {
   width: 92%;
@@ -136,7 +127,7 @@
 
   p {
     color: $accents-secondary-light;
-    font-size: $font-nav-sm;
+    font-size: $font-size-sm;
     margin-bottom: 0;
     margin-top: 20px;
   }
@@ -144,28 +135,86 @@
     color: $secondary;
   }
   a:hover {
-    background: none !important;
+    background: none;
   }
   .navBookButton {
-    color: #fff !important;
+    color: #fff;
     // background: $secondary;
   }
   .navBookButton:hover {
-    background: $primary !important;
+    background: $primary;
   }
   .nav-media-socials {
     // display: none;
     display: flex;
 
     width: 70px;
-    padding: 0 !important;
+    padding: 0;
+    list-style-type: none;
 
-    li {
-      list-style-type: none;
+    .nav-socials-icons {
+      width: 30px;
+    }
+  }
+}
 
-      img {
-        width: 30px !important;
+@media screen and (min-width: ($mediaQ-phone-tablet + 0.01)) and (max-width: $mediaQ-tablet) {
+  .App-header {
+    .navHeader {
+      &__menu__item {
+        margin: 0;
+        a {
+          font-size: $font-nav-sm;
+        }
       }
     }
+  }
+}
+@media screen and (max-width: ($mediaQ-phone-tablet - 0.01)) {
+  .App-header {
+    top: 0;
+    z-index: 100;
+    // Toggle the hamburger menu in mobile view
+    .hide-item {
+      display: none;
+    }
+    .navHeader {
+      align-items: stretch;
+
+      &__menu {
+        // width: 100vw;
+        li {
+          &:last-child {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .headerImg {
+      width: 88%;
+      margin: 0 auto;
+    }
+  }
+}
+//only in desktop screen
+@media screen and (min-width: $mediaQ-phone-tablet) {
+  .App-header {
+    .navHeader {
+      &__toggle {
+        display: none;
+      }
+
+      &__menu {
+        flex-direction: row;
+
+        &__item {
+          margin: 0 0.9rem;
+        }
+      }
+    }
+  }
+  .nav-quick-contact {
+    display: none;
   }
 }

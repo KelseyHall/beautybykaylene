@@ -1,3 +1,9 @@
+@media screen and (max-width: ($mediaQ-phone-tablet - 0.01)) {
+  //base
+  .h1-title {
+    font-size: $font-title-md;
+  }
+}
 *,
 :after,
 :before {
@@ -7,6 +13,7 @@
 body {
   font-family: $default-font;
   margin: 0;
+  color: $accents-secondary;
 }
 // .main-container {
 //   max-width: 1500px;
@@ -52,9 +59,7 @@ hr {
   border: none;
   border-top: 1px solid $secondary-light;
 }
-.homeUnderline {
-  width: 500px;
-}
+
 h1,
 h2,
 h3 {
@@ -68,17 +73,19 @@ h3 {
   // font-size: $font-size-md;
   padding: 6px 12px;
   // width: 120px;
+  max-height: 46px;
   border-radius: 9px;
 }
 .button:hover {
   background: $primary;
-  color: #fff !important;
+  color: #fff;
 }
 
 //text paragraphs
 p {
-  font-size: $font-size-sm;
-  max-width: 600px;
+  // font-size: $font-size-sm;
+  font-size: $font-fluid-p;
+  max-width: 700px;
 }
 
 //mock list

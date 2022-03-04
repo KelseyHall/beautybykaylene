@@ -54,7 +54,7 @@ const AreasOfService = () => {
           </div>
         </div>
       </div>
-      <p className="blurb">
+      <p className="commuting-chart-blurb">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu dictum
         netus morbi nisi in ligula. Aliquam sit quam ante pellentesque morbi
         curabitur. Pretium tincidunt amet, elit consequat amet gravida feugiat

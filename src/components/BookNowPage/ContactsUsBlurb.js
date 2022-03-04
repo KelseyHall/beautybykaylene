@@ -36,11 +36,9 @@ const ContactUsBlurb = () => {
         for the day of! See map below for service areas.
   </p>*/}
 
-      <h3 className="h3-title">
-        <a className="h2-title " href="tel:905-644-8880">
-          905.644.8880
-        </a>
-      </h3>
+      <h2 className="h2-title">
+        <a href="tel:905-644-8880">905.644.8880</a>
+      </h2>
       <p className="email-us">
         <a href="mailto:beautybykaylene@gmail.com">beautybykaylene@gmail.com</a>
       </p>

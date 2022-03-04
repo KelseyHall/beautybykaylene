@@ -3,15 +3,9 @@ import { Link } from 'react-router-dom';
 import { servicesNav } from '../Staticdatabase';
 import ServicesAccordion from './ServicesAccordion';
 
-//to Determine what background class
-// const isEven = (n) => {
-//   return n % 2 === 0;
-// };
-// const WhichRow = (idx) => (isEven(idx) ? '' : '-2');
-
 const Services = ({ list }) => {
   const [categorySearch, setCategorySearch] = useState('');
-  // const [visible, setVisible] = useState(false);
+
   const [searchResults, setSearchResults] = useState([]);
   const FilterByCategory = (e) => () => {
     setCategorySearch(e);
@@ -43,15 +37,13 @@ const Services = ({ list }) => {
   return (
     <div>
       <div className="services-jump-to-service-wrapper">
-        <div className="sort-by-service">
-          {/*<h3 className="nav-text primary">sort by service</h3>*/}
-          <ul>
-            <button className="view-all-button" onClick={FilterByCategory('')}>
-              <span> view all </span>
-            </button>
-            <SortByService />
-          </ul>
-        </div>
+        {/*<h3 className="nav-text primary">sort by service</h3>*/}
+        <ul className="sort-by-service">
+          <button className="view-all-button" onClick={FilterByCategory('')}>
+            <span> view all </span>
+          </button>
+          <SortByService />
+        </ul>
       </div>
 
       {searchResults.map(
@@ -65,17 +57,17 @@ const Services = ({ list }) => {
           linkedinHandle,
         }) => (
           <div className="services-content" id={linkedinHandle} key={id}>
-            <div className={'side-bg-content'}></div>
-            <div className={'services-about-content  service-top-col'}>
+            <div className={'top-stagger-bg'}></div>
+            <div className={'services-content-about  service-top-col'}>
               <h2 className="h2-title secondary-dark">{service}</h2>
               <img src={image} className="services-Img" alt="service-theme" />
               <p className="servicesBlurb">{blurb}</p>
             </div>
-            <div className={'stagger-bg'}></div>
-            <div className={'services-pricing  service-bottom-col'}>
+            <div className={'bottom-stagger-bg'}></div>
+            <div className={'services-content-prices  service-bottom-col'}>
               <div className="services-item">
                 {serviceDetails.map(({ title, details, disclaimer }) => (
-                  <ul className="services-sub" key={id + title}>
+                  <ul className="services-col" key={id + title}>
                     <h3 className="h3-title secondary-dark">{title}</h3>
                     {details.map((props) => (
                       <ServicesAccordion key={props.id} {...props} />

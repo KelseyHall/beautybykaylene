@@ -17,13 +17,13 @@ const ServicesAccordion = ({ serviceName, price, time, description }) => {
   };
   return (
     <li>
-      <div className="service-namePrice">
-        <p className="serviceName">
+      <div className="service-individual-item">
+        <p className="service-individual-item-name">
           {serviceName}
-          <span className="time">{`${time}`}</span>
+          <span className="service-individual-item-time">{`${time}`}</span>
         </p>
 
-        <p className="price">{`$${price}`}</p>
+        <p className="service-individual-item-price">{`$${price}`}</p>
       </div>
       <span>
         <button
@@ -37,7 +37,9 @@ const ServicesAccordion = ({ serviceName, price, time, description }) => {
         >
           {showContent()}
         </button>{' '}
-        {isOpen && <p className="serviceDescription">{`${description}`}</p>}
+        {isOpen && (
+          <p className="service-individual-item-description">{`${description}`}</p>
+        )}
       </span>
     </li>
   );

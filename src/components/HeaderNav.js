@@ -16,7 +16,10 @@ const HeaderNav = () => {
 
   return (
     <div>
-      <nav className="navHeader">
+      <nav
+        className="navHeader"
+        style={isOpen ? { position: 'fixed' } : { position: 'relative' }}
+      >
         <img
           className="headerImg"
           src={header}
@@ -100,12 +103,20 @@ const HeaderNav = () => {
               <ul className="nav-media-socials">
                 <li>
                   <a href={FacebookLink} target="_blank" rel="noreferrer">
-                    <img src={FacebookIcon} alt="facebook-icon" />
+                    <img
+                      src={FacebookIcon}
+                      className="nav-socials-icons"
+                      alt="facebook-icon"
+                    />
                   </a>
                 </li>
                 <li>
                   <a href={InstagramLink} target="_blank" rel="noreferrer">
-                    <img src={InstaIcon} alt="instagram-icon" />
+                    <img
+                      src={InstaIcon}
+                      className="nav-socials-icons"
+                      alt="instagram-icon"
+                    />
                   </a>
                 </li>
               </ul>

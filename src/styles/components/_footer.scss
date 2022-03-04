@@ -44,12 +44,37 @@ footer {
       color: $primary-dark;
     }
   }
-  .contact-info-footer {
-    display: flex;
+}
+.contact-info-footer {
+  display: flex;
+}
+.copyright {
+  padding: 10px;
+  margin: 0 auto;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: $mediaQ-tablet) {
+  //footer
+  .footer {
+    margin-top: 40px;
+    flex-direction: column;
   }
-  .copyright {
-    padding: 10px;
-    margin: 0 auto;
-    text-transform: capitalize;
+}
+@media screen and (max-width: ($mediaQ-phone-tablet - 0.01)) {
+  //footer
+  footer {
+    .footer {
+      .logo {
+        width: 70%;
+      }
+      .contact-info-footer {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .get-socials {
+        flex-direction: row;
+      }
+    }
   }
 }

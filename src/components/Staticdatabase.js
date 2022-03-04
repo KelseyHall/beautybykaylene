@@ -1227,8 +1227,10 @@ export const policies = [
           50% of the cost of the service booked, payable on or before your next
           appointment.{' '}
         </p>
-        <p>Thank you for understanding and your kindness,</p>
-        <span className="signature"> Kay xo</span>{' '}
+        <p>
+          Thank you for understanding and your kindness,
+          <span className="signature"> Kay xo</span>{' '}
+        </p>
       </span>
     ),
   },
@@ -1252,8 +1254,8 @@ export const policies = [
         <p>
           Canceling due to menstruation will still need to be mindful of our
           *cancellation policy* to avoid any fees.{' '}
+          <span className="signature"> Kay xo</span>
         </p>
-        <span className="signature"> Kay xo</span>
       </span>
     ),
   },

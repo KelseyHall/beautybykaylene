@@ -1,11 +1,9 @@
 .areas-of-service {
-  // margin: 70px auto;
   width: 50%;
-  h1 {
+  .h1-title {
     text-align: center;
     hr {
       width: 60%;
-      left: 0;
     }
   }
   .areas-of-service-map {
@@ -21,12 +19,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    p {
-      font-size: $font-size-sm;
-      color: $accents-secondary-light;
-    }
-    .blurb {
-      margin-top: 20px !important;
+
+    &-blurb {
+      margin-top: 20px;
     }
   }
   .services-area-1,
@@ -38,6 +33,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    color: $accents-secondary-light;
+
     p {
       margin: 0 0 0 5px;
       display: flex;
@@ -83,36 +80,32 @@
     font-size: $font-size-md;
     color: $accents-secondary;
     padding-left: 0;
-    li {
-      list-style-type: none;
-    }
+    list-style-type: none;
   }
   .contactUs-content {
     display: flex;
     flex-direction: column;
-    align-content: center;
     text-align: center;
     align-items: center;
     margin-right: 30px;
+    color: $accents-secondary;
     width: 60%;
+    .beforeYouBookText {
+      margin: 5px 0;
+    }
     .book-info {
       padding: 25px 0;
       * {
         padding: 5px 0;
       }
     }
-    p {
-      color: $accents-secondary;
-      margin: 5px 0;
-    }
 
-    .h3-title a {
+    .h2-title {
       color: $accents-primary;
+      margin: 0;
     }
     .email-us {
-      a {
-        color: $accents-primary;
-      }
+      color: $accents-primary;
     }
     .online-booking {
       display: inline-block;
@@ -134,54 +127,28 @@
   background-color: $primary-lighter;
   border: 2px dotted $secondary;
   border-radius: 20px;
-  a:hover {
-    color: $accents-primary-light;
-  }
-}
-.client-forms {
-  padding: 30px 0;
-  @extend %pageCenter;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  a:hover {
-    color: $accents-primary-light;
-  }
 }
 
-//For future form
-// .contactUs-column-1 {
-//   background: $purple-light;
-//   text-align: right;
-//   padding: 65px 0 20px;
-//   p {
-//     padding-right: 20px;
-//     color: $dark-grey;
-//   }
-//   .h1-title,
-//   .h3-title {
-//     margin: 0;
-//     padding-right: 20px;
-//     text-align: right;
-//   }
-//   .contactUs-content {
-//     padding: 0 20px;
-//     hr {
-//       width: 100%;
-//     }
-//   }
-// }
+@media screen and (max-width: $mediaQ-tablet) {
+  //contact us page
+  .areas-of-service {
+    margin-top: 40px;
+    padding: 0 2%;
+    width: 100%;
 
-// .contactUs-column-2 {
-//   margin-top: 0;
-
-//   .getInTouch {
-//     padding: 30px;
-//     hr {
-//       width: 100%;
-//     }
-//     .h1-title {
-//       text-align: left;
-//     }
-//   }
-// }
+    .commuting-chart {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-evenly;
+    }
+    iframe {
+      height: 300px;
+    }
+  }
+  .contactUs {
+    flex-direction: column;
+    .contactUs-content {
+      width: 100%;
+    }
+  }
+}
