@@ -33,7 +33,7 @@ const FaqPage = (props) => {
             className="service-links"
             onClick={FilterByCategory(category)}
           >
-            <p>{title}</p>
+            {title}
           </button>
         </li>
       );
@@ -44,7 +44,7 @@ const FaqPage = (props) => {
       <h2 className="h2-title primary">frequently asked questions</h2>
       <div className="faq-sort-by-service">
         <h3 className="nav-title primary">sort by service</h3>
-        <ul>
+        <ul className="faq-nav-list">
           <SortByService />
         </ul>
 

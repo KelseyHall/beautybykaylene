@@ -5,23 +5,26 @@
   .h2-title {
     text-align: center;
   }
-  p {
+  .QA {
+    max-width: $layout-breakpoint-med;
     margin-left: auto;
     margin-right: auto;
+    p {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
-// .faq-backdrop {
-//   background-image: url('../../../images/backdrop.jpg');
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-position-y: top;
-// }
+
 .faq-sort-by-service {
+  font-size: $font-fluid-sub-nav;
+  max-width: $layout-breakpoint-med;
+  margin: 0 auto;
+
   .nav-title {
     padding: 20px;
   }
-  ul {
+  .faq-nav-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -31,41 +34,32 @@
     font-family: $display-font;
     li {
       margin: 7px 0;
-      text-align: center;
     }
     .service-links {
       border: none;
       font-variant: small-caps;
       background-color: $primary;
       color: white;
-      font-size: $font-nav-sm;
+      font-size: $font-fluid-sub-nav;
 
       margin: 0;
       padding: 5px 20px;
       border-radius: 10px;
-      p {
-        margin: 0;
+      &:hover {
+        background-color: $secondary;
+        color: #fff;
       }
-    }
-    .service-links:hover {
-      background-color: $primary;
-      color: $accents-secondary;
     }
   }
   .view-all-button {
     background: none;
     border: none;
     font-variant: small-caps;
-    span {
-      color: $accents-secondary;
-      font-size: $font-size-md;
-    }
-    span:hover {
-      color: $accents-primary;
-    }
-  }
+    font-size: $font-fluid-sub-nav;
+    color: $accents-secondary;
 
-  img {
-    width: 115px;
+    span:hover {
+      color: $primary;
+    }
   }
 }

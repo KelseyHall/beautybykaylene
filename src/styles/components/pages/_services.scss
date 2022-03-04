@@ -1,17 +1,8 @@
-.services-content {
-  @extend %pageCenter;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  .h2-title,
-  p,
-  img {
-    padding: 0 20px;
-  }
-
-  .h2-title {
-    text-align: left;
+@media (min-width: ($mediaQ-tablet - 0.01)) {
+  .services-content {
+    .h2-title {
+      text-align: left;
+    }
   }
 }
 
@@ -19,10 +10,9 @@
   @extend %pageCenter;
   font-variant-caps: all-petite-caps;
   font-family: $display-font;
-  .nav-title {
-    padding: 20px;
-  }
-  ul {
+  font-size: $font-fluid-sub-nav;
+
+  .sort-by-service {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -30,180 +20,279 @@
     justify-content: space-around;
     list-style: none;
     padding-left: 0;
-    li {
-      text-align: center;
-    }
-    a {
-      color: $accents-secondary;
-      font-size: $font-size-md;
-      margin: 0;
-      cursor: pointer;
-    }
-    a:hover {
-      color: $accents-primary;
-    }
+
     .service-links {
+      color: $accents-secondary;
       background: none;
       border: none;
+      &:hover {
+        color: $accents-primary;
+      }
     }
   }
   .view-all-button {
     background: none;
     border: none;
     font-variant-caps: all-petite-caps;
-    span {
-      color: $accents-secondary;
-      font-size: $font-size-md;
-      margin: 0;
-      cursor: pointer;
-    }
-    span:hover {
+    font-size: $font-fluid-sub-nav;
+    font-family: $display-font;
+    color: $accents-secondary;
+    cursor: pointer;
+
+    &:hover {
       color: $accents-primary;
     }
   }
-
-  img {
-    width: 115px;
-  }
 }
-.services-about-content {
-  display: inline-block;
-  padding-bottom: 30px;
-  .services-Img {
-    float: left;
-    width: 50%;
-    margin: 5px;
+
+.services-content {
+  @extend %pageCenter;
+  color: $secondary-dark;
+  margin: 20px auto 40px;
+
+  //grid
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr 3fr;
+  grid-auto-rows: minmax(50px, auto);
+  //
+
+  .service-top-col {
+    margin-top: 40px;
+    background: $primary-light;
+
+    //grid
+    grid-column: 2/8;
+    grid-row: 1/4;
+    //
   }
-  .servicesBlurb {
-    color: $secondary-dark;
-  }
-}
-.services-pricing {
-  // display: flex;
-  // flex-wrap: wrap;
-  padding: 15px 0;
-  .services-item {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
+  .top-stagger-bg {
+    margin-top: 40px;
+    margin-left: 25px;
+    background: $primary-light;
+
+    //grid
+    grid-column: 1;
+    grid-row: 1/4;
+    //
   }
 
-  .services-sub {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    list-style: none;
-    li {
-      padding: 10px 0;
+  .service-bottom-col {
+    background: $primary-lightest;
+
+    //grid
+    grid-column: 2/8;
+    grid-row: 4/7;
+
+    .content {
+      grid-row: 3/7;
     }
-    p {
-      margin: 0;
+    //
+  }
+  .bottom-stagger-bg {
+    height: 100%;
+    background: $primary-lightest;
+
+    //grid
+    grid-column: 8/9;
+    grid-row: 2/7;
+    //
+  }
+
+  &-about {
+    display: inline-block;
+    padding: 20px 30px;
+    .services-Img {
+      float: left;
+      width: 50%;
+      margin: 5px;
     }
-    .service-namePrice {
+  }
+  &-prices {
+    padding: 20px 30px;
+
+    .h3-title {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    .services-item {
       display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
       justify-content: space-between;
-      align-items: center;
-      .serviceName {
-        text-transform: capitalize;
+      width: 100%;
+    }
+
+    .services-col {
+      width: 48%;
+      padding: 10px;
+      list-style: none;
+      li {
+        padding: 10px 0;
+      }
+
+      .service-individual-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-name {
+          text-transform: capitalize;
+        }
+
+        &-description {
+          padding-top: 10px;
+          color: $secondary;
+        }
+
+        &-price,
+        &-name {
+          font-size: $font-pricing;
+          font-family: $display-font;
+        }
+
+        &-time {
+          padding-left: 10px;
+          padding-right: 10px;
+          font-size: $font-size-sm;
+          white-space: nowrap;
+          color: $secondary;
+        }
+        &-name,
+        &-time,
+        &-price,
+        &-description {
+          margin: 0;
+        }
+      }
+      .arrows {
+        width: 20px;
       }
     }
 
-    .serviceDescription {
-      padding-top: 10px;
-      font-size: $font-size-sm;
-      color: $secondary;
+    .disclaimer {
+      display: flex;
+      flex-direction: column;
+      padding-left: 30px;
+      width: 100%;
+      margin-bottom: 40px;
     }
   }
-  .services-sub:nth-child(odd) {
-    clear: left;
-  }
-
-  .price,
-  .serviceName {
-    font-size: $font-pricing !important;
-    color: $secondary-dark;
-    font-family: $display-font;
-  }
-
-  .time {
-    padding-left: 10px;
-    font-size: $font-size-sm;
-    white-space: nowrap;
-    color: $secondary;
-  }
-
-  .h3-title {
-    padding: 0 20px 10px;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-
-  .individualDisclaimer {
-    color: $secondary-dark;
-  }
-  .disclaimer {
-    display: flex;
-    flex-direction: column;
-    padding-left: 30px;
-    width: 100%;
-    margin-bottom: 40px;
-  }
 }
+
 .services-floating-nav {
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   z-index: 100;
-  display: flex;
-  justify-content: space-evenly;
-  color: $accents-secondary;
   background-color: $primary-lighter;
   width: 100%;
-  align-items: center;
   padding: 10px;
   text-align: center;
+}
 
-  @extend %pageCenter;
-  img {
-    width: 30px;
+@media screen and (min-width: ($mediaQ-tablet + 0.01)) and (max-width: $mediaQ-laptop) {
+  //services Page GRID
+  .services-content {
+    .top-stagger-bg {
+      grid-column: 1;
+    }
+    // .service-top-col {
+    //   grid-column: 2/8;
+    // }
+    .service-bottom-col {
+      grid-column: 2/8;
+    }
+    .bottom-stagger-bg {
+      grid-column: 2/9;
+      grid-row: 2/8;
+      z-index: -1;
+    }
   }
 }
-// .service-top-col,
-// .service-bottom-col {
-//   color: $accents-secondary;
-//   text-align: left;
-//   position: relative;
-// }
-// .service-bottom-col {
-//   background: $primary-lighter;
-// }
-
-// .service-top-col {
-//   background: $primary-lighter;
-//   margin-top: 40px;
-// }
-.service-bottom-col {
-  background: $primary-lightest;
-  color: $accents-secondary;
-  position: relative;
-}
-.service-top-col {
-  margin-top: 40px;
-  background: $primary-light;
-  color: $accents-secondary;
-}
-.side-bg-content {
-  margin-top: 40px;
-  background: $primary-light;
-}
-.stagger-bg {
-  height: 100%;
-  position: relative;
-  z-index: -5;
+@media screen and (min-width: ($mediaQ-phone-tablet + 0.01)) and (max-width: $mediaQ-tablet) {
+  //grid
+  .services-content {
+    .service-top-col {
+      grid-column: 1/8;
+    }
+    .service-bottom-col {
+      grid-column: 1/8;
+    }
+    .bottom-stagger-bg {
+      grid-column: 2/9;
+      grid-row: 2/8;
+      z-index: -1;
+    }
+    .top-stagger-bg {
+      display: none;
+    }
+  }
 }
 
-.stagger-bg {
-  background: $primary-lightest;
+@media screen and (max-width: $mediaQ-tablet) {
+  .services-content {
+    .h2-title,
+    .h3-title {
+      text-align: center;
+    }
+
+    .services-Img {
+      width: 100%;
+      margin: 0;
+    }
+
+    .services-col {
+      width: 100%;
+    }
+
+    .bottom-stagger-bg {
+      background: $primary-lightest;
+    }
+
+    .service-top-col,
+    .service-bottom-col {
+      background: $primary-light;
+    }
+  }
+}
+
+@media screen and (max-width: ($mediaQ-phone-tablet - 0.01)) {
+  .services-content {
+    width: 100%;
+    .bottom-stagger-bg {
+      display: none;
+    }
+
+    .service-top-col {
+      margin-top: 10px;
+      border-top: 50px solid $primary-lightest;
+    }
+    .service-bottom-col {
+      border-bottom: 50px solid $primary-lightest;
+    }
+  }
+
+  //service Page Grid
+  .services-content {
+    .service-top-col {
+      padding: 10px;
+      grid-column: 1/9;
+    }
+    .service-bottom-col {
+      padding: 0;
+      grid-column: 1/9;
+    }
+  }
+}
+
+@media screen and (max-width: $mediaQ-phone-only) {
+  .services-jump-to-service-wrapper {
+    .sort-by-service {
+      flex-direction: column;
+    }
+  }
+  .services-floating-nav {
+    padding: 5px;
+  }
 }

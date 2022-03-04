@@ -2,6 +2,7 @@
   @extend %pageCenter;
   display: flex;
   flex-direction: column;
+  max-width: $layout-breakpoint-med;
   //   align-items: center;
   .policy {
     margin: 30px auto;
@@ -9,6 +10,7 @@
   }
   p {
     padding: 0 10px;
+    margin: 10px auto;
   }
   button {
     display: flex;
@@ -22,5 +24,7 @@
     font-weight: bold;
     color: $primary;
     padding: 20px 10px;
+    margin: 10px auto;
+    display: block;
   }
 }

@@ -3,8 +3,7 @@ import HomeServicesBlurb from '../components/Homepage/Services-blurb';
 import AboutUsContent from '../components/Homepage/AboutUs';
 // import Testimonials from '../components/Homepage/Testimonials';
 import LandingBanner from '../components/Homepage/LandingBanner';
-import CarouselGallery from '../components/Homepage/GalleryCarousel';
-// import GetintouchForm from '../components/GetInTouchForm';
+// import CarouselGallery from '../components/Homepage/GalleryCarousel';
 
 const HomePage = (props) => {
   return (
@@ -13,7 +12,7 @@ const HomePage = (props) => {
       <AboutUsContent />
       {/*<Testimonials />*/}
       <HomeServicesBlurb />
-      <CarouselGallery />
+      {/*<CarouselGallery />*/}
     </div>
   );
 };

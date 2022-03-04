@@ -63,8 +63,9 @@ $default-font: 'Catamaran';
 //nav
 //17px = 1.063rem
 $font-nav-sm: 1.063rem;
-//20px = 1.25rem
-$font-nav: 1.25rem;
+//22px = 1.375rem
+$font-nav: 1.375rem;
+$font-fluid-nav: calc(17px + (24 - 17) * ((100vw - 300px) / (1600 - 300)));
 
 //pricing
 //17px = 1.063rem
@@ -90,9 +91,21 @@ $font-size-ml: 1.25rem;
 //22px = 1.375rem
 $font-size-lg: 1.375rem;
 
+//fluid paragraph font calucations
+$font-fluid-p: calc(12px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
+$font-fluid-sub-nav: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+//calculation font adjust to window size
+
 //Media break points
 $layout-breakpoint-med: 960px;
-$layout-breakpoint-lrg: 1440px;
+$layout-breakpoint-lrg: 1200px;
+$layout-breakpoint-Xlrg: 1600px;
+
+//mediaQueries
+$mediaQ-phone-only: 400px;
+$mediaQ-phone-tablet: 575.99px;
+$mediaQ-tablet: 768.98px;
+$mediaQ-laptop: 991.98px;
 
 %pageCenter {
   margin: 0 auto;

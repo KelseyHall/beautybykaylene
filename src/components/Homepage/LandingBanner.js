@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const LandingBanner = () => {
   return (
     <div className="home-banner">
-      <img src={BannerImg} alt="banner-img" />
+      <img src={BannerImg} alt="cuticle oil" className="home-banner-img" />
       <div className="home-banner-content">
         <h1 className="h1-title secondary ">Welcome!</h1>
         <p>
@@ -39,7 +39,7 @@ const LandingBanner = () => {
           Durham and Quite West.
         </p>
 
-        <Link to="/booknow" className="button ">
+        <Link to="/booknow" className="bookNow-btn button ">
           BOOK NOW
         </Link>
       </div>
