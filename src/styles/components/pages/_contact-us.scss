@@ -33,7 +33,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: $accents-secondary-light;
+    color: $accents-secondary;
 
     p {
       margin: 0 0 0 5px;
@@ -124,7 +124,7 @@
   text-align: center;
   color: $accents-secondary;
   width: fit-content;
-  background-color: $primary-lighter;
+  background-color: $primary-lightest;
   border: 2px dotted $secondary;
   border-radius: 20px;
 }
