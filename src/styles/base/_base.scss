@@ -69,6 +69,10 @@ h3 {
 .button {
   background: $secondary;
   color: #fff;
+
+  font-weight: 900;
+  font-variation-settings: 'GRAD' 90; //makes more readable
+  letter-spacing: 0.053em;
   border: none;
   // font-size: $font-size-md;
   padding: 6px 12px;

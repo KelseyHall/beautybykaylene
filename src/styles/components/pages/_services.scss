@@ -142,7 +142,7 @@
 
         &-description {
           padding-top: 10px;
-          color: $secondary;
+          color: $accents-secondary;
         }
 
         &-price,
@@ -156,7 +156,7 @@
           padding-right: 10px;
           font-size: $font-size-sm;
           white-space: nowrap;
-          color: $secondary;
+          color: $accents-secondary;
         }
         &-name,
         &-time,
@@ -186,9 +186,16 @@
   bottom: 0;
   z-index: 100;
   background-color: $primary-lighter;
+  font-weight: bold;
   width: 100%;
   padding: 10px;
   text-align: center;
+  a {
+    color: $secondary-dark;
+  }
+  a:hover {
+    color: $accents-primary;
+  }
 }
 
 @media screen and (min-width: ($mediaQ-tablet + 0.01)) and (max-width: $mediaQ-laptop) {
