@@ -58,7 +58,7 @@ const FaqPage = (props) => {
       <h1 className="h2-title primary">{<WhichTitle />}</h1>
       {searchResults.map(({ id, question, answer }) => (
         <div key={id} className="QA">
-          <p className="question-bold secondary">{question}</p>
+          <p className="question-bold secondary-dark">{question}</p>
           <p>{answer}</p>
         </div>
       ))}

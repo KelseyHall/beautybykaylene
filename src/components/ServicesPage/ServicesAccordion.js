@@ -7,9 +7,9 @@ const ServicesAccordion = ({ serviceName, price, time, description }) => {
   const showContent = () => {
     if (description.length > 0) {
       return isOpen ? (
-        <img src={downArrow} className="arrows" alt="downArrow" />
+        <img src={downArrow} className="arrows" alt="down Arrow" />
       ) : (
-        <img src={upArrow} className="arrows" alt="upArrow" />
+        <img src={upArrow} className="arrows" alt="up Arrow" />
       );
     } else {
       return;
@@ -33,6 +33,7 @@ const ServicesAccordion = ({ serviceName, price, time, description }) => {
             textAlign: 'center',
             width: '100%',
           }}
+          tabIndex={description.length > 0 ? 0 : -1}
           onClick={handleToggle}
         >
           {showContent()}
