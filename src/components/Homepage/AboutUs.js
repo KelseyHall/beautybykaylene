@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 const AboutUsContent = () => {
   return (
     <div className="about-us-homePage">
-      <h1 className="h1-title secondary">
+      <h2 className="h1-title secondary">
         about us
         <hr className="homeUnderline" />
-      </h1>
+      </h2>
       <div className="about-us-homePage-blurb-content">
         <img
           src={AboutUsImg}

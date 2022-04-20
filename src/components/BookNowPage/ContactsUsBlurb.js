@@ -19,7 +19,7 @@ const ContactUsBlurb = () => {
         <li>a few dates & times that work for you</li>
       </ul>
       <div className="book-info">
-        <h1 className="h1-title secondary">book appointment</h1>
+        <h2 className="h1-title secondary">book appointment</h2>
 
         <a
           href="https://www.fresha.com/a/beauty-by-kaylene-mobile-spa-port-hope-toronto-rd-u3ztt3oj/booking?menu=true&dppub=true&employeeId=1328692"

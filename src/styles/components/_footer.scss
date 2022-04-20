@@ -44,6 +44,12 @@ footer {
       color: $primary-dark;
     }
   }
+  .footer-sub-title {
+    color: $secondary-dark;
+    margin: 0;
+    padding: 0;
+    font-size: $font-size-lg;
+  }
 }
 .contact-info-footer {
   display: flex;

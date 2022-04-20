@@ -96,11 +96,48 @@ export const serviceBlurb = [
 
 //HomePage carousel
 export const CarouselSlides = [
-  { key: uuidv4(), content: <img src={galleryPicture1} alt="1" /> },
-  { key: uuidv4(), content: <img src={galleryPicture5} alt="2" /> },
-  { key: uuidv4(), content: <img src={galleryPicture6} alt="3" /> },
-  { key: uuidv4(), content: <img src={galleryPicture9} alt="4" /> },
-  { key: uuidv4(), content: <img src={galleryPicture10} alt="5" /> },
+  {
+    key: uuidv4(),
+    content: (
+      <img src={galleryPicture1} alt="women's hand. manicure soft pink paint" />
+    ),
+  },
+  {
+    key: uuidv4(),
+    content: (
+      <img
+        src={galleryPicture5}
+        alt="women's face. Eyelashes lifted and tinted dark. Eyebrows tinted darker"
+      />
+    ),
+  },
+  {
+    key: uuidv4(),
+    content: (
+      <img
+        src={galleryPicture6}
+        alt="nail color palate wheel. showing rainbow of color options"
+      />
+    ),
+  },
+  {
+    key: uuidv4(),
+    content: (
+      <img
+        src={galleryPicture9}
+        alt="women's hand. nail art, one nail cheetah print design, another nail leaf design"
+      />
+    ),
+  },
+  {
+    key: uuidv4(),
+    content: (
+      <img
+        src={galleryPicture10}
+        alt="women's toes. Pedicure, in hot red nail polish"
+      />
+    ),
+  },
 ];
 //Services sorting Nav
 
@@ -143,6 +180,7 @@ export const ServicesDescriptions = [
     linkedinHandle: 'anchor-service1',
     service: 'nails',
     image: nailService,
+    imgAlt: `nail color wheel palette, showing an option of colors`,
     blurb: (
       <span>
         Get your attitude back with a fresh polish! Enjoy a relaxing (or much
@@ -377,6 +415,7 @@ export const ServicesDescriptions = [
     linkedinHandle: 'anchor-service2',
     service: 'lashes & brows',
     image: lashbrowService,
+    imgAlt: `Close up, side view of eyelash lift and tint. Brow lamination and tint`,
     blurb: (
       <span>
         Wake up ready to take on the day! Your mornings are about to be a
@@ -481,6 +520,7 @@ export const ServicesDescriptions = [
     linkedinHandle: 'anchor-service3',
     service: 'ladies waxing ',
     image: waxWomenService,
+    imgAlt: `artistic photo of hard wax and wooden applicators `,
     blurb: (
       <span>
         Get your skin feeling fresh and smooth, for longer with waxing!
@@ -714,6 +754,7 @@ export const ServicesDescriptions = [
     linkedinHandle: '',
     service: `men's waxing`,
     image: waxMenService,
+    imgAlt: `artistic shot of hard wax and wooden applicators`,
     blurb: (
       <span>
         Get your skin feeling fresh and smooth, for longer with waxing!
@@ -816,6 +857,7 @@ export const ServicesDescriptions = [
     linkedinHandle: 'anchor-service4',
     service: 'massage',
     image: massageServiceImg,
+    imgAlt: `hot stones stacked in a pile`,
     blurb: (
       <span>
         A soothing warm oil massage to bring peace and mindfulness to your day.
@@ -905,7 +947,7 @@ export const GalleryDatabase = [
     img: galleryPicture1,
     title: ' ',
     caption: ' ',
-    altText: '',
+    altText: `women's hands. manicure soft pink polish`,
   },
   {
     id: uuidv4(),
@@ -913,7 +955,7 @@ export const GalleryDatabase = [
     img: galleryPicture2,
     title: ' ',
     caption: ' ',
-    altText: '',
+    altText: `women's hands. manicure, black nail polish`,
   },
   {
     id: uuidv4(),
@@ -921,7 +963,7 @@ export const GalleryDatabase = [
     img: galleryPicture3,
     title: ' ',
     caption: ' ',
-    altText: '',
+    altText: `women's hands. manicure, deep red nail polish `,
   },
   {
     id: uuidv4(),
@@ -929,7 +971,7 @@ export const GalleryDatabase = [
     img: galleryPicture4,
     title: ' ',
     caption: ' ',
-    altText: '',
+    altText: `women's hands. manicure soft pink polish`,
   },
   {
     id: uuidv4(),
@@ -937,7 +979,7 @@ export const GalleryDatabase = [
     img: galleryPicture5,
     title: ' ',
     caption: ' ',
-    altText: '',
+    altText: `women's face. Eyelashes lifted and tinted dark. Eyebrows tinted darker`,
   },
   {
     id: uuidv4(),
@@ -945,7 +987,7 @@ export const GalleryDatabase = [
     img: galleryPicture6,
     title: ' ',
     caption: ' ',
-    altText: '',
+    altText: `nail color palate wheel. showing rainbow of color options`,
   },
   {
     id: uuidv4(),
@@ -953,7 +995,7 @@ export const GalleryDatabase = [
     img: galleryPicture7,
     title: ' ',
     caption: ' ',
-    altText: '',
+    altText: `close up of eye and brown. Eyelash lift, side view`,
   },
   {
     id: uuidv4(),
@@ -961,7 +1003,7 @@ export const GalleryDatabase = [
     img: galleryPicture8,
     title: ' ',
     caption: ' ',
-    altText: '',
+    altText: `close up of eye and brown. Eyelash lift, front view`,
   },
   {
     id: uuidv4(),
@@ -969,7 +1011,7 @@ export const GalleryDatabase = [
     img: galleryPicture9,
     title: ' ',
     caption: ' ',
-    altText: '',
+    altText: `women's hand. nail art, one nail cheetah print design, another nail leaf design`,
   },
   {
     id: uuidv4(),
@@ -977,7 +1019,7 @@ export const GalleryDatabase = [
     img: galleryPicture10,
     title: ' ',
     caption: '',
-    altText: '',
+    altText: `women's toes. Pedicure, in hot red nail polish`,
   },
   {
     id: uuidv4(),
@@ -985,7 +1027,7 @@ export const GalleryDatabase = [
     img: galleryPicture11,
     title: '',
     caption: '',
-    altText: '',
+    altText: `women's hands. manicure, in hot red nail polish`,
   },
   {
     id: uuidv4(),
@@ -993,7 +1035,7 @@ export const GalleryDatabase = [
     img: galleryPicture12,
     title: '',
     caption: '',
-    altText: '',
+    altText: `women's hands. manicure, in pastel pearl polish`,
   },
 ];
 
