@@ -4,7 +4,7 @@ const ContactInfo = () => {
   return (
     <div className="contact-info-footer">
       <div className="info-wrapper">
-        <p className="secondary capitalize">text</p>
+        <h4 className="footer-sub-title capitalize">text</h4>
         <p>
           <a className="primary" href="tel:905-644-8880">
             905.644.8880
@@ -12,7 +12,7 @@ const ContactInfo = () => {
         </p>
       </div>
       <div className="info-wrapper">
-        <p className="secondary capitalize">send us an email at</p>
+        <h4 className="footer-sub-title capitalize">send us an email at</h4>
         <p>
           <a className="primary" href="mailto:beautybykaylene@gmail.com">
             beautybykaylene@gmail.com

@@ -51,6 +51,7 @@ const Services = ({ list }) => {
           id,
           service,
           image,
+          imgAlt,
           blurb,
           serviceDetails,
 
@@ -60,7 +61,7 @@ const Services = ({ list }) => {
             <div className={'top-stagger-bg'}></div>
             <div className={'services-content-about  service-top-col'}>
               <h2 className="h2-title secondary-dark">{service}</h2>
-              <img src={image} className="services-Img" alt="service-theme" />
+              <img src={image} className="services-Img" alt={imgAlt} />
               <p className="servicesBlurb">{blurb}</p>
             </div>
             <div className={'bottom-stagger-bg'}></div>

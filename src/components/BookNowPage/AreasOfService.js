@@ -4,9 +4,9 @@ import React from 'react';
 const AreasOfService = () => {
   return (
     <div className="areas-of-service">
-      <h1 className="h1-title secondary">
+      <h2 className="h1-title secondary">
         areas of service <hr />
-      </h1>
+      </h2>
       <div className="areas-of-service-map">
         <iframe
           title="areasOfService"

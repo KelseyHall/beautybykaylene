@@ -18,9 +18,9 @@ const HomeServicesBlurb = () => {
   return (
     <div className="services">
       <img src={BannerImg} alt="services-banner" className="banner" />
-      <h1 className="h1-title secondary">
+      <h2 className="h1-title secondary">
         services <hr className="homeUnderline" />
-      </h1>
+      </h2>
       <div className="services-bg">
         <div className="services-card">
           <DisplayServicesBlurb />
