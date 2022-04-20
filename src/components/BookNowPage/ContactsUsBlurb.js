@@ -7,7 +7,7 @@ const ContactUsBlurb = () => {
       <hr />
       <p className="beforeYouBookText">
         Before you book please read our{' '}
-        <Link to="/policies" className="secondary">
+        <Link to="/policies" className="secondary-dark">
           policies
         </Link>
       </p>
